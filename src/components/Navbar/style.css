@@ -1,0 +1,59 @@
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #16163F;
+    cursor: pointer;
+}
+
+header .container {
+    margin: 0;
+    padding: 0;
+}
+
+header ul {
+    position: absolute;
+    left: 340px;
+}
+
+header a {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #16163F;
+    padding-left: 50px !important;
+    text-decoration: none;
+    cursor:pointer;
+}
+
+header a:hover {
+    color: #16163F;
+    text-decoration: underline;
+}
+
+
+@media (max-width: 1028px) {
+    .navbar-collapse {
+        position: relative;
+        z-index: 1;
+    }
+
+    header ul {
+        background-color: #16163F;
+        right: 0;
+        align-items: center;
+        display: inline-flexbox !important;
+        left: 550px;
+        border-radius: 20px;
+    }
+    header a{
+        color: #fff !important;
+        padding: 15px 10px !important;
+        display: inline !important;
+    }
+
+    header a:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+}

@@ -1,0 +1,38 @@
+.row {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    color: #fff;
+}
+
+.card {
+    height: 330px;
+    background-color: #16163F;
+    border: none;
+}
+
+.card-title {
+   text-align: center;
+}
+
+.researchers .card-title a{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.researchers .card-title a:hover{
+    text-decoration: underline;
+}
+
+.card-text {
+    font-weight: 300;
+    font-size: 0.75rem;
+    text-align: justify;
+}
+
+.card-img-top {
+    align-self: center;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}

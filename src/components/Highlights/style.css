@@ -1,0 +1,50 @@
+.highlights {
+    position: relative;
+    padding: 70px 0;
+    color: #16163F;
+}
+
+.highlights .container {
+    padding-top: 40px;
+    width: 50%;
+}
+
+.highlights h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    font-size: 2.25rem;
+}
+
+.carousel {
+    width: 100%;
+}
+
+.carousel-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    padding: 0 0 10px 10px;
+
+}
+
+.carousel-title:hover {
+    text-decoration: underline;
+}
+
+.carousel-img {
+    width: 100%;
+}
+
+.carousel-caption {
+    position: relative;
+    left: 0;
+    right: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: #16163F;
+}
+
+.carousel-indicators {
+    padding-bottom: 10px;
+}
