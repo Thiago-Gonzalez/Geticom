@@ -12,7 +12,7 @@ export default function Researchers (props) {
             <Container>
                 <h2>Pesquisadores</h2>
                 <Coordinators coordinators={props.coordinators}/>
-                <Button variant="link"><Link to="/sobre">Equipe</Link></Button>
+                <Link to="/sobre"><Button href="/sobre" variant="link">Equipe</Button></Link>
             </Container>
         </div>
     );

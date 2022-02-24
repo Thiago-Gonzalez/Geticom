@@ -11,7 +11,7 @@
 
 .highlights h2 {
     font-family: 'Work Sans', sans-serif;
-    font-weight: 800;
+    font-weight: 600;
     font-size: 2.25rem;
 }
 
@@ -43,6 +43,10 @@
     padding-left: 3%;
     padding-right: 3%;
     background-color: #16163F;
+}
+
+.highlights a {
+    text-decoration: none;
 }
 
 .carousel-indicators {

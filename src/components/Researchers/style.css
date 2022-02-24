@@ -18,20 +18,23 @@
     border-radius: 20px;
     padding: 7px 40px;
     text-decoration: none;
-}
-
-.researchers a {
     font-weight: 600;
     color: #fff;
     text-decoration: none;
-    font-size: 0.75rem;
-}
-
-.researchers .btn:hover a {
-    color: #16163F;
+    font-size: 1rem;
 }
 
 .researchers .btn:hover {
     color: #16163F;
     background-color: #fff;
+    text-decoration: none;
+}
+
+.researchers a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.researchers a:hover {
+    text-decoration: underline;
 }

@@ -1,0 +1,57 @@
+.last-articles {
+    padding: 70px 0;
+}
+
+.last-articles .container {
+    margin: 0;
+    padding: 0;
+}
+
+.last-articles h2, h4 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+}
+
+.last-articles h2 {
+    font-size: 2.25rem;
+    padding-bottom: 30px;
+}
+
+.last-articles h4 a {
+    font-size: 1.5rem;
+    color: #16163F;
+    text-decoration: none;
+}
+
+.last-articles h4 a:hover {
+    text-decoration: underline;
+}
+
+.last-articles p {
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
+.last-articles p a {
+    color: #16163F;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+.last-articles .btn {
+    color: #16163F;
+    font-weight: 600;
+    font-size: 1rem;
+    border: 1px solid #16163F;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.last-articles .btn:hover {
+    background-color: #16163F;
+    color: #fff;
+}

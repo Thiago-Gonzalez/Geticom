@@ -1,5 +1,4 @@
 import { Col, Row } from 'react-bootstrap';
-import uemaLogo from '../../img/uema-logo.png';
 import './style.css';
 
 export default function Footer() {
@@ -8,7 +7,7 @@ export default function Footer() {
             <div className='footer-geticom'>
                 <Row>
                     <Col lg={4} md={4} sm={4}>
-                        <img src={uemaLogo} alt="Logo UEMA" />
+                        <img src="./img/uema-logo.png" alt="Logo UEMA" />
                     </Col>
                     <Col lg={8} md={8} sm={8}>
                         <p>Grupo de Estudos em Tecnologias de Informação e Comunicações sem Fio | Todos os direitos reservados</p>

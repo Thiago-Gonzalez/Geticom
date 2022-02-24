@@ -1,0 +1,29 @@
+.last-videos {
+    padding: 70px 0;
+    background-color: #0074FF;
+    margin: auto -100px;
+    color: #fff;
+}
+
+.last-videos h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 2.25rem;
+    margin-left: -12px;
+    padding-bottom: 30px;
+}
+
+.last-videos .btn {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 7px 20px;
+}
+
+.last-videos .btn:hover {
+    color: #0074FF;
+    background-color: #fff;
+}

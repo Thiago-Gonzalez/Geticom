@@ -1,4 +1,5 @@
 import { Container, Carousel } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import './style.css';
 
 
@@ -14,13 +15,17 @@ export default function Highlights(props) {
                     {highlights.map( (highlight) => {
                         return (
                             <Carousel.Item>
-                                <img
-                                    className="d-block carousel-img"
-                                    src={highlight.imgPath}
-                                    alt={"Imagem de destaque - slide " + highlight.id}
-                                />
+                                <Link to={`/destaques/${highlight.title.replaceAll(" ", "-").toLowerCase()}`}>
+                                    <img
+                                        className="d-block carousel-img"
+                                        src={highlight.imgPath}
+                                        alt={"Imagem de destaque - slide " + highlight.id}
+                                    />
+                                </Link>
                                 <Carousel.Caption>
-                                    <p className="carousel-title">{highlight.title}</p>
+                                    <Link to={`/destaques/${highlight.title.replaceAll(" ", "-").toLowerCase()}`}>
+                                        <p className="carousel-title">{highlight.title}</p>
+                                    </Link>
                                 </Carousel.Caption>
                             </Carousel.Item>
                         );
