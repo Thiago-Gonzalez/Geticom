@@ -9,11 +9,16 @@
     font-family: 'Work Sans', sans-serif;
     font-weight: 600;
     font-size: 2.25rem;
-    margin-left: -12px;
-    padding-bottom: 30px;
+    margin-left: -15px;
+}
+
+.video {
+    margin-left: -15px;
+    padding: 40px 0;
 }
 
 .last-videos .btn {
+    margin: -15px;
     color: #fff;
     text-decoration: none;
     font-weight: 600;

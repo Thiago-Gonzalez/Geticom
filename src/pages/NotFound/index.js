@@ -1,18 +1,20 @@
-import { Container } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import Header from '../../components/Header/index';
+import appConfig from '../../config.json';
+import './style.css';
 
 export default function NotFound() {
-    const headerContent = {
-        heading: "Página não encontrada!",
-        paragraph: "Ops, ocorreu algum problema! Clique em um dos menus no topo da página para voltar a navegar"
-    }
 
     return(
-        <Container fluid>
-            <Header 
-                headerHeading={headerContent.heading}
-                headerParagraph={headerContent.paragraph}
-            />
-        </Container>
+        <div className="not-found">
+            <Container fluid>
+                <Header 
+                    headerHeading={appConfig.headerContent.notFound.heading}
+                    headerParagraph={appConfig.headerContent.notFound.paragraph}
+                />
+                <Link to="/"><Button variant="link">Retornar</Button></Link>
+            </Container>
+        </div>
     );
 }

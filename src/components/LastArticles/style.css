@@ -1,5 +1,6 @@
 .last-articles {
     padding: 70px 0;
+    color: #16163F;
 }
 
 .last-articles .container {
@@ -18,8 +19,8 @@
 }
 
 .last-articles h4 a {
-    font-size: 1.5rem;
     color: #16163F;
+    font-size: 1.5rem;
     text-decoration: none;
 }
 
@@ -32,12 +33,18 @@
     font-size: 1rem;
     text-align: justify;
     padding-bottom: 20px;
+    text-indent: 3.5rem;
+    line-height: 1.6;
 }
 
 .last-articles p a {
-    color: #16163F;
     font-weight: 500;
     font-size: 1rem;
+    text-decoration: none;
+    color: #16163F;
+}
+
+.last-articles p a:hover {
     text-decoration: underline;
 }
 
@@ -47,7 +54,7 @@
     font-size: 1rem;
     border: 1px solid #16163F;
     border-radius: 20px;
-    padding: 10px 20px;
+    padding: 7px 20px;
     text-decoration: none;
 }
 

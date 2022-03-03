@@ -1,0 +1,136 @@
+.team {
+    color: #16163F;
+    position: relative;
+    padding: 70px 0;
+}
+
+.team .container {
+    margin: 0;
+    padding: 0;
+}
+
+.team h2, h4, h6 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+}
+
+.team h2 {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 300px;
+    font-size: 2.25rem;
+    padding-bottom: 30px;
+}
+
+.team h4 {
+    font-size: 1.5rem;
+}
+
+.team .row {
+    margin: 0;
+    padding: 30px 5px;
+}
+
+.team .card {
+    background-color: #fff;
+}
+
+.team .card-title a{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color:#16163F;
+    text-decoration: none;
+}
+
+.team .card-title a:hover{
+    text-decoration: underline;
+}
+
+.team .card-text {
+    font-weight: 400;
+    color: #16163F;
+}
+
+.team h6 {
+    color: #16163F;
+}
+
+.researcher-info {
+    padding-bottom: 10px;
+    height: 100px;
+}
+
+.researcher-info a, h6 {
+    font-size: 1.125rem;
+    display: inline;
+    text-decoration: none;
+}
+
+.researcher-info a:hover {
+    text-decoration:underline;
+}
+
+.researcher-info p {
+    font-weight: 400;
+    font-size: 1rem;
+    color:#16163F !important;
+}
+
+.team .btn {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    color:#16163F;
+    border: 1px solid #16163F;
+    border-radius: 20px;
+    padding: 7px 12px;
+}
+
+.team .btn:hover {
+    background-color: #16163F;
+    color: #fff;
+}
+
+.btn-div span {
+    display: inline-block;
+    background-color: #16163F;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    text-align:center;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+}
+
+.btn-div p {
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+    z-index: 1;
+    color: #fff;
+    background-color: #16163F;
+    text-align: center;
+    padding: 10px;
+    width: 200px;
+    border-radius: 20px;
+    visibility: hidden;
+}
+
+.btn-div span:hover {
+    cursor: pointer;
+}
+
+.btn-div span:hover p {
+    visibility: visible;
+}
+
+@media (max-width: 1028px) {
+    .about header .header-paragraph {
+        width: 90%;
+    }
+}

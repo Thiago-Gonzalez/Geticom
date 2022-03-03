@@ -11,16 +11,24 @@ header .container {
     padding: 0;
 }
 
+header a:not(ul a) {
+    text-decoration: none;
+}
+
+header a:not(ul a):hover {
+    text-decoration: none;
+}
+
 header ul {
     position: absolute;
     left: 340px;
 }
 
-header a {
+header ul a {
     font-size: 1rem;
     font-weight: 400;
     color: #16163F;
-    padding-left: 50px !important;
+    padding-left: 60px !important;
     text-decoration: none;
     cursor:pointer;
 }
@@ -40,15 +48,15 @@ header a:hover {
     header ul {
         background-color: #16163F;
         right: 0;
-        align-items: center;
         display: inline-flexbox !important;
         left: 550px;
         border-radius: 20px;
     }
-    header a{
-        color: #fff !important;
-        padding: 15px 10px !important;
-        display: inline !important;
+    header .navbar-collapse a{
+        color: #fff;
+        display: inline;
+        padding: 20px 60px;
+        text-align: center;
     }
 
     header a:hover {

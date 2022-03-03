@@ -6,7 +6,7 @@ export default function Navigationbar() {
     return (
         <Navbar expand="xl">
             <Container>
-                <Navbar.Brand as="h1">Geticom</Navbar.Brand>
+                <Link to="/"><Navbar.Brand as="h1">Geticom</Navbar.Brand></Link>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav as="ul" className="me-auto">
