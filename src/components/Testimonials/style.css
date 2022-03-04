@@ -1,0 +1,31 @@
+.testimonials {
+    padding: 70px 0;
+    background-color: #0074FF;
+    margin: auto -100px;
+    color: #fff;
+}
+
+.testimonials .carousel {
+    align-items: center;
+}
+
+.testimonials .carousel-caption {
+    background-color: #0074FF;
+    padding: 50px 100px;
+}
+
+.testimonials .carousel-caption h4 {
+    font-weight: 700;
+    font-size: 2.25rem;
+    text-align: center;
+    color: #fff;
+}
+
+.testimonials .carousel-caption p {
+    margin-top: 50px;
+    font-size: 1rem;
+}
+
+.testimonials .carousel-caption p b {
+    font-weight: 900;
+}

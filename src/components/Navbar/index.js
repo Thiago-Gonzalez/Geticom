@@ -13,7 +13,7 @@ export default function Navigationbar() {
                         <Link to="/">Início</Link>
                         <Link to="/sobre">Sobre</Link>
                         <Link to="/servicos">Serviços</Link>
-                        <Link to="/contato">Contato</Link>
+                        <a href="/servicos#contatos">Contatos</a>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

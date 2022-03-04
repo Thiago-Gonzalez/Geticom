@@ -8,6 +8,10 @@
             "heading": "Sobre",
             "paragraph": "GETICOM é um núcleo de estudos em telecomunicações cuja missão é desenvolver tecnologia em comunicação sem fio, através da pesquisa acadêmica e aplicada, realizada por professores e alunos de graduação e pós-graduação da UEMA. Atuamos como ferramenta de apoio ao ensino-aprendizagem nas áreas de tecnologia da informação, telecomunicações e automação e controle. Além de oferecer consultoria para soluções em telecomunicações, promovida por profissionais experientes e com um preço abaixo do mercado"
         },
+        "services": {
+            "heading": "Conheça nossos serviços",
+            "paragraph": "Oferecemos consultoria para soluções em diversas linhas de ação em telecomunicações, através das melhores ferramentas e aplicações, realizada por profissionais especializados e com um preço abaixo do mercado"
+        },
         "notFound": {
             "heading": "Página não encontrada!",
             "paragraph": "Ops, ocorreu algum problema! Clique no botão abaixo ou em um dos menus da navegação para voltar a navegar"
@@ -169,6 +173,118 @@
             "name": "Ricardo Yvan de La Cruz Cueva",
             "description": "Mestre em Física Computacional, UFRN | Doutor em Física Computacional, INPE",
             "lattes": "http://lattes.cnpq.br/5569424161133651"
+        }
+    ],
+    "services": [
+        {
+            "id": 1,
+            "title": "Projeto de Redes de Telecomunicações",
+            "description": "Planejamento de redes sem fio a partir das premissas de negócio do cliente, analisando os padrões de tráfego, as características demográficas, a topografia e as características climáticas da área a ser coberta. Cálculos de visibilidade, drive-tests, site-survey, análise radiometereológica e de interferências. Planejamento de cobertura"
+        },
+        {
+            "id": 2,
+            "title": "Cálculos de Rádio Enlace",
+            "description": "O uso de ferramentas computacionais consolidadas proporcionam confiabilidade nos cálculos para definir os equipamentos e a infraestrutura necessária para prover a melhor perfomance para o sistema"
+        },
+        {
+            "id": 3,
+            "title": "Laudos Radiométricos",
+            "description": "Emissão de laudos para radiação eletromagnética de estações de telecomunicações de acordo com a Resolução 303 da Anatel e das determinações da Comissão Internacional para Proteção contra Radiações não Ionizantes - ICNIRP, órgão da Associação Internacional de Proteção a Radiações - IRPA"
+        },
+        {
+            "id": 4,
+            "title": "Otimização de Recursos de Rede",
+            "description": "Realização de testes de campo e efetuação dos ajustes necessários para a instação de sistemas de comunicação wireless de máxima eficácia. No caso dos serviços já existentes, analisa o tráfego, as rotas e a configuração da rede, otimizando os recursos, a cobertura e dos custos envolvidos"
+        },
+        {
+            "id": 5,
+            "title": "Projetos de Redes de Comunicações Óticas",
+            "description": "Projetos de redes híbridas tendo como rede de acesso de dados a tecnologia sem fio baseada nos padrões Wi-Fi e/ou WiMAX e a rede PON baseada nos padrões GPON (Gigabit-capable Passive Optical Network) e/ou GEPON (Gigabit Ethernet Passive Optical Network) permitindo acesso de dados a altas taxas e compondo o núcleo da rede por meio de elementos de rede com tecnologia metroethernet"
+        },
+        {
+            "id": 6,
+            "title": "Análise de Interferências",
+            "description": "Nossa equipe projeta, planeja e implementa as coluções de engenharia necessárias para eliminar problemas de interferências prejudiciais que afetam a qualidade dos serviços de telecomunicações"
+        },
+        {
+            "id": 7,
+            "title": "Segurança da Informação",
+            "description": "Equipe com vasta experiência e conhecimento em análise de risco, política de segurança, firewall, análise de vulnerabilidade, teste ético de invasão"
+        },
+        {
+            "id": 8,
+            "title": "Varredura de Espectro",
+            "description": "As atividades de varredura de espectro e identificação de fonte interferente são necessárias para verificar a presença de interfências prejudiciais sobre os sistemas de comunicações, a fim de evitar que estas interferências influenciem na disponibilidade e desempenho das redes"
+        },
+        {
+            "id": 9,
+            "title": "Redes Wi-Fi Indoor e Outdoor",
+            "description": "A necessidade de mobilidade e redução de curstos de deslocamento tem exigido cada vez mais soluções de redes locais wireless (WLAN). O GETICOM implementa, de forma rápida e otimizada, redes WLAN em ambientes indoor e outdoor com alto nível de segurança"
+        },
+        {
+            "id": 10,
+            "title": "Inclusão Social/Digital",
+            "description": "O grupo de pesquisa pode apoiar Governos na busca de soluções para prover inclusão social e digital a regiões desassistidas, escolas públicas e órgãos do governo"
+        },
+        {
+            "id": 11,
+            "title": "Desenvolvimento de Aplicativos",
+            "description": "Equipe altamente capacitada para atender demandas de desenvolvimento de sistemas de mobilidade para as plataformas mobile (Android e iOS) e web para uma organização que possam ser implementados em servidores próprios ou na nuvem, de forma rápida e eficiente, sem necessitar de uma infraestrutura tecnológica"
+        }
+    ],
+    "researches": [
+        {
+            "id": 1,
+            "title": "Caracterização de canal rádio móvel",
+            "description": "Trata-se da caracterização estatística do canal rádio móvel em banda larga e banda estreita, através de ambientes simulados e reais, através de medidas de campo utilizando técnicas de sondagem de canal nos domínios do tempo e da frequência"
+        },
+        {
+            "id": 2,
+            "title": "Internet das Coisas - IoT",
+            "description": "Procurar soluções inovadoras para os problemas atuais nas áreas da saúde, energia, transporte, segurança pública, mobilidade urbana, sonegação fiscal e cidades inteligentes utilizando os conceitos de Internet das Coisas"
+        },
+        {
+            "id": 3,
+            "title": "Sistemas de Comunicações sem Fio",
+            "description": "Planejamento de Sistemas Móveis, Redes de Comunicação sem fio padrões Wi-Fi, WiMAX e Wi-mesh, predição de cobertura de sistemas móveis nos modos de comunicação ponto-multiponto, ponto-a-ponto e multiponto-multiponto (mesh) em ambientes urbano, suburbano e rural" 
+        }
+    ],
+    "testimonials": [
+        {
+            "id": 1,
+            "content": "A consultoria prestada e sua análise técnica do enlace de rádio foi fundamental nas decisões de investimento do backone na Lig16.",
+            "author": "Maurício Oliveira, Diretor Executivo da Lig16"
+        },
+        {
+            "id": 2,
+            "content": "O treinamento em sido uma excelente ferramenta de capacitação profissional de nossa equipe, possibilitando uma amplificação do conhecimento dos profissionais.",
+            "author": "José Augusto Diniz Neto, Diretor da TVN"
+        }
+    ],
+    "contacts": [
+        {
+            "id": 1,
+            "name": "Coordenador Leonardo Gonsioroski",
+            "phone": "(98) 9 8347-1218",
+            "email": "gonsioroski@uema.br"
+        },
+        {
+            "id": 2,
+            "name": "Prof. Rogério Moreira Lima",
+            "phone": "(98) 9 8403-8255",
+            "email": "rogeriomls@uema.br"
+        },
+        {
+            "id": 3,
+            "name": "Prof. Luis Carlos Costa Fonseca",
+            "phone": "(98) 9 8111-2222",
+            "email": "lccfonseca@gmail.com"
+        },
+        {
+            "id": 4,
+            "name": "Prof. Henrique Mariano Costa do Amaral",
+            "phone": "(98) 9 8126-9273",
+            "email": "hmca13@gmail.com"
         }
     ]
 }

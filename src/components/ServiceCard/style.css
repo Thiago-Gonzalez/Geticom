@@ -1,0 +1,28 @@
+.services-page .card {
+    margin-bottom: 50px;
+    padding: 10px;
+    height: 325px;
+    width: 300px;
+    border: 1px solid #16163f;
+    border-radius: 0%;
+}
+
+.services-page .card-header {
+    background-color: #fff;
+    margin: -10px -10px 0;
+    padding: 7px;
+    height: 50px;
+}
+
+.services-page .card-body {
+    margin: 0 -10px;
+    padding: 0;
+}
+
+.services-page .card-text {
+    padding: 15px;
+    font-weight: 300;
+    font-size: 0.875rem;
+    line-height: 22px;
+    text-align: justify;
+}
