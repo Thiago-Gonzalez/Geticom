@@ -1,0 +1,95 @@
+header{
+    background-image: url("../../assets/img/header-background.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    position: relative;
+    margin: 0 -100px;
+    padding: 20px 100px;
+    min-height: 700px;
+    max-height: 100%;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+header a:not(ul a):hover {
+    text-decoration: none;
+}
+
+header ul a {
+    font-weight: 400;
+    color: #16163F;
+    padding: 0 30px;
+}
+
+.navbar .container {
+    max-width: 100%;
+}
+
+#basic-navbar-nav {
+    margin-left: -160px;
+}
+
+header ul {
+    margin: 0 auto;
+}
+
+
+@media (max-width: 1199px) {
+
+    #basic-navbar-nav {
+        margin-left: 0;
+    }
+
+    .navbar-collapse {
+        z-index: 99;
+    }
+
+    header ul {
+        position: absolute;
+        width: 200px;
+        right: 0;
+        background-color: #16163F;
+        display: inline;
+        border-radius: 20px;
+    }
+    header .navbar-collapse a{
+        color: #fff;
+        padding: 20px 60px;
+        text-align: center;
+    }
+
+    header a:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+}
+
+
+
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 55px;
+    padding: 60px 0 50px;
+}
+
+.header-content h1 {
+    font-weight: 700;
+    font-size: 2.5em;
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+.header-content p {
+    font-size: 1.5rem;
+    width: 50%;
+    text-align: justify;
+}

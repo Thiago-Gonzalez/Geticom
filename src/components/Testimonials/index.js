@@ -1,23 +1,21 @@
-import { Container, Carousel } from "react-bootstrap";
-import './style.css';
+import { Carousel } from "react-bootstrap";
+import './testimonials.css';
 
-export default function Testimonials (props) {
+export default function Testimonials ({ testimonials }) {
     return (
         <div className="testimonials">
-            <Container>
-                <Carousel>
-                    {props.testimonials.map( (testimonial) => {
-                        return (
-                            <Carousel.Item>
-                                <Carousel.Caption>
-                                    <h4>"{testimonial.content}"</h4>
-                                    <p>{testimonial.author}</p>
-                                </Carousel.Caption>
-                            </Carousel.Item>
-                        );
-                    })}
-                </Carousel>
-            </Container>
+            <Carousel>
+                {testimonials.map( (testimonial) => {
+                    return (
+                        <Carousel.Item>
+                            <Carousel.Caption>
+                                <h2>"{testimonial.content}"</h2>
+                                <p>{testimonial.author}</p>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                    );
+                })}
+            </Carousel>
         </div>
     );
 }

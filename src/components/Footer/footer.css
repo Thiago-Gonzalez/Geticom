@@ -1,0 +1,30 @@
+footer {
+    margin: auto -100px;
+    font-size: 0.75rem;
+    color: #fff;
+}
+
+footer .row {
+    align-items: center;
+}
+
+footer .footer {
+    background-color: #101C45;
+    padding: 50px 150px;
+}
+
+.footer-dev {
+    background-color: #191A19;
+    padding: 10px 0;
+    font-size: 0.6rem;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    font-size: 0.7rem;
+}
+
+footer a:hover {
+    color: #fff;
+}

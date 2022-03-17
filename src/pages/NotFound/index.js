@@ -1,22 +1,25 @@
 import { Button, Container } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import Footer from "../../components/Footer";
 import Header from '../../components/Header/index';
 import appConfig from '../../config.json';
-import './style.css';
+import './notfound.css';
+
+import { useHistory } from "react-router-dom";
 
 export default function NotFound() {
 
+    const history = useHistory();
+
+    function returnHome() {
+        history.push("/");
+    }
+
     return(
-        <div className="not-found">
-            <Container fluid>
+            <Container fluid className="notfound">
                 <Header 
-                    headerHeading={appConfig.headerContent.notFound.heading}
-                    headerParagraph={appConfig.headerContent.notFound.paragraph}
+                    heading={appConfig.headerContent.notFound.heading}
+                    paragraph={appConfig.headerContent.notFound.paragraph}
                 />
-                <Link to="/"><Button variant="link">Retornar</Button></Link>
-                <Footer />
+                <Button variant="link" onClick={returnHome}>Retornar</Button>
             </Container>
-        </div>
     );
 }

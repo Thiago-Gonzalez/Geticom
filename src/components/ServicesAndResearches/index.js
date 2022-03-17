@@ -1,33 +1,37 @@
 import {  Container, Row } from "react-bootstrap";
 import ServiceCard from "../ServiceCard";
-import './style.css';
+import './servicesandresearches.css';
 
-export default function ServicesAndResearches (props) {
+export default function ServicesAndResearches ({ services, researches }) {
     return (
-        <div className="services">
-            <Container>
-                <h2>Serviços</h2>
-                <Row>
-                    {props.services.map((service) => {
-                        return (
-                            <ServiceCard
-                                service={service}    
-                            />
-                        );
-                    })}
-                </Row>
-                <p className="services-obs1">Empresas parceiras podem contar com serviços de avaliação de tecnologias, desenvolvimento de estratégias de otimização operacional de recursos tecnológicos, apoio e suporte a processos licitatórios e de atendimento a normas de telecomunicações e treinamentos in company para formação ou aperfeiçoamento de pessoal</p>
-                <p className="services-obs2">Além de soluções corporativas, o GETICOM trabalha com pesquisas nas seguintes áreas das ciências e tecnologias:</p>
-                <Row>
-                    {props.researches.map((research) => {
-                        return (
-                            <ServiceCard 
-                                service={research}
-                            />
-                        );
-                    })}
-                </Row>
-            </Container>
-        </div>
+        <Container className="services">
+            <h1>Serviços</h1>
+            <Row>
+                {services.map((service) => {
+                    return (
+                        <ServiceCard
+                            service={service}    
+                        />
+                    );
+                })}
+            </Row>
+
+            
+            <div className="partner-companies">
+                <p >Empresas parceiras podem contar com serviços de avaliação de tecnologias, desenvolvimento de estratégias de otimização operacional de recursos tecnológicos, apoio e suporte a processos licitatórios e de atendimento a normas de telecomunicações e treinamentos in company para formação ou aperfeiçoamento de pessoal</p>
+            </div>
+
+
+            <h2>Além de soluções corporativas, o GETICOM trabalha com pesquisas nas seguintes áreas das ciências e tecnologias:</h2>
+            <Row>
+                {researches.map((research) => {
+                    return (
+                        <ServiceCard
+                            service={research}
+                        />
+                    );
+                })}
+            </Row>
+        </Container>
     );
 }

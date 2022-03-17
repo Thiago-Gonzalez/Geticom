@@ -1,18 +1,17 @@
 import Header from '../../components/Header';
 import Team from '../../components/Team';
 import { Container } from 'react-bootstrap';
-import '../style.css';
 import Footer from '../../components/Footer';
 import appConfig from '../../config.json';
+import './about.css';
 
 export default function About () {
 
     return (
-        <div className='about'>
-            <Container fluid>
+            <Container fluid className='about'>
                 <Header
-                headerHeading={appConfig.headerContent.about.heading} 
-                headerParagraph={appConfig.headerContent.about.paragraph}
+                    heading={appConfig.headerContent.about.heading} 
+                    paragraph={appConfig.headerContent.about.paragraph}
                 />
                 <Team
                     coordinators={appConfig.coordinators}
@@ -20,6 +19,5 @@ export default function About () {
                 />
                 <Footer />
             </Container>
-        </div>
     );
 }

@@ -1,0 +1,30 @@
+.container.services {
+    padding: 70px 0;
+}
+
+.services .row {
+    padding: 20px 0;
+}
+
+.partner-companies {
+    background-color: #101C45;
+    color: #fff;
+    margin: 0 -100px 70px;
+    padding: 70px 0;
+}
+
+.partner-companies p {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 60%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 0;
+    line-height: 2rem;
+}
+
+.services h2 {
+    width: 70%;
+}

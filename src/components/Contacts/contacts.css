@@ -1,0 +1,24 @@
+.container.contacts {
+    padding: 70px 0;
+}
+
+
+.contacts h1 {
+    margin-bottom: 30px;
+}
+
+.contacts .row {
+    margin-top: -20px;
+}
+
+.contact-detail {
+    margin-bottom: 40px;
+}
+
+.contact-detail p {
+    margin-bottom: 5px;
+}
+
+.contact-detail svg {
+    margin-right: 5px;
+}

@@ -1,22 +1,12 @@
-.highlights {
-    position: relative;
+.container.highlights {
     padding: 70px 0;
-    color: #16163F;
 }
 
 .highlights .container {
     padding-top: 40px;
-    width: 65%;
-}
-
-.highlights h2 {
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 600;
-    font-size: 2.25rem;
-}
-
-.carousel {
-    width: 100%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .carousel-title {
@@ -25,7 +15,6 @@
     text-align: center;
     color: #fff;
     padding: 0 0 10px 10px;
-
 }
 
 .carousel-title:hover {
@@ -39,14 +28,8 @@
 .carousel-caption {
     position: relative;
     left: 0;
-    right: 0;
-    padding-left: 3%;
-    padding-right: 3%;
+    padding: 3%;
     background-color: #16163F;
-}
-
-.highlights a {
-    text-decoration: none;
 }
 
 .carousel-indicators {

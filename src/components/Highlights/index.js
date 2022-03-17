@@ -1,37 +1,37 @@
 import { Container, Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import './style.css';
+import './highlights.css';
+import  slide1  from '../../assets/img/destaque-slide1.jpg';
 
 
-export default function Highlights(props) {
+export default function Highlights({ highlights }) {
 
-    const highlights = props.highlights.slice(-5);
 
     return(
-        <div className="highlights">
-            <h2>Destaques</h2>
+        <Container className="highlights">
+            <h1>Destaques</h1>
             <Container>
                 <Carousel>
-                    {highlights.map( (highlight) => {
+                    {highlights.slice(-5).map( (highlight) => {
                         return (
                             <Carousel.Item>
-                                <Link to={`/destaques/${highlight.title.replaceAll(" ", "-").toLowerCase()}`}>
+                                <Link to={`/destaques/${highlight.id}/${highlight.title.replaceAll(" ", "-").toLowerCase()}`}>
                                     <img
                                         className="d-block carousel-img"
-                                        src={highlight.imgPath}
+                                        src={slide1}
                                         alt={"Imagem de destaque - slide " + highlight.id}
                                     />
                                 </Link>
                                 <Carousel.Caption>
-                                    <Link to={`/destaques/${highlight.title.replaceAll(" ", "-").toLowerCase()}`}>
+                                    <Link to={`/destaques/${highlight.id}/${highlight.title.replaceAll(" ", "-").toLowerCase()}`}>
                                         <p className="carousel-title">{highlight.title}</p>
                                     </Link>
                                 </Carousel.Caption>
                             </Carousel.Item>
                         );
                     })}
-                    </Carousel>
+                </Carousel>
             </Container>
-        </div>
+        </Container>
     );
 }

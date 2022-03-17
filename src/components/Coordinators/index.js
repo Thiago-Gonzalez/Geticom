@@ -1,13 +1,13 @@
-import { Card, Col, Row } from "react-bootstrap";
-import './style.css';
+import { Card, Col, Container, Row } from "react-bootstrap";
+import './coordinators.css';
 
-export default function Coordinators (props) {
+export default function Coordinators({ coordinators }) {
     return (
-        <>
+        <Container className="coordinators">
             <Row>
-                {props.coordinators.map( (coordinator) => {
+                {coordinators.map( (coordinator) => {
                     return (
-                        <Col sm={6} lg={3}>
+                        <Col sm={6} lg={6} xl={3}>
                             <Card style={{ width: '15rem' }}>
                                 <Card.Img variant="top" src={coordinator.img} />
                                 <Card.Body>
@@ -21,6 +21,6 @@ export default function Coordinators (props) {
                     );
                 })}
             </Row>
-        </>
+        </Container>
     );
 }

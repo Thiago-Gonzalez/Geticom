@@ -1,48 +1,51 @@
 import { Button, Col, Container, Row } from "react-bootstrap";
-import { Link} from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import Coordinators from "../Coordinators";
-import './style.css';
+import './team.css';
 
 
-export default function Team(props) {
+export default function Team({ coordinators, researchers }) {
+    const history = useHistory();
+
+    function redirectToServices() {
+        history.push("/servicos");
+    }
     
     return (
-        <div className="team">
-            <Container>
-                <h2>Conheça nossa equipe</h2>
-                <h4>Coordenadores</h4>
-                <Coordinators coordinators={props.coordinators} />
-                <h4>Docentes e pesquisadores</h4>
-                <Row>
-                    <Col lg={6}>
-                        {props.researchers.slice(0, props.researchers.length/2).map((researcher) => {
-                            return (
-                                <div className="researcher-info">
-                                    <a href={researcher.lattes}><h6>{researcher.name}</h6></a>
-                                    <p >{researcher.description}</p>
-                                </div>
-                            );
-                        })}    
-                    </Col>
-                    <Col lg={6}>
-                        {props.researchers.slice(props.researchers.length/2).map((researcher) => {
-                            return (
-                                <div className="researcher-info" >
-                                    <a href={researcher.lattes}><h6>{researcher.name}</h6></a>
-                                    <p >{researcher.description}</p>
-                                </div>
-                            );
-                        })}    
-                    </Col>
-                </Row>
-                <div className="btn-div">
-                    <Link to="/servicos"><Button variant="link">Conheça nossos serviços</Button></Link>
-                    <span>
-                        ?
-                        <p>Ao clicar no nome de um dos Docentes ou Pesquisadores, você será redirecionado para à página do currículo lattes a ele associada</p>
-                    </span>
-                </div>
-            </Container>
-        </div>
+        <Container className="team">
+            <h1>Conheça nossa equipe</h1>
+            <h2>Coordenadores</h2>
+            <Coordinators coordinators={coordinators} />
+            <h2>Docentes e pesquisadores</h2>
+            <Row>
+                <Col lg={6}>
+                    {researchers.slice(0, researchers.length/2).map((researcher) => {
+                        return (
+                            <div className="researcher-info">
+                                <a href={researcher.lattes}><h4>{researcher.name}</h4></a>
+                                <p >{researcher.description}</p>
+                            </div>
+                        );
+                    })}    
+                </Col>
+                <Col lg={6}>
+                    {researchers.slice(researchers.length/2).map((researcher) => {
+                        return (
+                            <div className="researcher-info" >
+                                <a href={researcher.lattes}><h4>{researcher.name}</h4></a>
+                                <p >{researcher.description}</p>
+                            </div>
+                        );
+                    })}    
+                </Col>
+            </Row>
+            <div className="btn-div">
+                <Button variant="link" onClick={redirectToServices}>Conheça nossos serviços</Button>
+                <span>
+                    ?
+                    <p>Ao clicar no nome de um dos Docentes ou Pesquisadores, você será redirecionado para à página do currículo lattes a ele associada</p>
+                </span>
+            </div>
+        </Container>
     );
 }

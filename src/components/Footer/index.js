@@ -1,13 +1,15 @@
-import { Col, Row } from 'react-bootstrap';
-import './style.css';
+import { Col, Container, Row } from 'react-bootstrap';
+import './footer.css';
+
+import uema from "../../assets/img/uema-logo.png";
 
 export default function Footer() {
     return (
         <footer>
-            <div className='footer-geticom'>
+            <Container className='footer'>
                 <Row>
                     <Col lg={4} md={4} sm={4}>
-                        <img src="./img/uema-logo.png" alt="Logo UEMA" />
+                        <img src={uema} alt="Logo UEMA" />
                     </Col>
                     <Col lg={8} md={8} sm={8}>
                         <p>Grupo de Estudos em Tecnologias de Informação e Comunicações sem Fio | Todos os direitos reservados</p>
@@ -16,10 +18,9 @@ export default function Footer() {
                         <p>email: leonardohgfs@hotmail.com</p>
                     </Col>
                 </Row>
-            </div>
-            <div className='footer-dev'>
-                <p>© Desenvolvido por <a href="https://beacons.ai/thiago.gonzalez">Thiago González</a></p>
-            </div>
+            </Container>
+
+            <p className='footer-dev'>© Desenvolvido por <a href="https://beacons.ai/thiago.gonzalez">Thiago González</a></p>
         </footer>
     );
 }

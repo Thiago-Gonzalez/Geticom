@@ -1,14 +1,14 @@
 import { Card, Col } from "react-bootstrap";
-import './style.css';
+import './servicecard.css';
 
-export default function ServiceCard (props) {
+export default function ServiceCard ({ service }) {
     return (
         <Col xl={4} lg={6} md={6} sm={6}>
             <Card>
-                <Card.Header as="h4">{props.service.title}</Card.Header>
+                <Card.Header as="h4">{service.title}</Card.Header>
                 <Card.Body>
                     <Card.Text>
-                        {props.service.description}
+                        {service.description}
                     </Card.Text>
                 </Card.Body>
             </Card>

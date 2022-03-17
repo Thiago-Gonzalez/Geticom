@@ -1,23 +1,37 @@
-import { Container, Row } from 'react-bootstrap';
-import Contact from '../Contact';
-import './style.css';
+import { Col, Container, Row} from 'react-bootstrap';
+import './contacts.css';
 
-export default function Contacts (props) {
+import { FiMail } from 'react-icons/fi';
+import { BsWhatsapp } from 'react-icons/bs';
+
+export default function Contacts ({ contacts }) {
     return (
-        <div id="contatos" className="contacts">
-            <Container>
-                <h2>Contatos</h2>
-                <p className='time'>Atendimento: segunda à sexta das 8h às 18h</p>
-                <Row>
-                    {props.contacts.map( (contact) => {
-                        return (
-                            <Contact 
-                                contact={contact}
-                            />
-                        );
-                    })}
-                </Row>
-            </Container>
-        </div>
+        <Container id="contatos" className="contacts">
+            <h1>Contatos</h1>
+            <h2>Horário de funcionamento:</h2>
+            <p className='opening-hours'>Atendimento: segunda à sexta das 8h às 18h</p>
+            <Row>
+                {contacts.map((contact) => {
+                    return (
+                        <Col xl={6} lg={6} md={6}>
+                            <div className='contact-detail'>
+                                <h4>{contact.name}</h4>
+                                <p>
+                                    <BsWhatsapp />
+                                    {contact.phone}
+                                </p>
+                                <p>
+                                    <FiMail />                   
+                                    {contact.email}
+                                </p>
+                            </div>
+                        </Col>
+                    );
+                })}
+            </Row>
+            
+            
+        </Container>
+
     );
 }

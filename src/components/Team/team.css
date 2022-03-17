@@ -1,0 +1,88 @@
+.team {
+    position: relative;
+    padding: 70px 0;
+}
+
+.team h1 {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 300px;
+    font-size: 2.25rem;
+    padding-bottom: 30px;
+}
+
+.team h2 {
+    font-size: 2em;
+}
+
+.team .row {
+    padding: 20px 0;
+}
+
+.team .card {
+    background-color: #fff;
+}
+
+.team .card-title a{
+    color:#16163F;
+}
+
+.team .card-text {
+    font-weight: 400;
+    letter-spacing: 0.05em;
+}
+
+.researcher-info {
+    padding-bottom: 10px;
+    height: 100px;
+}
+
+.researcher-info a, h4 {
+    display: inline;
+}
+
+.team .btn {
+    color:#16163F;
+    border: 1px solid #16163F;
+}
+
+.team .btn:hover {
+    background-color: #16163F;
+    color: #fff;
+}
+
+.btn-div span {
+    background-color: #16163F;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    text-align:center;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+}
+
+.btn-div p {
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+    z-index: 99;
+    color: #fff;
+    background-color: #16163F;
+    text-align: justify;
+    padding: 25px;
+    width: 250px;
+    visibility: hidden;
+    border-radius: 20px;
+}
+
+.btn-div span:hover {
+    cursor: pointer;
+}
+
+.btn-div span:hover p {
+    visibility: visible;
+}

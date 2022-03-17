@@ -1,19 +1,23 @@
 import { useState } from "react";
-import { Button, Container } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
+import { useHistory } from "react-router-dom";
 import Coordinators from "../Coordinators";
-import './style.css';
+import './researchers.css';
 
-export default function Researchers (props) {
+export default function Researchers ({ coordinators }) {
+    const history = useHistory();
 
+    function redirectAbout() {
+        history.push("/sobre");
+    }
 
     return(
         <div className="researchers">
-            <Container>
-                <h2>Pesquisadores</h2>
-                <Coordinators coordinators={props.coordinators}/>
-                <Link to="/sobre"><Button variant="link">Equipe</Button></Link>
-            </Container>
+            <h1>Pesquisadores</h1>
+
+            <Coordinators coordinators={coordinators} />
+
+            <Button variant="link" onClick={redirectAbout}>Equipe</Button>
         </div>
     );
 }

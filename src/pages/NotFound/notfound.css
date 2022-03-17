@@ -1,0 +1,12 @@
+.notfound .btn {
+    position: absolute;
+    top: 425px;
+    color: #16163F;
+    border: 1px solid #16163F;
+    transition: ease-in 0.2s;
+}
+
+.notfound .btn:hover {
+    color: #fff;
+    background-color: #16163F;
+}

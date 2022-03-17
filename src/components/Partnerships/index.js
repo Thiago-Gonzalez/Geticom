@@ -1,90 +1,103 @@
-import { Collapse } from "bootstrap";
+import cnpq from "../../assets/img/cnpq.jpg";
+import fapema from "../../assets/img/fapema.jpg";
+import pecs from "../../assets/img/pecs.jpg";
+import engcomp from "../../assets/img/engcomp.png";
+import usp from "../../assets/img/usp.jpg";
+import ifam from "../../assets/img/ifam.jpg";
+import fapead from "../../assets/img/fapead.jpg";
+import abtelecom from "../../assets/img/abtelecom.jpg";
+import fiema from "../../assets/img/fiema.jpg";
+import celplan from "../../assets/img/celplan.jpg";
+import lig16 from "../../assets/img/lig16.jpg";
+import cisco from "../../assets/img/cisco.jpg";
+import anatel from "../../assets/img/anatel.jpg";
+import tvn from "../../assets/img/tvn.jpg";
+import cla from "../../assets/img/cla.jpg";
+import crea from "../../assets/img/crea.jpg";
 import { Col, Container, Row } from "react-bootstrap";
-import './style.css';
+import './partnerships.css';
 
 export default function Partnerships() {
     return (
-        <div className="partnerships">
-            <Container>
-                <h2>PARCERIAS</h2>
-                <Row>
-                    <Col>
-                        <img src="./img/cnpq.jpg" alt="Logo-parceiro"/>
-                    </Col>
-                    
-                    <Col>
-                        <img src="./img/fapema.jpg" alt="Logo-parceiro"/>
-                    </Col>
+        <Container className="partnerships">
+            <h1>PARCERIAS</h1>
+            <Row>
+                <Col>
+                    <img src={cnpq} alt="Logo-parceiro"/>
+                </Col>
+                
+                <Col>
+                    <img src={fapema} alt="Logo-parceiro"/>
+                </Col>
 
-                    <Col>
-                        <img src="./img/pecs.jpg" alt="Logo-parceiro"/>
-                    </Col>
+                <Col>
+                    <img src={pecs} alt="Logo-parceiro"/>
+                </Col>
 
-                    <Col>
-                        <img src="./img/engcomp.png" alt="Logo-parceiro" />
-                    </Col>
+                <Col>
+                    <img src={engcomp} alt="Logo-parceiro" />
+                </Col>
 
-                </Row>
+            </Row>
 
-                <Row>
+            <Row>
 
-                    <Col>
-                        <img src="./img/usp.jpg" alt="Logo-parceiro"/>
-                    </Col>
+                <Col>
+                    <img src={usp} alt="Logo-parceiro"/>
+                </Col>
 
-                    <Col>
-                        <img src="./img/ifam.jpg" alt="Logo-parceiro"/>
-                    </Col>
+                <Col>
+                    <img src={ifam} alt="Logo-parceiro"/>
+                </Col>
 
-                    <Col>
-                        <img src="./img/fapead.jpg" alt="Logo-parceiro"/>
-                    </Col>
+                <Col>
+                    <img src={fapead} alt="Logo-parceiro"/>
+                </Col>
 
-                    <Col>
-                        <img src="./img/abtelecom.jpg" alt="Logo-parceiro"/>
-                    </Col>
-                    
-                </Row>
+                <Col>
+                    <img src={abtelecom} alt="Logo-parceiro"/>
+                </Col>
+                
+            </Row>
 
-                <Row>
-                    <Col>
-                        <img src="./img/fiema.jpg" alt="Logo-parceiro"/>
-                    </Col>
+            <Row>
+                <Col>
+                    <img src={fiema} alt="Logo-parceiro"/>
+                </Col>
 
-                    <Col>
-                        <img src="./img/celplan.jpg" alt="Logo-parceiro"/>
-                    </Col>
+                <Col>
+                    <img src={celplan} alt="Logo-parceiro"/>
+                </Col>
 
-                    <Col>
-                        <img src="./img/lig16.jpg" alt="Logo-parceiro"/>
-                    </Col>
+                <Col>
+                    <img src={lig16} alt="Logo-parceiro"/>
+                </Col>
 
-                    <Col>
-                        <img src="./img/cisco.jpg" alt="Logo-parceiro"/>
-                    </Col>
-                    
-                </Row>
+                <Col>
+                    <img src={cisco} alt="Logo-parceiro"/>
+                </Col>
+                
+            </Row>
 
-                <Row>
-                    <Col>
-                        <img src="./img/anatel.jpg" alt="Logo-parceiro"/>
-                    </Col>
+            <Row>
+                <Col>
+                    <img src={anatel} alt="Logo-parceiro"/>
+                </Col>
 
-                    <Col>
-                        <img src="./img/tvn.jpg" alt="Logo-parceiro"/>
-                    </Col>
+                <Col>
+                    <img src={tvn} alt="Logo-parceiro"/>
+                </Col>
 
-                    <Col>
-                        <img src="./img/cla.jpg" alt="Logo-parceiro"/>
-                    </Col>
+                <Col>
+                    <img src={cla} alt="Logo-parceiro"/>
+                </Col>
 
-                    <Col>
-                        <img src="./img/crea.jpg" alt="Logo-parceiro"/>
-                    </Col>
+                <Col>
+                    <img src={crea} alt="Logo-parceiro"/>
+                </Col>
 
-                </Row>
+            </Row>
 
-            </Container>
-        </div>
+        </Container>
     );
 }
