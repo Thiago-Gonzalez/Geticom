@@ -11,7 +11,7 @@ export default function HighlightPage () {
     const { id, title } = useParams();
 
     const highlight = appConfig.highlights.find( (highlight) => {
-        return highlight.id === parseInt(id) && highlight.title.replaceAll(" ", "-").toLowerCase() === title.toString() ? highlight : undefined;
+        return highlight.id === parseInt(id) && highlight.title.replaceAll(" ", "-").toLowerCase() === title.toLowerCase() ? highlight : undefined;
     });
 
     return (

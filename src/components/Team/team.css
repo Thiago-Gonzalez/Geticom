@@ -1,4 +1,4 @@
-.team {
+.container.team {
     position: relative;
     padding: 70px 0;
 }
@@ -30,7 +30,8 @@
 }
 
 .team .card-text {
-    font-weight: 400;
+    font-weight: 500;
+    font-size: 0.8em;
     letter-spacing: 0.05em;
 }
 

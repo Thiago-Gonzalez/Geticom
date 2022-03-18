@@ -1,5 +1,7 @@
 .container.partnerships {
-    padding: 70px 0;
+    padding: 70px 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .partnerships h1 {
@@ -13,7 +15,13 @@
     padding: 30px 0;
 }
 
+.partnerships .col {
+    display: flex;
+}
+
 .partnerships img {
+    margin-left: auto;
+    margin-right: auto;
     max-width: 200px;
     max-height: 50px;
 }

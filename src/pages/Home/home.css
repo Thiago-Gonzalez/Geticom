@@ -1,0 +1,48 @@
+.researchers {
+    background-color: #16163F;
+    color: #fff;
+    padding: 70px 100px;
+    margin: auto -100px;
+}
+
+.researchers h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.researchers .btn {
+    margin-left: 20px;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 7px 40px;
+}
+
+.researchers .btn:hover {
+    color: #16163F;
+    background-color: #fff;
+}
+
+.researchers a {
+    color: #fff;
+}
+
+
+
+
+.container.last-articles {
+    padding: 70px 0;
+}
+
+.last-articles h1 {
+    padding-bottom: 30px;
+}
+
+.last-articles .btn {
+    color: #16163F;
+    border: 1px solid #16163F;
+}
+
+.last-articles .btn:hover {
+    background-color: #16163F;
+    color: #fff;
+}

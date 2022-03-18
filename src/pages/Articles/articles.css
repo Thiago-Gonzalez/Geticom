@@ -1,0 +1,18 @@
+.container.articles {
+    padding: 70px 0;
+}
+
+.articles h1 {
+    font-size: 1.5em;
+}
+
+.articles .btn {
+    margin-top: 30px;
+    color: #16163F;
+    border: 1px solid #16163F;
+}
+
+.articles .btn:hover {
+    background-color: #16163F;
+    color: #fff;
+}

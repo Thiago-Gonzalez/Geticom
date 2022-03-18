@@ -12,9 +12,9 @@ export default function Highlights({ highlights }) {
             <h1>Destaques</h1>
             <Container>
                 <Carousel>
-                    {highlights.slice(-5).map( (highlight) => {
+                    {highlights.slice(-5).map( (highlight, index) => {
                         return (
-                            <Carousel.Item>
+                            <Carousel.Item key={index}>
                                 <Link to={`/destaques/${highlight.id}/${highlight.title.replaceAll(" ", "-").toLowerCase()}`}>
                                     <img
                                         className="d-block carousel-img"

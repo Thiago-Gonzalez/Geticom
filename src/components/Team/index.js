@@ -6,10 +6,6 @@ import './team.css';
 
 export default function Team({ coordinators, researchers }) {
     const history = useHistory();
-
-    function redirectToServices() {
-        history.push("/servicos");
-    }
     
     return (
         <Container className="team">
@@ -40,7 +36,7 @@ export default function Team({ coordinators, researchers }) {
                 </Col>
             </Row>
             <div className="btn-div">
-                <Button variant="link" onClick={redirectToServices}>Conheça nossos serviços</Button>
+                <Button variant="link" onClick={() =>  history.push("/servicos")}>Conheça nossos serviços</Button>
                 <span>
                     ?
                     <p>Ao clicar no nome de um dos Docentes ou Pesquisadores, você será redirecionado para à página do currículo lattes a ele associada</p>
