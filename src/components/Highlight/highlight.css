@@ -4,6 +4,10 @@
     padding: 70px 0;
 }
 
+.highlight h1 {
+    text-align: justify;
+}
+
 .highlight img {
     margin: 20px auto 10px;
     height: 100%;

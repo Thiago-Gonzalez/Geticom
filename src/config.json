@@ -30,15 +30,15 @@
     "highlights": [
         {
             "id": 1,
-            "title": "CREA-MA recebe Academia Maranhense de Ciências para iniciar tratativas para parceria",
-            "content": "O vice-presidente do CREA-MA, Eng. Eletric. Rogerio Moreira Lima, e o Superintendente Operacional, Eng. Amb. Sergio Silva,  receberam na última terça-feira (25) o Presidente da Academia Maranhense de Ciências, Eng. Civ. Henrique Mariano Amaral, e o 2º Secretário da AMC,  Eng. Mec. André Silva, a fim de tratarem sobre o  Termo de Cooperação Técnica que em breve será firmado pelas duas instituições. Na oportunidade foram discutidos projetos e ações em conjunto voltados para as engenharias, agronomia e geociências.",
-            "imgPath": "../../assets/img/destaque-slide1.jpg/"
+            "title": "Participação do GETICOM no COBENGE 2018",
+            "content": "Durante os dias 03 a 06 de setembro de 2018, o GETICOM participou do XLVI Congresso Brasileiro de Educação em Engenharia (COBENGE), ocorrido em Salvador, BA, no qual publicou o artigo \"Ferramenta Computacional de Apoio ao Ensino em Engenharia de Telecomunicações\", cujo trabalho apresenta a estratégia didático-pedagógica elaborada pelo grupo de estudos GETICOM da Universidade Estadual do Maranhão para melhorar a compreensão dos conceitos teóricos da disciplina de Redes Móveis e Rádio Acesso do curso de graduação de Engenharia de Computação, que, através da plataforma de prototipagem MATLAB foi desenvolvida uma ferramenta computacional de apoio ao ensino-aprendizagem, denominada \"Cálculos de Parâmetros para o Planejamento de Sistemas Celulares - CPPSC\", que facilita ao aluno a simulação de cálculos necessários à concepção de projetos, gerando eficientes resultados no planejamento de uma rede de telefonia celular. O artigo completo está disponível para download abaixo.",
+            "imgPath": "../../assets/img/cobenge2018.jpeg"
         },
         {
             "id": 2,
-            "title": "Dia do Agente Fiscal",
-            "content": "Nosso reconhecimento aos profissionais que atuam na difícil missão de fiscalizar o exercício profissional e as atividades das engenharias, agronomia e geociências.",
-            "imgPath": "/img/destaque-slide2.jpeg"
+            "title": "Participação do GETICOM no SBRT 2018",
+            "content": "Durante os dias 16 a 19 de setembro de 2018, o GETICOM participou do XXXVI Simpósio Brasileiro de Telecomunicações e Processamento de Sinais, ocorrido em Campina Grande, PB, no qual publicou os artigos 'Analysis of Dispersion Parameters of the Mobile Radio Chanel in 2.5 and 5.86 GHz Bands at High Speed' e 'Comparação Preliminar dos Níveis de Ocupação de Espectro Temporal e Espacial numa Região Metropolitana', disponíveis para download abaixo.",
+            "imgPath": "../../assets/img/sbrt18.jpeg"
         }
     ],
     "coordinators": [

@@ -1,7 +1,6 @@
 import { Container, Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import './highlights.css';
-import  slide1  from '../../assets/img/destaque-slide1.jpg';
 
 
 export default function Highlights({ highlights }) {
@@ -18,7 +17,7 @@ export default function Highlights({ highlights }) {
                                 <Link to={`/destaques/${highlight.id}/${highlight.title.replaceAll(" ", "-").toLowerCase()}`}>
                                     <img
                                         className="d-block carousel-img"
-                                        src={slide1}
+                                        src={highlight.imgPath}
                                         alt={"Imagem de destaque - slide " + highlight.id}
                                     />
                                 </Link>

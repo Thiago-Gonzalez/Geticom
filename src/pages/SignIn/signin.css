@@ -1,0 +1,80 @@
+.login-page {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #292929;
+    margin: 0 -100px;
+}
+
+.login {
+    background: #EAEAEC;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login-area {
+    display: flex;
+    justify-content: center;
+    background-color: #181c2e;
+    width: 100%;
+}
+
+.login-area img {
+    padding: 20px;
+    width: 120px;
+    height: 120px;
+}
+
+.login-page form {
+    margin-top: 1.5em;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-page form h1 {
+    text-align: center;
+    margin-bottom: 0.5em;
+    color: #181c2e;
+}
+
+.login input {
+    margin-bottom: 15px;
+    height: 35px;
+    border: 0;
+    border-radius: 7px;
+    padding: 10px;
+    font-size: 15px;
+    background-color: #FFF;
+}
+
+.login-page form button {
+    height: 35px;
+    border: 0;
+    border-radius: 7px;
+    background-color: #181c2e;
+    color: #FFF;
+    font-size: 1.3em;
+    margin-bottom: 0.2em;
+    transition: 0.2s;
+}
+
+.login-page form button:hover {
+    transform: scale(1.02);
+}
+
+.login-page .forget-password-btn {
+    background-color: transparent;
+    color: #181c2e;
+    border: none;
+    font-size: 1em;
+    margin-bottom: 0.75em;
+}
+
+.login-page .forget-password-btn:hover {
+    text-decoration: underline;
+}

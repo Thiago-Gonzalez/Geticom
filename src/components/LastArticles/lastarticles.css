@@ -1,0 +1,17 @@
+.container.last-articles {
+    padding: 70px 0;
+}
+
+.last-articles h1 {
+    padding-bottom: 30px;
+}
+
+.last-articles .btn {
+    color: #16163F;
+    border: 1px solid #16163F;
+}
+
+.last-articles .btn:hover {
+    background-color: #16163F;
+    color: #fff;
+}

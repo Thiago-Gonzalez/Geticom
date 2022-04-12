@@ -1,5 +1,5 @@
 import Route from './Route'; 
-//import custom route (RouteWrapper)
+
 import { Switch } from 'react-router-dom';
 
 import Home from '../pages/Home';
@@ -9,6 +9,10 @@ import ServicesPage from '../pages/ServicesPage';
 import HighlightPage from '../pages/HighlightPage';
 import Articles from '../pages/Articles';
 import ArticlePage from '../pages/ArticlePage';
+import SignIn from '../pages/SignIn';
+import SignUp from '../pages/SignUp';
+import Reset from '../pages/Reset';
+import Admin from '../pages/Admin';
 
 const Routes = () => {
     return (
@@ -20,6 +24,11 @@ const Routes = () => {
             <Route exact path="/destaques/:id/:title" component={HighlightPage}/>
             <Route exact path="/artigos" component={Articles} />
             <Route exact path="/artigos/:id/:title" component={ArticlePage} />
+
+            <Route exact path="/admin/login" component={SignIn} />
+            <Route exact path="/admin/reset" component={Reset} />
+            <Route exact path="/admin" component={Admin} isPrivate />
+            <Route exact path="/admin/register" component={SignUp} isPrivate />
 
             <Route path="*" component={NotFound} />
         </Switch>
