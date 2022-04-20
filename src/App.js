@@ -6,19 +6,22 @@ import { ToastContainer } from 'react-toastify';
 import AuthProvider from './contexts/auth';
 
 import 'react-toastify/dist/ReactToastify.css';
+import HighlightsProvider from './contexts/highlights';
 
 function App() {
 
   return (
     <AuthProvider>
       <ArticlesProvider>
-        <BrowserRouter>
-          <ToastContainer 
-            autoClose={3000}
-          />
-          <Routes />
-          <ScrollToTop />
-        </BrowserRouter>
+        <HighlightsProvider>
+          <BrowserRouter>
+            <ToastContainer 
+              autoClose={3000}
+            />
+            <Routes />
+            <ScrollToTop />
+          </BrowserRouter>
+        </HighlightsProvider>
       </ArticlesProvider>
     </AuthProvider>
   );

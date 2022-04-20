@@ -11,9 +11,9 @@ export default function Contacts ({ contacts }) {
             <h2>Horário de funcionamento:</h2>
             <p className='opening-hours'>Atendimento: segunda à sexta das 8h às 18h</p>
             <Row>
-                {contacts.map((contact) => {
+                {contacts.map((contact, index) => {
                     return (
-                        <Col xl={6} lg={6} md={6}>
+                        <Col xl={6} lg={6} md={6} key={index}>
                             <div className='contact-detail'>
                                 <h4>{contact.name}</h4>
                                 <p>

@@ -30,34 +30,20 @@ export default function AdminHeader() {
                 Perfil
             </Link>
 
-            <Link to="/admin/compose/highlights">
+            <Link to="/admin/highlights">
                 <MdHighlight color="#FFF" size={24} /> 
                 Destaques
             </Link>
-            <Link to="/admin/compose/articles">
+            <Link to="/admin/articles">
                 <MdOutlineArticle color="#FFF" size={24} /> 
                 Artigos
             </Link>
-            <Link to="/admin/team">
-                <RiTeamFill color="#FFF" size={24} /> 
-                Equipe
-            </Link>
-            <Link to="/admin/services">
-                <MdMiscellaneousServices color="#FFF" size={24} /> 
-                Serviços
-            </Link>
-            <Link to="/admin/testimonials">
-                <BsFillMegaphoneFill color="#FFF" size={24} /> 
-                Testemunhos
-            </Link>
-            <Link to="/admin/contacts">
-                <TiContacts color="#FFF" size={24} /> 
-                Contatos
-            </Link>
-            <Link to="/admin/register">
-                <BiUserPlus color="#FFF" size={24} />
-                Cadastrar usuário
-            </Link>
+            {user.email === 'geticom.adm@gmail.com' &&
+                <Link to="/admin/register">
+                    <BiUserPlus color="#FFF" size={24} />
+                    Cadastrar usuário
+                </Link>
+            }
             <Button className='signout-btn' onClick={() => signOut()}><GiExitDoor color='#FFF' size={24} />{loadingSignOut ? 'Saindo...' : 'Sair'}</Button>
         </div>
     );

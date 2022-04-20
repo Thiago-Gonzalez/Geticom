@@ -15,9 +15,9 @@ export default function Team({ coordinators, researchers }) {
             <h2>Docentes e pesquisadores</h2>
             <Row>
                 <Col lg={6}>
-                    {researchers.slice(0, researchers.length/2).map((researcher) => {
+                    {researchers.slice(0, researchers.length/2).map((researcher, index) => {
                         return (
-                            <div className="researcher-info">
+                            <div className="researcher-info" key={index}>
                                 <a href={researcher.lattes}><h4>{researcher.name}</h4></a>
                                 <p >{researcher.description}</p>
                             </div>
@@ -25,9 +25,9 @@ export default function Team({ coordinators, researchers }) {
                     })}    
                 </Col>
                 <Col lg={6}>
-                    {researchers.slice(researchers.length/2).map((researcher) => {
+                    {researchers.slice(researchers.length/2).map((researcher, index) => {
                         return (
-                            <div className="researcher-info" >
+                            <div className="researcher-info" key={index} >
                                 <a href={researcher.lattes}><h4>{researcher.name}</h4></a>
                                 <p >{researcher.description}</p>
                             </div>

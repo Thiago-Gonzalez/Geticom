@@ -9,7 +9,7 @@ export default function Coordinators({ coordinators }) {
                     return (
                         <Col sm={6} lg={6} xl={3} key={index}>
                             <Card style={{ width: '15rem' }}>
-                                <Card.Img variant="top" src={coordinator.img} />
+                                <Card.Img variant="top" src={require(`../../assets/img/${coordinator.img}`)} />
                                 <Card.Body>
                                     <Card.Title><a href={coordinator.lattes}>{coordinator.name}</a></Card.Title>
                                     <Card.Text>

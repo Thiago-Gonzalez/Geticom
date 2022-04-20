@@ -22,7 +22,10 @@
 }
 
 .carousel-img {
+    max-width: 900px;
+    max-height: 600px;
     width: 100%;
+    height: auto;
 }
 
 .carousel-caption {

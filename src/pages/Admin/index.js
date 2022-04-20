@@ -16,7 +16,7 @@ import './admin.css';
 import { Button } from "react-bootstrap";
 
 export default function UserConfig() {
-    const { user, setUser } = useContext(AuthContext);
+    const { user, setUser, signOut } = useContext(AuthContext);
 
     const [name, setName] = useState(user && user.name);
     const [email, setEmail] = useState(user && user.email);
@@ -25,6 +25,10 @@ export default function UserConfig() {
     const [imageAvatar, setImageAvatar] = useState(null);
 
     const [loadingSave, setLoadingSave] = useState(false);
+
+    const [newPassword, setNewPassword] = useState('');
+    const [confirmPassword, setConfirmPassword] = useState('');
+    const [loadingUpdatePassword, setLoadingUpdatePassword] = useState(false);
 
 
     function handleFile(e) {
@@ -99,6 +103,34 @@ export default function UserConfig() {
         setLoadingSave(false);
     }
 
+    async function handleUpdatePassword(e) {
+        e.preventDefault();
+        setLoadingUpdatePassword(true);
+
+        if (newPassword !== '' && confirmPassword !== '') {
+            await firebase.auth().currentUser.updatePassword(newPassword)
+                .then(() => {
+                    toast.success('Senha alterada com sucesso! Realize login novamente para continuar.');
+                    setTimeout(() => {
+                        signOut();
+                    }, 3000);
+                })
+                .catch((error) => {
+                    if (error.code === 'auth/weak-password') {
+                        toast.warning('Senha muito fraca! Crie uma senha com no mínimo 6 dígitos.');
+                    } else {
+                        console.log(error);
+                        toast.error('Ops, ocorreu um erro inesperado ao atualizar sua senha! Tente novamente mais tarde.');
+                    }
+                })
+
+        } else {
+            toast.error('Preencha todos os campos!');
+        }
+
+        setLoadingUpdatePassword(false);
+    }
+
     return(
         <div className='admin'>
             <AdminHeader />
@@ -130,6 +162,22 @@ export default function UserConfig() {
                         <input type="text" value={email} disabled={true} />
                             
                         <Button type='submit'>{loadingSave ? 'Salvando...' : 'Salvar'}</Button>
+                    </form>
+                </div>
+
+                <div className='special-container'>
+                    <form className="form-profile" onSubmit={handleUpdatePassword}>
+
+                        <h1>Alterar Senha</h1>
+
+                        <label>Nova Senha</label>
+                        <input type="password" placeholder="Nova Senha" value={newPassword} onChange={ (e) => setNewPassword(e.target.value)} />
+                        
+                        <label>Confirme a Senha</label>
+                        <input type="password" placeholder="Confirme a nova senha" value={confirmPassword} onChange={ (e) => setConfirmPassword(e.target.value)} />
+                        {newPassword !== confirmPassword && <p className="password-match">A senha digitada é diferente da anterior</p>}
+                            
+                        <Button className="password-match-btn" type='submit' disabled={(newPassword === '' && confirmPassword === '') || (newPassword !== confirmPassword)}>{loadingUpdatePassword ? 'Alterando...' : 'Alterar senha'}</Button>
                     </form>
                 </div>
 

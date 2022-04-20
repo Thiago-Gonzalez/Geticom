@@ -25,6 +25,10 @@
     background-color: #fff;
 }
 
+.team .card-title a:hover {
+    color: #16163F;
+}
+
 .team .card-title a{
     color:#16163F;
 }

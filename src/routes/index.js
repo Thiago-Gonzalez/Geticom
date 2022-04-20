@@ -13,6 +13,7 @@ import SignIn from '../pages/SignIn';
 import SignUp from '../pages/SignUp';
 import Reset from '../pages/Reset';
 import Admin from '../pages/Admin';
+import DashboardHighlights from '../pages/DashboardHighlights';
 
 const Routes = () => {
     return (
@@ -29,6 +30,7 @@ const Routes = () => {
             <Route exact path="/admin/reset" component={Reset} />
             <Route exact path="/admin" component={Admin} isPrivate />
             <Route exact path="/admin/register" component={SignUp} isPrivate />
+            <Route exact path="/admin/highlights" component={DashboardHighlights} isPrivate />
 
             <Route path="*" component={NotFound} />
         </Switch>

@@ -1,0 +1,55 @@
+.dashboard {
+    margin: 0 -100px;
+    background-color: #f8f8f8;
+    height: 100%;
+}
+
+table {
+    border: 1px solid #CCC;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+}
+
+table tr {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: .35em;
+}
+
+table th, 
+table td {
+    padding: .62em;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.td-title {
+    text-align: justify;
+}
+
+table td .action {
+    border: 0;
+    padding: 5px;
+    margin-right: 2px;
+    align-items: center;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+table td .action svg {
+    vertical-align: middle;
+}

@@ -11,13 +11,13 @@ export default function Highlights({ highlights }) {
             <h1>Destaques</h1>
             <Container>
                 <Carousel>
-                    {highlights.slice(-5).map( (highlight, index) => {
+                    {highlights.slice(-5).reverse().map( (highlight, index) => {
                         return (
                             <Carousel.Item key={index}>
                                 <Link to={`/destaques/${highlight.id}/${highlight.title.replaceAll(" ", "-").toLowerCase()}`}>
                                     <img
                                         className="d-block carousel-img"
-                                        src={highlight.imgPath}
+                                        src={require(`../../assets/img/${highlight.img}`)}
                                         alt={"Imagem de destaque - slide " + highlight.id}
                                     />
                                 </Link>

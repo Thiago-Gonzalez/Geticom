@@ -3,20 +3,24 @@
     flex-direction: column;
 }
 
-.article h1 {
-    margin-bottom: 30px;
-}
-
 .article span {
-    font-size: 0.8em;
+    font-size: 0.9em;
     font-weight: 500;
     padding-bottom: 30px;
 }
 
 .article p {
-    padding-bottom: 20px;
     text-align: justify;
     line-height: 1.6;
+}
+
+.article .download-btn {
+    align-self: flex-start;
+    margin-bottom: 20px;
+}
+
+.article .download-btn:hover {
+    text-decoration: none;
 }
 
 .article .btn {

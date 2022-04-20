@@ -5,20 +5,21 @@ import { AuthContext } from "../contexts/auth";
 
 export default function RouteWrapper({
     component: Component,
-    isPrivate, //private route
+    isPrivate,
     ...rest 
 }){
 
-    const { signed } = useContext(AuthContext);
+    const { user, signed } = useContext(AuthContext);
 
     if (!signed && isPrivate) {
         return <Redirect to="/admin/login" />
     }
 
     if (signed && !isPrivate) {
-        alert("Encerre a sessão para acessar rotas públicas.");
         return <Redirect to="/admin" />
     }
+
+
 
     return(
         <Route 

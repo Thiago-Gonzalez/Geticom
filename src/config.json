@@ -28,45 +28,83 @@
         }
     },
     "highlights": [
+        
         {
             "id": 1,
-            "title": "Participação do GETICOM no COBENGE 2018",
-            "content": "Durante os dias 03 a 06 de setembro de 2018, o GETICOM participou do XLVI Congresso Brasileiro de Educação em Engenharia (COBENGE), ocorrido em Salvador, BA, no qual publicou o artigo \"Ferramenta Computacional de Apoio ao Ensino em Engenharia de Telecomunicações\", cujo trabalho apresenta a estratégia didático-pedagógica elaborada pelo grupo de estudos GETICOM da Universidade Estadual do Maranhão para melhorar a compreensão dos conceitos teóricos da disciplina de Redes Móveis e Rádio Acesso do curso de graduação de Engenharia de Computação, que, através da plataforma de prototipagem MATLAB foi desenvolvida uma ferramenta computacional de apoio ao ensino-aprendizagem, denominada \"Cálculos de Parâmetros para o Planejamento de Sistemas Celulares - CPPSC\", que facilita ao aluno a simulação de cálculos necessários à concepção de projetos, gerando eficientes resultados no planejamento de uma rede de telefonia celular. O artigo completo está disponível para download abaixo.",
-            "imgPath": "../../assets/img/cobenge2018.jpeg"
+            "title": "Testes descartam interferência de 4G na TV digital",
+            "content": "O Pesquisador e Coordenador do GETICOM Leonardo Henrique Gonsiroski participou dos testes de interferência de LTE em TV Digital na faixa de 7000 MHz em 2014 e foi um dos responsáveis pelo relatório técnico que liberou a Agência Nacional de Telecomunicações (Anatel) para realizar a licitação da faixa de 700 MHz em agosto de 2014. Os testes mostraram que o sistema de banda larga móvel 4G não causa ruídos ou interferência no sistema de TV digital. Os testes foram realizados em Aparecida (SP) e tiveram a chancela de grupos interessados, como a Alcatel-Lucent, Motorola Solution, Nokia e Qualcomm. O estudo é uma resposta à Sociedade Brasileira de Engenharia da Televisão (SET), que, em fevereiro, afirmou que a exploração da faixa de 700 MHz pode causar interferência na transmissão da TV digital aberta.",
+            "img": "testesInterferencia.png"
         },
         {
             "id": 2,
+            "title": "Participação do GETICOM no COBENGE 2018",
+            "content": "Durante os dias 03 a 06 de setembro de 2018, o GETICOM participou do XLVI Congresso Brasileiro de Educação em Engenharia (COBENGE), ocorrido em Salvador, BA, no qual publicou o artigo \"Ferramenta Computacional de Apoio ao Ensino em Engenharia de Telecomunicações\", cujo trabalho apresenta a estratégia didático-pedagógica elaborada pelo grupo de estudos GETICOM da Universidade Estadual do Maranhão para melhorar a compreensão dos conceitos teóricos da disciplina de Redes Móveis e Rádio Acesso do curso de graduação de Engenharia de Computação, que, através da plataforma de prototipagem MATLAB foi desenvolvida uma ferramenta computacional de apoio ao ensino-aprendizagem, denominada \"Cálculos de Parâmetros para o Planejamento de Sistemas Celulares - CPPSC\", que facilita ao aluno a simulação de cálculos necessários à concepção de projetos, gerando eficientes resultados no planejamento de uma rede de telefonia celular. O artigo completo está disponível para download abaixo.",
+            "img": "cobenge2018.jpeg"
+        },
+        {
+            "id": 3,
             "title": "Participação do GETICOM no SBRT 2018",
-            "content": "Durante os dias 16 a 19 de setembro de 2018, o GETICOM participou do XXXVI Simpósio Brasileiro de Telecomunicações e Processamento de Sinais, ocorrido em Campina Grande, PB, no qual publicou os artigos 'Analysis of Dispersion Parameters of the Mobile Radio Chanel in 2.5 and 5.86 GHz Bands at High Speed' e 'Comparação Preliminar dos Níveis de Ocupação de Espectro Temporal e Espacial numa Região Metropolitana', disponíveis para download abaixo.",
-            "imgPath": "../../assets/img/sbrt18.jpeg"
+            "content": "Durante os dias 16 a 19 de setembro de 2018, o GETICOM participou do XXXVI Simpósio Brasileiro de Telecomunicações e Processamento de Sinais, ocorrido em Campina Grande, PB, no qual publicou os artigos \"Analysis of Dispersion Parameters of the Mobile Radio Chanel in 2.5 and 5.86 GHz Bands at High Speed\" e \"Comparação Preliminar dos Níveis de Ocupação de Espectro Temporal e Espacial numa Região Metropolitana\", disponíveis para download abaixo.",
+            "img": "sbrt18.jpeg"
+        },
+        {
+            "id": 4,
+            "title": "Os pesquisadores do GETICOM, Leonardo Henrique Gonsioroski e Amanda Beatriz dos Santos, participaram dos testes de campo para avaliar as tecnologias que serão empregadas na TV 3.0",
+            "content": "Em 2021 os Pesquisadores do GETICOM Leonardo Henrique Gonsioroski e Amanda Beatriz dos Santos, foram convidados dentre 70 outros pesquisadores de 7 universidades de todo Brasil para participar dos testes de campo para avaliar as tecnologias que serão empregadas na TV 3.0. A TV 3.0 é o novo sistema de TV aberta cujo desenvolvimento é realizado pelo Fórum SBTVD, que substituirá o sistema atual. Uma chamada internacional (Call for Proposals) foi publicada em julho de 2020 para receber propostas de tecnologias do Brasil e de outros países. No total, 21 organizações de diferentes países responderam à chamada internacional. A pesquisadora Amanda Beatriz dos Santos que atualmente faz doutorado em Engenharia Elétrica na PUC-Rio, tem desenvolvidos pesquisas e testes adicionais com a tecnologia japonesa ISDB-T Avançado.",
+            "img": "amanda-teste-de-campo.jpeg"
+        },
+        {
+            "id": 5,
+            "title": "Professor do GETICOM, Henrique Mariano Costa do Amaral, torna-se presidente da Academia Maranhense de Ciências (AMC)",
+            "content": "O professor do GETICOM, Herique Mariano Costa do Amaral, Mestre em Engenharia de Computação e Sistemas pela Universidade Federal do Rio de Janeiro (UFRJ), foi eleito presidente da Academia Maranhense de Ciências (AMC).",
+            "img": "academiaCiencias.jpg"
+        },
+        {
+            "id": 6,
+            "title": "Pesquisador do GETICOM é eleito Coordenador Nacional das Câmaras Especializadas em Engenharia Elétrica do CONFEA",
+            "content": "O professor do GETICOM, Rogério Moreira Lima Silva, Doutor em Telecomunicações pela PUC-Rio e Mestre em Telecomunicações pelo Instituto Militar de Engenharia - IME, foi eleito Coordenador Nacional das Câmaras Especializadas em Engenharia Elétrica do CONFEA.",
+            "img": "rogerioCREA.jpeg"
+        },
+        {
+            "id": 7,
+            "title": "Professor do GETICOM torna-se vice-presidente do CREA-MA",
+            "content": "O professor do GETICOM, Rogério Moreira Lima Silva, Doutor em Telecomunicações pela PUC-Rio e Mestre em Telecomunicações pelo Instituto Militar de Engenharia - IME, foi eleito Vice-Presidente do CREA-MA.",
+            "img": "rogerioCREA.jpeg"
+        },
+        {
+            "id": 8,
+            "title": "13º Fórum Regional de Geração Distribuída com Fontes Renováveis (GD)",
+            "content": "Geticom presente no 13° Forum GD - Professor Dr. Rogerio Moreira Lima, pesquisador de GETICOM que também exerce o cargo de Vice-presidente do CREA-MA, fará a palestra de abertura do 13° Forum GD no dia 04/05 as 08:50 hs. As inscricoes do evento ja estao abertas no link",
+            "img": "forumGD22.jpeg",
+            "link": "https://www.forumgdnordeste.com.br/site/programacao/"
         }
     ],
     "coordinators": [
         {
             "id": 1,
             "name": "HENRIQUE MARIANO COSTA DO AMARAL",
-            "img": "/img/mariano.jpg",
+            "img": "mariano.jpg",
             "description": "Mestre em Engenharia de Computação e Sistemas pela Universidade Federal do Rio de Janeiro - UFRJ",
             "lattes": "http://lattes.cnpq.br/0524178426308330"
         },
         {
             "id": 2,
             "name": "LEONARDO HENRIQUE GONSIOROSKI",
-            "img": "/img/leonardo.jpg",
+            "img": "leonardo.jpg",
             "description": "Pós-Doutorado pela PUC-Rio, Doutor em Telecomunicações pela PUC-Rio e Mestre em Engenharia Nuclear pelo Instituto Militar de Engenharia - IME | Coordenador do GETICOM",
             "lattes": "http://lattes.cnpq.br/5396107949326303"
         },
         {
             "id": 3,
             "name": "ROGÉRIO MOREIRA LIMA SILVA",
-            "img": "/img/rogerio.jpg",
+            "img": "rogerio.jpg",
             "description": "Doutor em Telecomunicações pela PUC-Rio e Mestre em Telecomunicações pelo Instituto Militar de Engenharia - IME",
             "lattes": "http://lattes.cnpq.br/0490351544174740"
         },
         {
             "id": 4,
             "name": "LUIS CARLOS COSTA FONSECA",
-            "img": "/img/luiscarlos.jpg",
+            "img": "luiscarlos.jpg",
             "description": "Doutor em Informática pela Universidade Federal do Rio Grande do Sul - UFRGS e Mestre em Ciência da Computação pela UFMA",
             "lattes": "http://lattes.cnpq.br/5011119718693303"
         }
@@ -74,33 +112,45 @@
     "articles": [
         {
             "id": 1,
-            "title": "The standard Lorem Ipsum passage, used since the 1500s",
-            "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure"
+            "title":" Ferramenta Computacional de Apoio ao Ensino em Engenharia de Telecomunicações",
+            "authors": "Leonardo Henrique Gonsioroski, Rogério Moreiria Lima Silva, Amanda Beatriz Cunha dos Santos, Jairon Viana Batista, Sandra Eloi Ferreira Nogueira, Igor Amorim Silva, Marcos Jose Dos Passos Sa, Ana Paula Ferreira Costa",
+            "summary": "Este trabalho apresenta a estratégia didático-pedagógica elaborada pelo grupo de estudos GETICOM da Universidade Estadual do Maranhão para melhorar a compreensão dos conceitos teóricos da disciplina de Redes Móveis e Rádio Acesso do curso de graduação de Engenharia de Computação. Através da plataforma de prototipagem MATLAB foi desenvolvido uma ferramenta computacional de apoio ao ensino-aprendizagem denominada “Cálculos de Parâmetros para o Planejamento de Sistemas Celulares – CPPSC”, que facilita ao aluno a simulação de cálculos necessários à concepção de projetos, gerando eficientes resultados no planejamento de uma rede de telefonia celular. O desenvolvimento e a utilização desta ferramenta são importante para a redução de custos e otimização do tempo no planejamento de uma rede móvel além de objetivar o maior interesse do aluno na busca e assimilação do conhecimento."
         },
         {
             "id": 2,
-            "title": "Section 1.10.32 of 'de Finibus Bonorum et Malorum', written by Cicero in 45 BC",
-            "summary": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure"
+            "title":"Analysis of Dispersion Parameters of the Mobile Radio Channel in 2.5 and 5.86 GHz Bands at High Speed",
+            "authors": "Fabiano C. S. Assumpção, Leonardo O. Regent, Gabriel S. Chaves, Leonardo H. Gonsioroski, Pedro V. G. Castellanos, Leni J. Matos",
+            "summary": "This paper deals with the characterization of a radio mobile channel in an urban environment, Rio de Janeiro, Brazil, for both 2.5 GHz and 5.86 GHz bands, providing the results and analysis of time and frequency dispersion parameters for future works. It is worth to emphasize that the measurements occurred at high speed, approximately 100 km/h."
         },
         {
             "id": 3,
-            "title": "1914 translation by H. Rackham",
-            "summary": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure"
+            "title":"Comparação Preliminar dos Níveis de Ocupação de Espectro Temporal e Espacial numa Região Metropolitana",
+            "authors": "Daniel da C. Vidal, Pedro V. C. Gonzalez, Tadeu N. Ferreira, Leonardo Gonsioroski, Jussif A. Arnez",
+            "summary": "Na atualidade vivemos uma revolução na maneira de como o espectro radioelétrico é utilizado. Novas tecnologias e novos conceitos de uso do espectro vem sendo implementadas para contornar o problema de escassez de espectro. O conceito de Rádio Cognitivo (RC) e suas implementações vêm sendo amplamente estudado pelos pesquisadores para prover acesso compartilhado numa determinada faixa de frequências. Para atingir o objetivo final do paradigma de acesso do RC, vários parâmetros devem ser analisados antes de prover uma determinada faixa ou faixas de frequências. Neste trabalho medições em campo foram realizadas na faixa de frequências destinadas ao sistema de televisão digital UHF para determinar estatísticas de ocupação do espectro tanto espacialmente como temporalmente."
         },
         {
             "id": 4,
-            "title": "Section 1.10.33 of 'de Finibus Bonorum et Malorum', written by Cicero in 45 BC",
-            "summary": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure"
+            "title": "Power Delay Profile Filtering Technique Using Artificial Neural Networks",
+            "authors": "Sandra Ferreira, Leonardo Gonsioroski,  Amanda dos Santos, Jairon Batista, Leni Matos, Pedro Gonzalez Castellanos, Rogerio Moreira Lima Silva, Carlos Henrique R. Oliveira",
+            "summary": "This paper presents an alternative technique for the filtering of the power delay profile in mobile radio channel using artificial neural networks for the identification and extraction of impulsive noise. The power delay profiles obtained from field measurements in the 700 MHz band, were subjected to two filtering techniques: the CFAR (Constant False Alarm Rate) filtering technique and the proposed technique using artificial neural networks. The neural technique demonstrated to be a good alternative with 91.38% of average accuracy and more satisfactory filtering than the CFAR for the identification of valid multipaths. The results of the temporal dispersion parameters Mean Excess Delay and RMS Delay Spread achieved by the new technique presented satisfactory values when compared with the CFAR and with the values described in the ITU-R (International Union of Telecommunications) standard P.1411-9."
         },
         {
             "id": 5,
-            "title": "1914 translation by H. Rackham",
-            "summary": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure"
+            "title": "Measurements of Propagation Loss at 910 MHz in Vegetated Environment for IEEE 802.11ah Network",
+            "authors": "Leonardo Gonsioroski, Amanda Beatriz dos Santos, Rogério Moreira Lima Silva, Wilyam David Torres Meza, Luiz da Silva Mello, Pedro Gonzalez Castellanos",
+            "summary": "The new standard IEEE 802.11ah is ideal targeting large-scale and dense deployments of IoT and M2M solutions due to three specific characteristics: the low operating frequency allowing coverage up to 1km, the ability to simultaneously connect a large number of devices per access point, and low power consumption. Several studies on the characteristics of radio propagation in the bands used by the IEEE standard are being carried out worldwide. In this paper, we evaluate two urban path loss models and four specific path loss models for vegetated environments, based on a measurement campaign performed in an urban environment with a strong presence of vegetation, typical of living areas, squares and urban parks where IoT technologies should be commonly implemented in the coming years. The models proposed by TGah were also evaluated. Based on empirical data, the most accurate models are determined. The characterization of large-scale fading and small-scale fading are presented."
+        },
+        {
+            "id": 6,
+            "title": "Measurements and Modeling of the Mobile Wireless Channel at 2.4 GHz in Urban and Suburban Areas",
+            "authors": "Leonardo Gonsioroski, Luiz da Silva Mello, Amanda Beatriz dos Santos",
+            "summary": "The path loss and wideband channel models for urban and suburban scenarios play a crucial role since they provide RF power estimations that allow the wireless network's optimized design and performance. Although several propagation models can be found in the literature, it is always important to consider the particular characteristics of urbanization in each region where a 5G technology is deployed. In this contribution, we present narrowband and wideband measurements and channel modeling for at 2.4 GHz band in urban and suburban regions in Rio de Janeiro, Brazil. The results include the path loss dependence with distance, the average delay and the statistical distributions of the root mean square (RMS) delay spread, the number of multipath components, and multipath amplitudes."
+        },
+        {
+            "id": 7,
+            "title": "Wideband Channel Sounding Simulation Tool and Sounding Sequences Evaluation",
+            "authors": "J. Marcos Leal B. Filho, Vicente A. de Sousa Jr., Danilo de S. Pena, Leonardo H. Gonsioroski",
+            "summary": "This work presents the Base-Band Sounding Tool (BSOT), a wideband channel sounding simulator with different scenarios and configurations, providing the channel's characterization in terms of delay and Doppler spreading. BSOT follows COST 207 statistical channel model and the pulse compression technique with direct cross-correlation at the receiver. Besides its validation results, the paper presents a performance evaluation of 6 types of sounding sequences (Random, Kasami, Gold, m-Sequence, Zadoff-Chu and Golay), including a robustness evaluation with different lengths, sampling rates, and SNR values. The simulated outputs are coherent with the theoretical modeling, and the investigation of sounding sequences reveals a better sounding performance of Zadoff-Chu and Golay sequences."
         }
 
     ],
@@ -267,12 +317,17 @@
     "testimonials": [
         {
             "id": 1,
+            "content": "Este treinamento é, sem dúvida, o primeiro que qualquer técnico ou engenheiro deveria realizar antes de iniciar qualquer atividade de laboratório ou de campo nesta área.",
+            "author": "Rogerio Moreira Lima Silva, Coordenador Nacional das Câmaras Especializadas em Engenharia Elétrica - CONFEA, sobre curso de RF"
+        },
+        {
+            "id": 2,
             "content": "A consultoria prestada e sua análise técnica do enlace de rádio foi fundamental nas decisões de investimento do backone na Lig16.",
             "author": "Maurício Oliveira, Diretor Executivo da Lig16"
         },
         {
-            "id": 2,
-            "content": "O treinamento em sido uma excelente ferramenta de capacitação profissional de nossa equipe, possibilitando uma amplificação do conhecimento dos profissionais.",
+            "id": 3,
+            "content": "O treinamento tem sido uma excelente ferramenta de capacitação profissional de nossa equipe, possibilitando uma amplificação do conhecimento dos profissionais.",
             "author": "José Augusto Diniz Neto, Diretor da TVN"
         }
     ],

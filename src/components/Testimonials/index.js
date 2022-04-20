@@ -5,9 +5,9 @@ export default function Testimonials ({ testimonials }) {
     return (
         <div className="testimonials">
             <Carousel>
-                {testimonials.map( (testimonial) => {
+                {testimonials.map( (testimonial, index) => {
                     return (
-                        <Carousel.Item>
+                        <Carousel.Item key={index}>
                             <Carousel.Caption>
                                 <h2>"{testimonial.content}"</h2>
                                 <p>{testimonial.author}</p>

@@ -75,7 +75,7 @@ p {
 
 .special-container {
     display: flex;
-    background-color: #f8f8f8;
+    background-color: #fff;
     border-radius: 5px;
     padding: 12px;
     align-items: center;

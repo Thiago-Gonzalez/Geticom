@@ -17,6 +17,11 @@
     font-size: 1rem;
 }
 
+.coordinators .card-title a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
 .coordinators .card-text {
     font-weight: 300;
     font-size: 0.75rem;

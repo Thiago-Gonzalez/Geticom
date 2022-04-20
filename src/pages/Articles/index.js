@@ -26,11 +26,11 @@ export default function Articles() {
                         <Article 
                             index={index}
                             article={article}
-                            summary={true}
+                            articlePage={false}
                         />
                     );
                 })}
-                <Button variant="link">Ler mais artigos</Button>
+                <Button variant="link">Ver mais artigos</Button>
             </Container>
 
             <Footer />

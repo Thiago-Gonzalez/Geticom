@@ -70,11 +70,11 @@ export default function AuthProvider({
                 if (error.code === 'auth/unverified-email') {
                     toast.error("Email não verificado! Realize a verificação através do link que foi enviado ao seu email.");
                 } else if (error.code === 'auth/wrong-password') {
-                    toast.error("Senha inválida!");
+                    toast.error("Falha ao realizar login! Verifique se suas credenciais estão corretas.");
                 } else if (error.code === 'auth/invalid-email') {
                     toast.error("Email inválido!");
                 } else if (error.code === 'auth/user-not-found') {
-                    toast.error("Usuário não encontrado! Verifique se suas credenciais estão corretas.");
+                    toast.error("Falha ao realizar login! Verifique se suas credenciais estão corretas.");
                 } else {
                     console.log(error);
                     toast.error("Ops, ocorreu um erro inesperado ao realizar login!");
@@ -120,12 +120,13 @@ export default function AuthProvider({
             })
     }
 
-    async function signOut() {
+    function signOut() {
         setLoadingSignOut(true);
-        await firebase.auth().signOut();
-        setUser(null);
-        setLoadingSignOut(false);
-        history.push("/");
+        setTimeout(async () => {
+            await firebase.auth().signOut();
+            setUser(null);
+            setLoadingSignOut(false);
+        }, 1000);
     }
 
     return ( 

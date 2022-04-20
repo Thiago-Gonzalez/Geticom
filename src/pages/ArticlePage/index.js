@@ -30,7 +30,7 @@ export default function ArticlePage() {
                     
                     <Article 
                         article={articleSelected}
-                        summary={false}
+                        articlePage={true}
                     />
 
                     <Footer />

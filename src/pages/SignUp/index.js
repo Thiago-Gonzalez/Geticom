@@ -40,17 +40,16 @@ export default function Admin() {
             <AdminHeader />
 
             <div className='content'>
-                <Title name="Gerenciar usuários">
+                <Title name="Cadastrar novo admin">
                     <BiUserPlus size={25} />
                 </Title>
 
                 <div className='special-container'>
                     <form className="form-register-adm" onSubmit={handleSubmit}>
 
-                        <h1>Cadastrar novo admin</h1>
-                        <input type="text" placeholder="Seu nome" value={name} onChange={ (e) => setName(e.target.value) } />
-                        <input type="text" placeholder='email@email.com' value={email} onChange={ (e) => setEmail(e.target.value)} />
-                        <input type="password" placeholder='********'  value={password} onChange={ (e) => setPassword(e.target.value)} />
+                        <input type="text" placeholder="Nome" value={name} onChange={ (e) => setName(e.target.value) } />
+                        <input type="text" placeholder='Email' value={email} onChange={ (e) => setEmail(e.target.value)} />
+                        <input type="password" placeholder='Senha'  value={password} onChange={ (e) => setPassword(e.target.value)} />
                         <Button type='submit' onClick={handleSubmit}>{loadingAuth ? 'Cadastrando...' : 'Cadastrar'}</Button>
                     
                     </form>

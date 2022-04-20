@@ -1,3 +1,7 @@
+.admin {
+    background-color: #f8f8f8;
+}
+
 .form-profile {
     display: flex;
     flex-direction: column;
@@ -56,4 +60,13 @@
 
 .form-profile button {
     max-width: 600px;
+}
+
+.password-match {
+    color: red;
+    font-size: 0.85rem;
+}
+
+button.password-match-btn:disabled {
+    cursor: not-allowed;
 }
