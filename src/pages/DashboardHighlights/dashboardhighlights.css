@@ -1,7 +1,47 @@
-.dashboard {
+.dashboard-highlights {
     margin: 0 -100px;
     background-color: #f8f8f8;
     height: 100%;
+}
+
+.dashboard-empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dashboard-empty span {
+    margin: 2em 0;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.new-btn {
+    float: right;
+    margin-bottom: 1.5em;
+    background-color: #83bf02;
+    color: #fff;
+    border: 0;
+    padding: .5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.1em;
+    border-radius: 6px;
+    transition: ease-in 0.2s;
+}
+
+.new-btn svg {
+    margin-right: 5px;
+}
+
+
+.new-btn:hover {
+    background-color: #5fd204;
+    transform: scale(1.1);
+    text-decoration: none;
 }
 
 table {
@@ -52,4 +92,65 @@ table td .action {
 
 table td .action svg {
     vertical-align: middle;
+}
+
+.btn-more{
+    margin: 1.5em 0;
+    padding: 7px 10px;
+    font-weight: 600;
+    border: 1px solid #181c2e;
+    border-radius: 5px;
+    background-color: #181c2e;
+    color: #fff;
+    transition: 0.4s;
+}
+
+.btn-more:hover {
+    background-color: #fff;
+    color: #181c2e;
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        border: 0;
+    }
+
+    table caption {
+        font-size: 1.3em;
+    }
+
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: .65em;
+    }
+
+    table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: .8em;
+        text-align: right;
+    }
+
+    table td:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    table td:last-child {
+        border-bottom: 0;
+    }
 }

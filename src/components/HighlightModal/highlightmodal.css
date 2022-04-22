@@ -1,0 +1,78 @@
+.highlight-modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 99;
+}
+
+.highlight-modal .container {
+    position: fixed;
+    max-height: 100vh;
+    overflow-y: auto;
+    max-width: 600px;
+    top: 10%;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 5em 2rem;
+    background-color: #FFF;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+.close {
+    background-color: #F65835;
+    border: 0;
+    color: #FFF;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 15px;
+    border-radius: 5px;
+}
+
+.close svg {
+    margin-right: 5px;
+}
+
+
+.highlight-modal h2{
+    margin-bottom: 1.2em;
+    font-size: 2em;
+    text-align: justify;
+}
+
+.modal-row {
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-row a {
+    border: 1px solid #16163F;
+    background-color: #16163F;
+    color: #fff;
+    border-radius: 20px;
+    padding: 7px 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 160px;
+    transition: 0.4s;
+}
+
+.modal-row a:hover {
+    text-decoration: none;
+    background-color: #fff;
+    color: #16163F;
+}
+
+.highlight-modal p {
+    white-space: pre-wrap;
+    padding-top: 0.5em;
+    text-align: justify;
+}

@@ -1,0 +1,42 @@
+.new-highlight {
+    margin: 0 -100px;
+    background-color: #f8f8f8;
+    height: 100%;
+}
+
+.form-highlight {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.form-highlight label {
+    margin-bottom: .5em;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.form-highlight input, textarea, textarea {
+    margin-bottom: 1em;
+    padding: .7em;
+    border: 0;
+    border-radius: 5px;
+}
+
+.form-highlight textarea {
+    height: 200px;
+}
+
+.form-highlight button {
+    border: 1px solid #16163F;
+    border-radius: 20px;
+    background-color: #16163F;
+    color: #fff;
+    padding: 7px 10px;
+    font-weight: 600;
+    transition: 0.4s;
+}
+.form-highlight button:hover {
+    color: #16163F;
+    background-color: #fff;
+}

@@ -21,9 +21,7 @@ export default function Home () {
                 paragraph={appConfig.headerContent.home.paragraph}
             />
 
-            <Highlights 
-                highlights={appConfig.highlights}
-            />
+            <Highlights />
 
             <Researchers />
 

@@ -14,6 +14,7 @@ import SignUp from '../pages/SignUp';
 import Reset from '../pages/Reset';
 import Admin from '../pages/Admin';
 import DashboardHighlights from '../pages/DashboardHighlights';
+import NewHighlight from '../pages/NewHighlight';
 
 const Routes = () => {
     return (
@@ -31,6 +32,8 @@ const Routes = () => {
             <Route exact path="/admin" component={Admin} isPrivate />
             <Route exact path="/admin/register" component={SignUp} isPrivate />
             <Route exact path="/admin/highlights" component={DashboardHighlights} isPrivate />
+            <Route exact path="/admin/compose/highlight" component={NewHighlight} isPrivate />
+            <Route exact path="/admin/compose/highlight/:id" component={NewHighlight} isPrivate />
 
             <Route path="*" component={NotFound} />
         </Switch>

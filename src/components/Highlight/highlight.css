@@ -39,3 +39,8 @@
     background-color: #16163F;
     color: #fff;
 }
+
+.highlight .download-btn {
+    margin-bottom: 20px;
+    width: 120px;
+}

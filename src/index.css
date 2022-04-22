@@ -75,9 +75,13 @@ p {
 
 .special-container {
     display: flex;
-    background-color: #fff;
+    background-color: #f8f8f8;
     border-radius: 5px;
     padding: 12px;
     align-items: center;
     margin-bottom: 1rem;
+}
+
+.content {
+    background-color: #EFEFEF;
 }
