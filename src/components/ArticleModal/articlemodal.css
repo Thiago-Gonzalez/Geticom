@@ -1,0 +1,36 @@
+.article-modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 99;
+}
+
+.article-modal .container {
+    position: fixed;
+    max-height: 100vh;
+    overflow-y: auto;
+    max-width: 600px;
+    top: 10%;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 5em 2rem;
+    background-color: #FFF;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.article-modal h2{
+    margin-bottom: 1.2em;
+    font-size: 2em;
+    text-align: justify;
+}
+
+.article-modal p {
+    white-space: pre-wrap;
+    padding-top: 0.5em;
+    text-align: justify;
+}

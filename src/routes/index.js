@@ -15,6 +15,8 @@ import Reset from '../pages/Reset';
 import Admin from '../pages/Admin';
 import DashboardHighlights from '../pages/DashboardHighlights';
 import NewHighlight from '../pages/NewHighlight';
+import DashboardArticles from '../pages/DashboardArticles';
+import NewArticle from '../pages/NewArticle';
 
 const Routes = () => {
     return (
@@ -34,6 +36,9 @@ const Routes = () => {
             <Route exact path="/admin/highlights" component={DashboardHighlights} isPrivate />
             <Route exact path="/admin/compose/highlight" component={NewHighlight} isPrivate />
             <Route exact path="/admin/compose/highlight/:id" component={NewHighlight} isPrivate />
+            <Route exact path="/admin/articles" component={DashboardArticles} isPrivate />
+            <Route exact path="/admin/compose/article" component={NewArticle} isPrivate />
+            <Route exact path="/admin/compose/article/:id" component={NewArticle} isPrivate />
 
             <Route path="*" component={NotFound} />
         </Switch>

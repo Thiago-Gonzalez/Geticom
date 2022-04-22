@@ -65,7 +65,8 @@ export default function NewHighlight() {
     function handlePdfs(e) {
 
         if (e.target.files.length > 0) {
-            setFiles(e.target.files);
+            const fileList = document.getElementById('fileList').files;
+            setFiles(fileList);
         }
 
     }
@@ -105,21 +106,23 @@ export default function NewHighlight() {
                                 if (files.length > 0) {
                                     [...files].forEach( async (file) => {
 
-                                        const uploadFiles = await firebase.storage().ref(`highlights/${id}/files/${file.name}`)
+                                        const uploadFiles = await firebase.storage()
+                                        .ref(`highlights/${id}/files/${file.name}`)
                                         .put(file)
                                         .then(async () => {
 
                                             await firebase.storage().ref(`highlights/${id}/files`)
                                             .child(file.name).getDownloadURL()
                                             .then( async (url) => {
+                                                let urlFile = url;
 
                                                 await firebase.firestore().collection('highlights')
                                                 .doc(id)
                                                 .update({
-                                                    filesUrl: firebase.firestore.FieldValue.arrayUnion(url)
+                                                    filesUrl: firebase.firestore.FieldValue.arrayUnion(urlFile)
                                                 })
                                                 .then(() => {
-                                                    toast.success('Destaque criado com sucesso!');
+                                                    toast.success('Destaque editado com sucesso!');
                                                     setLoadingRegister(false);
                                                     history.push('/admin/highlights');
                                                 })
@@ -127,7 +130,7 @@ export default function NewHighlight() {
                                         })
                                     })
                                 } else {
-                                    toast.success('Destaque criado com sucesso!');
+                                    toast.success('Destaque editado com sucesso!');
                                     setLoadingRegister(false);
                                     history.push('/admin/highlights');
                                 }
@@ -135,6 +138,36 @@ export default function NewHighlight() {
                             })
                         })
                     })
+                } else if (img === null && files.length > 0) {
+                    [...files].forEach( async (file) => {
+
+                        const uploadFiles = await firebase.storage()
+                        .ref(`highlights/${id}/files/${file.name}`)
+                        .put(file)
+                        .then(async () => {
+
+                            await firebase.storage().ref(`highlights/${id}/files`)
+                            .child(file.name).getDownloadURL()
+                            .then( async (url) => {
+                                let urlFile = url;
+
+                                await firebase.firestore().collection('highlights')
+                                .doc(id)
+                                .update({
+                                    filesUrl: firebase.firestore.FieldValue.arrayUnion(urlFile)
+                                })
+                                .then(() => {
+                                    toast.success('Destaque editado com sucesso!');
+                                    setLoadingRegister(false);
+                                    history.push('/admin/highlights');
+                                })
+                            })
+                        })
+                    })
+                } else {
+                    toast.success('Destaque editado com sucesso!');
+                    setLoadingRegister(false);
+                    history.push('/admin/highlights');
                 }
             })
             .catch((err) => {
@@ -185,11 +218,12 @@ export default function NewHighlight() {
                                         await firebase.storage().ref(`highlights/${docId}/files`)
                                         .child(file.name).getDownloadURL()
                                         .then( async (url) => {
+                                            let urlFile = url;
 
                                             await firebase.firestore().collection('highlights')
                                             .doc(docId)
                                             .update({
-                                                filesUrl: firebase.firestore.FieldValue.arrayUnion(url)
+                                                filesUrl: firebase.firestore.FieldValue.arrayUnion(urlFile)
                                             })
                                             .then(() => {
                                                 toast.success('Destaque criado com sucesso!');
@@ -231,29 +265,25 @@ export default function NewHighlight() {
                 </Title>
 
                 <div className="special-container">
-                    {idHighlight ? (
-                        <form className="form-highlight" onSubmit={handleRegister}>
+                    <form className="form-highlight" onSubmit={handleRegister}>
 
-                            <label>Título</label>
-                            <input type="text" placeholder="Título" value={title} onChange={ (e) => setTitle(e.target.value)} />
+                        <label>Título</label>
+                        <input type="text" placeholder="Título" value={title} onChange={ (e) => setTitle(e.target.value)} />
 
-                            <label>Imagem de destaque</label>
-                            <input type="file" accept='image/*' onChange={handleImg} />
-                            
-                            <label>Conteúdo</label>
-                            <textarea type="text" placeholder="Adicione um conteúdo para o destaque" value={content} onChange={ (e) => setContent(e.target.value)} />
+                        <label>Imagem de destaque</label>
+                        <input type="file" accept='image/*' onChange={handleImg} />
                         
-                            <label>Link</label>
-                            <input type="text" placeholder="Link" value={link} onChange={ (e) => setLink(e.target.value)} />
+                        <label>Conteúdo</label>
+                        <textarea type="text" placeholder="Adicione um conteúdo para o destaque" value={content} onChange={ (e) => setContent(e.target.value)} />
+                    
+                        <label>Link</label>
+                        <input type="text" placeholder="Link" value={link} onChange={ (e) => setLink(e.target.value)} />
 
-                            <label>Arquivos</label>
-                            <input type="file" accept="application/pdf" multiple="multiple" onChange={handlePdfs} />
+                        <label>Arquivos</label>
+                        <input id="fileList" type="file" accept="application/pdf" multiple="multiple" onChange={handlePdfs} />
 
-                            <button type="submit">{loadingRegister ? 'Registrando...' : 'Registrar'}</button>
-                        </form>
-                    ) : (
-                        <span>Destaque não encontrado</span>
-                    )}
+                        <button type="submit">{loadingRegister ? 'Registrando...' : 'Registrar'}</button>
+                    </form>
 
                 </div>
 

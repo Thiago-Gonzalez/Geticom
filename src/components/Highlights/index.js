@@ -15,7 +15,7 @@ export default function Highlights() {
             <h1>Destaques</h1>
             <Container>
                 <Carousel>
-                    {highlights.slice(0, 5).map( (highlight, index) => {
+                    {highlights.slice(0, 10).map( (highlight, index) => {
                         return (
                             <Carousel.Item key={index}>
                                 <Link to={`/destaques/${highlight.id}/${highlight.title.replaceAll(" ", "-").toLowerCase()}`}>
