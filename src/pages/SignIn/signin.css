@@ -72,9 +72,14 @@
     color: #181c2e;
     border: none;
     font-size: 1em;
-    margin-bottom: 0.75em;
+    margin-bottom: 0.15em;
 }
 
 .login-page .forget-password-btn:hover {
     text-decoration: underline;
+}
+
+.login-page .return-btn {
+    font-size: 1em;
+    margin-bottom: 1em;
 }

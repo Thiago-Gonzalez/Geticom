@@ -7,6 +7,7 @@ import { AuthContext } from "../../contexts/auth";
 
 import './signin.css';
 import { useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function SignIn() {
 
@@ -49,6 +50,7 @@ export default function SignIn() {
                     <button type='submit'>{loadingAuth ? 'Carregando...' : 'Acessar'}</button>
                 </form>
                 <Button type="link" className="forget-password-btn" onClick={handleForgetPassword}>Esqueceu sua senha?</Button>
+                <Link className="return-btn" to="/">Retornar</Link>
             </div>
         </div>
     );

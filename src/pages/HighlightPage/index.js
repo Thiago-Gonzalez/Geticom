@@ -14,7 +14,8 @@ export default function HighlightPage () {
     const { id, title } = useParams();
 
     const [highlight, setHighlight] = useState({});
-    const [found, setFound] = useState(false);
+    const [found, setFound] = useState(true);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
 
@@ -35,10 +36,12 @@ export default function HighlightPage () {
 
                 setHighlight(data);
                 setFound(true);
+                setLoading(false);
             })
             .catch((error) => {
                 console.log("Erro: destaque não encontrado. ", error);
                 setFound(false);
+                setLoading(false);
             })
         }
 
@@ -57,9 +60,17 @@ export default function HighlightPage () {
                         paragraph={appConfig.headerContent.highlight.paragraph}
                     />
 
-                    <Highlight
-                        highlight={highlight}
-                    />
+                    {loading ? (
+                        <div style={{ height: '300px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                            <span style={{ fontWeight: '600', fontSize: '1.5rem',  }}>Carregando destaque...</span>
+                        </div>
+                    ) : (
+                        highlight!== null &&
+                            <Highlight
+                                highlight={highlight}
+                            />
+                        
+                    )}
 
                     <Footer />
                 </Container>

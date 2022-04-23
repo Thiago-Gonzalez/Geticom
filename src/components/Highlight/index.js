@@ -21,7 +21,7 @@ export default function Highlight ({ highlight }) {
                         href={fileUrl} 
                         download 
                         target="_blank" 
-                        rel='noreferrer'
+                        rel='noopener noreferrer'
                         key={index}
                     >
                         <HiOutlineDocumentDownload size={24} /> 

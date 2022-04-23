@@ -19,7 +19,7 @@ export default function LastArticles() {
                     <Article
                         key={index}
                         article={article}
-                        summary={true}
+                        articlePage={false}
                     />
                 );
             })}
