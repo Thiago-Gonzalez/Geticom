@@ -48,23 +48,34 @@ export default function AuthProvider({
 
         await firebase.auth().signInWithEmailAndPassword(email, password)
             .then(async (userCredential) => {
+                console.log(userCredential);
 
-                let uid = userCredential.user.uid;
+                if (userCredential.user.emailVerified) {
 
-                const userProfile = await firebase.firestore().collection('users')
-                    .doc(uid).get();
+                    let uid = userCredential.user.uid;
+
+                    const userProfile = await firebase.firestore().collection('users')
+                        .doc(uid).get();
 
 
-                let data = {
-                    uid: uid,
-                    name: userProfile.data().name,
-                    avatarUrl: userProfile.data().avatarUrl,
-                    email: userCredential.user.email
+                    let data = {
+                        uid: uid,
+                        name: userProfile.data().name,
+                        avatarUrl: userProfile.data().avatarUrl,
+                        email: userCredential.user.email
+                    }
+
+                    setUser(data);
+                    setLoadingAuth(false);
+                    toast.success('Login realizado com sucesso!');
+                } else {
+                    signOut();
+                    firebase.auth().currentUser.sendEmailVerification()
+                        .then(() => {
+                            toast.error("E-mail não verificado! Um e-mail de verificação foi enviado para " + userCredential.user.email + ". Tente fazer login novamente após realizar a verificação de e-mail.");
+                        })
                 }
 
-                setUser(data);
-                setLoadingAuth(false);
-                toast.success('Login realizado com sucesso!');
             })
             .catch((error) => {
                 if (error.code === 'auth/unverified-email') {
@@ -97,6 +108,7 @@ export default function AuthProvider({
                         avatarUrl: null,
                     })
                     .then(() => {
+                        signOut();
                         firebase.auth().currentUser.sendEmailVerification()
                             .then(() => {
                                 setLoadingAuth(false);
@@ -126,6 +138,7 @@ export default function AuthProvider({
             await firebase.auth().signOut();
             setUser(null);
             setLoadingSignOut(false);
+            setLoadingAuth(false);
         }, 1000);
     }
 

@@ -10,6 +10,11 @@ header{
     max-height: 100%;
 }
 
+.header-logo {
+    height: 70px;
+    width: auto;
+}
+
 .navbar-brand {
     font-size: 2rem;
     font-weight: bold;
@@ -77,19 +82,21 @@ header ul {
 .header-content {
     display: flex;
     flex-direction: column;
-    margin-top: 55px;
+    margin-top: 30px;
     padding: 60px 0 50px;
 }
 
 .header-content h1 {
     font-weight: 700;
     font-size: 2.5em;
-    width: 60%;
+    width: 100%;
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 .header-content p {
     font-size: 1.5rem;
-    width: 50%;
+    width: 100%;
     text-align: justify;
+    line-height: 1.4;
 }

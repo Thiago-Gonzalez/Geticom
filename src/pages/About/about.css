@@ -1,5 +1,5 @@
 .about header .header-content p {
-    width: 60%;
+    width: 100%;
 }
 
 @media (max-width: 1199px) {

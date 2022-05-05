@@ -10,19 +10,28 @@
     text-align: center;
     width: 300px;
     font-size: 2.25rem;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .team h2 {
     font-size: 2em;
 }
 
-.team .row {
-    padding: 20px 0;
+.team .researches {
+    margin: 50px 20px;
+}
+
+.team .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .team .card {
     background-color: #fff;
+    border: none;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .team .card-title a:hover {
@@ -37,6 +46,13 @@
     font-weight: 500;
     font-size: 0.8em;
     letter-spacing: 0.05em;
+}
+
+.team .card-img-top {
+    align-self: center;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
 }
 
 .researcher-info {

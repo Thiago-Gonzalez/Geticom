@@ -1,5 +1,5 @@
 .container.coordinators {
-    padding: 70px 12px 50px;
+    padding: 50px 12px;
     max-width: 100%;
 }
 
@@ -7,10 +7,7 @@
     height: 330px;
     background-color: #16163F;
     border: none;
-}
-
-.coordinators .card-title {
-   text-align: center;
+    text-align: center;
 }
 
 .coordinators .card-title a{
@@ -25,7 +22,6 @@
 .coordinators .card-text {
     font-weight: 300;
     font-size: 0.75rem;
-    text-align: justify;
 }
 
 .coordinators .card-img-top {

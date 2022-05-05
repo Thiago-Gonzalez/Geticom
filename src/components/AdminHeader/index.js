@@ -38,7 +38,7 @@ export default function AdminHeader() {
                 <MdOutlineArticle color="#FFF" size={24} /> 
                 Artigos
             </Link>
-            {user.email === 'geticom.adm@gmail.com' &&
+            {user.email === process.env.REACT_APP_ADMIN_EMAIL &&
                 <Link to="/admin/register">
                     <BiUserPlus color="#FFF" size={24} />
                     Cadastrar usuário

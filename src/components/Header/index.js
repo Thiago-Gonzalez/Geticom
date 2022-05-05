@@ -2,12 +2,14 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './header.css';
 
+import logo from '../../assets/img/Geticom-logo.png';
+
 export default function Header({ heading, paragraph }) {
     return (
         <header>
             <Navbar expand="xl">
                 <Container>
-                    <Link to="/"><Navbar.Brand as="h1">Geticom</Navbar.Brand></Link>
+                    <Link to="/"><Navbar.Brand as="h1"><img className='header-logo' src={logo} alt="Logo do Geticom" /></Navbar.Brand></Link>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav as="ul" className="me-auto">

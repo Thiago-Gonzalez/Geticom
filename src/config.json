@@ -157,87 +157,45 @@
     "researchers": [
         {   
             "id": 1,
-            "name": "Áurea Celeste da Costa Ribeiro",
-            "description": "Mestre e Doutora em Processamento Digital de Sinais, UFMA",
-            "lattes": "http://lattes.cnpq.br/7281004775553558"
+            "name": "Amanda Beatriz Cunha dos Santos",
+            "description": "Mestre em Engenharia da Computação e Sistemas, UEMA",
+            "lattes": "http://lattes.cnpq.br/0814190530106602",
+            "img": "amanda.jpg"
         },
         {   
             "id": 2,
             "name": "Carlos Henrique Rodrigues de Oliveira",
             "description": "Mestre e Doutor em Telecomunicações, UNICAMP",
-            "lattes": "http://lattes.cnpq.br/0739489284822297"
+            "lattes": "http://lattes.cnpq.br/0739489284822297",
+            "img": "carloshenrique.jpg"
         },
         {   
             "id": 3,
-            "name": "Cícero Costa Quarto",
-            "description": "Mestre em Ciência da Computação, UFMA",
-            "lattes": "http://lattes.cnpq.br/6480934070733527"
+            "name": "Jairon Viana Batista",
+            "description": "Mestre em Engenharia da Computação e Sistemas, UEMA",
+            "lattes": "http://lattes.cnpq.br/8164620025860620",
+            "img": "jaironviana.jpg"
         },
         {   
             "id": 4,
-            "name": "Ewaldo Eder Carvalho Santana",
-            "description": "Mestre em Processamento Digital de Sinais, UFMA | Mestre em Processamento Digital de Sinais, UFCG",
-            "lattes": "http://lattes.cnpq.br/0660692009750374"
+            "name": "Lucas Jeferson da Costa Silva",
+            "description": "Mestre em Engenharia da Computação e Sistemas, UEMA",
+            "lattes": "http://lattes.cnpq.br/9721806560473297",
+            "img": "lucasjeferson.jpg"
         },
         {   
             "id": 5,
-            "name": "Fernando Jorge Cutrim Demétrio",
-            "description": "Mestre em Ciência da Computação, UFMA | Doutor em Engenharia de Produção, UNIP",
-            "lattes": "http://lattes.cnpq.br/6802721797900299"
+            "name": "Rafael Martins da Cruz",
+            "description": "Mestre em Engenharia da Computação e Sistemas, UEMA",
+            "lattes": "http://lattes.cnpq.br/9700705144701597",
+            "img": "rafael.jpg"
         },
         {   
             "id": 6,
-            "name": "Ivanildo Silva Abreu",
-            "description": "Mestrado em Matemática Computacional, UFPB | Doutor em Automação e Controle, UFPA",
-            "lattes": "http://lattes.cnpq.br/6144428536509111"
-        },
-        {   
-            "id": 7,
-            "name": "José Bello Salgado Neto",
-            "description": "Doutor em Urbanismo, UFRJ | Mestrado em Administração, UFSC | Mestrado em Engenharia Mecânica, UNICAMP",
-            "lattes": "http://lattes.cnpq.br/9941006054872205"
-        },
-        {   
-            "id": 8,
-            "name": "José Pinheiro de Moura",
-            "description": "Mestre em Automação e Controle, UFPA",
-            "lattes": "http://lattes.cnpq.br/9437910347392764"
-        },
-        {   
-            "id": 9,
-            "name": "Lourival Matos de Sousa Filho",
-            "description": "Mestre e Doutor em Mecânica Computacional, UNICAMP",
-            "lattes": "http://lattes.cnpq.br/9933591523216501"
-        },
-        {   
-            "id": 10,
-            "name": "Lúcio Flávio de Albuquerque Campos",
-            "description": "Mestre em Processamento Digital de Sinais, UFMA | Doutor em Bioinformática, UFRN/UFMA (Renobio)",
-            "lattes": "http://lattes.cnpq.br/6876234739101371"
-        },
-        {   
-            "id": 11,
-            "name": "Mauro Sérgio Silva Pinto",
-            "description": "Mestre em Instrumentação Eletrônica, UFMA",
-            "lattes": "http://lattes.cnpq.br/0804349408744542"
-        },
-        {   
-            "id": 12,
-            "name": "Patrícia Helena Moraes Rêgo",
-            "description": "Mestre e Doutora em Automação e Controle, UFMA",
-            "lattes": "http://lattes.cnpq.br/6535271381344851"
-        },
-        {   
-            "id": 13,
-            "name": "Reinaldo de Jesus da Silva",
-            "description": "Mestre em Ciência da Computação, UFMA",
-            "lattes": "http://lattes.cnpq.br/7984455205688904"
-        },
-        {   
-            "id": 14,
-            "name": "Ricardo Yvan de La Cruz Cueva",
-            "description": "Mestre em Física Computacional, UFRN | Doutor em Física Computacional, INPE",
-            "lattes": "http://lattes.cnpq.br/5569424161133651"
+            "name": "Sandra Eloi Ferreira Nogueira",
+            "description": "Mestre em Engenharia da Computação e Sistemas, UEMA",
+            "lattes": "http://lattes.cnpq.br/3347446811427312",
+            "img": "sandra.jpg"
         }
     ],
     "services": [
