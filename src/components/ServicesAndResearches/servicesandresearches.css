@@ -2,8 +2,12 @@
     padding: 70px 0;
 }
 
+.services .enterprise-services {
+    display: flex;
+}
+
 .services .row {
-    padding: 20px 0;
+    margin: 30px 10px 20px;
 }
 
 .partner-companies {

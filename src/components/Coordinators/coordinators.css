@@ -1,6 +1,8 @@
 .container.coordinators {
     padding: 50px 12px;
     max-width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .coordinators .card {

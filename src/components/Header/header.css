@@ -15,13 +15,6 @@ header{
     width: auto;
 }
 
-.navbar-brand {
-    font-size: 2rem;
-    font-weight: bold;
-    letter-spacing: 2px;
-    cursor: pointer;
-}
-
 header a:not(ul a):hover {
     text-decoration: none;
 }
@@ -83,7 +76,7 @@ header ul {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
-    padding: 60px 0 50px;
+    padding: 20px 0 50px;
 }
 
 .header-content h1 {

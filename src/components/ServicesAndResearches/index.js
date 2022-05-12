@@ -1,4 +1,4 @@
-import {  Button, Container, Row } from "react-bootstrap";
+import {  Container, Row } from "react-bootstrap";
 import ServiceCard from "../ServiceCard";
 import './servicesandresearches.css';
 
@@ -12,16 +12,19 @@ export default function ServicesAndResearches ({ services, researches }) {
     return (
         <Container className="services">
             <h1>Serviços</h1>
-            <Row>
-                {services.map((service, index) => {
-                    return (
-                        <ServiceCard
-                            service={service}   
-                            key={index} 
-                        />
-                    );
-                })}
-            </Row>
+            
+            <div className="enterprise-services">
+                <Row>
+                    {services.map((service, index) => {
+                        return (
+                            <ServiceCard
+                                service={service}   
+                                key={index} 
+                            />
+                        );
+                    })}
+                </Row>
+            </div>
 
             
             <div className="partner-companies">

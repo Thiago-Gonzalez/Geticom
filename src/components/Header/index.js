@@ -9,7 +9,7 @@ export default function Header({ heading, paragraph }) {
         <header>
             <Navbar expand="xl">
                 <Container>
-                    <Link to="/"><Navbar.Brand as="h1"><img className='header-logo' src={logo} alt="Logo do Geticom" /></Navbar.Brand></Link>
+                    <Navbar.Brand as="h1"><img className='header-logo' src={logo} alt="Logo do Geticom" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav as="ul" className="me-auto">
