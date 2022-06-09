@@ -1,7 +1,7 @@
 import { Button } from "react-bootstrap";
 import { toast } from "react-toastify";
 
-import logo from '../../assets/img/geticom-logo.png';
+import logo from '../../assets/img/logo-geticom.png';
 
 import firebase from '../../services/firebaseConnection';
 

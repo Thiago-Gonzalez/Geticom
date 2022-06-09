@@ -2,7 +2,7 @@ import { Button } from "react-bootstrap";
 import { useContext, useState } from "react";
 import { toast } from "react-toastify";
 
-import logo from '../../assets/img/geticom-logo.png';
+import logo from '../../assets/img/logo-geticom.png';
 import { AuthContext } from "../../contexts/auth";
 
 import './signin.css';
