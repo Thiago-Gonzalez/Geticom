@@ -7,7 +7,7 @@
 .form-article {
     display: flex;
     flex-direction: column;
-    width: 48%;
+    width: 55%;
 }
 
 .form-article label {
@@ -39,4 +39,10 @@
 .form-article button:hover {
     color: #16163F;
     background-color: #fff;
+}
+
+@media (max-width: 875px) {
+    .form-article {
+        width: 100%;
+    }
 }
