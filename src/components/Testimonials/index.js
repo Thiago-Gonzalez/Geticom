@@ -3,7 +3,7 @@ import './testimonials.css';
 
 export default function Testimonials ({ testimonials }) {
     return (
-        <div className="testimonials">
+        <div className="testimonials colored-section">
             <Carousel>
                 {testimonials.map( (testimonial, index) => {
                     return (

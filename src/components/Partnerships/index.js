@@ -14,90 +14,23 @@ import anatel from "../../assets/img/anatel.jpg";
 import tvn from "../../assets/img/tvn.jpg";
 import cla from "../../assets/img/cla.jpg";
 import crea from "../../assets/img/crea.jpg";
-import { Col, Container, Row } from "react-bootstrap";
+import { Container} from "react-bootstrap";
 import './partnerships.css';
 
 export default function Partnerships() {
+    const partnershipsLogos = [cnpq, fapema, pecs, engcomp, usp, ifam, fapead, abtelecom, fiema, celplan, lig16, cisco, anatel, tvn, cla, crea];
+
     return (
         <Container className="partnerships">
             <h1>PARCERIAS</h1>
-            <Row>
-                <Col>
-                    <img src={cnpq} alt="Logo-parceiro"/>
-                </Col>
-                
-                <Col>
-                    <img src={fapema} alt="Logo-parceiro"/>
-                </Col>
-
-                <Col>
-                    <img src={pecs} alt="Logo-parceiro"/>
-                </Col>
-
-                <Col>
-                    <img src={engcomp} alt="Logo-parceiro" />
-                </Col>
-
-            </Row>
-
-            <Row>
-
-                <Col>
-                    <img src={usp} alt="Logo-parceiro"/>
-                </Col>
-
-                <Col>
-                    <img src={ifam} alt="Logo-parceiro"/>
-                </Col>
-
-                <Col>
-                    <img src={fapead} alt="Logo-parceiro"/>
-                </Col>
-
-                <Col>
-                    <img src={abtelecom} alt="Logo-parceiro"/>
-                </Col>
-                
-            </Row>
-
-            <Row>
-                <Col>
-                    <img src={fiema} alt="Logo-parceiro"/>
-                </Col>
-
-                <Col>
-                    <img src={celplan} alt="Logo-parceiro"/>
-                </Col>
-
-                <Col>
-                    <img src={lig16} alt="Logo-parceiro"/>
-                </Col>
-
-                <Col>
-                    <img src={cisco} alt="Logo-parceiro"/>
-                </Col>
-                
-            </Row>
-
-            <Row>
-                <Col>
-                    <img src={anatel} alt="Logo-parceiro"/>
-                </Col>
-
-                <Col>
-                    <img src={tvn} alt="Logo-parceiro"/>
-                </Col>
-
-                <Col>
-                    <img src={cla} alt="Logo-parceiro"/>
-                </Col>
-
-                <Col>
-                    <img src={crea} alt="Logo-parceiro"/>
-                </Col>
-
-            </Row>
-
+            
+            <div className="logos">
+                {partnershipsLogos.map((logo, index) => {
+                    return (
+                        <img src={logo} key={index} alt="Logo de parceiro do GETICOM" />
+                    );
+                })}
+            </div>
         </Container>
     );
 }

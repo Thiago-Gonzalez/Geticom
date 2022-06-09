@@ -1,13 +1,14 @@
 .services .column {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .services .card {
     margin-bottom: 50px;
     padding: 10px;
-    height: 335px;
     width: 300px;
+    min-height: 340px;
+    height: auto;
     border: 1px solid #16163f;
     background-color: #16163f;
     color: #fff;
@@ -17,20 +18,19 @@
     background-color: #fff;
     color: #16163f;
     margin: -10px -10px 0;
-    padding: 7px;
-    height: 60px;
+    padding: 7px 10px;
+    min-height: 60px;
     text-align: center;
 }
 
 .services .card-body {
-    margin: 0 -10px;
     padding: 0;
 }
 
 .services .card-text {
-    padding: 15px;
+    padding: 12px;
     font-weight: 300;
     font-size: 0.875rem;
-    line-height: 22px;
+    line-height: 20px;
     text-align: justify;
 }

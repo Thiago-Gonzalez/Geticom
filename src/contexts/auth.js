@@ -9,7 +9,6 @@ export const AuthContext = createContext({});
 export default function AuthProvider({
     children
 }) {
-    const history = useHistory();
 
     const [user, setUser] = useState(null);
     const [loadingAuth, setLoadingAuth] = useState(false);
@@ -48,7 +47,6 @@ export default function AuthProvider({
 
         await firebase.auth().signInWithEmailAndPassword(email, password)
             .then(async (userCredential) => {
-                console.log(userCredential);
 
                 if (userCredential.user.emailVerified) {
 
@@ -70,7 +68,7 @@ export default function AuthProvider({
                     toast.success('Login realizado com sucesso!');
                 } else {
                     signOut();
-                    firebase.auth().currentUser.sendEmailVerification()
+                    await firebase.auth().currentUser.sendEmailVerification()
                         .then(() => {
                             toast.error("E-mail não verificado! Um e-mail de verificação foi enviado para " + userCredential.user.email + ". Tente fazer login novamente após realizar a verificação de e-mail.");
                         })

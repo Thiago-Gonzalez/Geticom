@@ -4,7 +4,7 @@ import './lastvideos.css';
 export default function LastVideos() {
 
     return(
-        <div className="last-videos">
+        <div className="last-videos colored-section">
             <h1>Últimos vídeos</h1>
 
             <div className="embed-container">

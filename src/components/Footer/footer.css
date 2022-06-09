@@ -4,19 +4,29 @@ footer {
     color: #fff;
 }
 
-footer .row {
+footer .footer {
+    padding: 50px 20px;
+    background-color: #101C45;
+    display: flex;
     align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
 }
 
-footer .footer {
-    background-color: #101C45;
-    padding: 50px 150px;
+footer img {
+    max-width: 100%;
 }
 
 .footer-dev {
     background-color: #191A19;
-    padding: 10px 0;
     font-size: 0.6rem;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-dev p {
+    margin: 0;
     text-align: center;
 }
 
@@ -27,4 +37,13 @@ footer a {
 
 footer a:hover {
     color: #fff;
+}
+
+@media (max-width: 766px) {
+
+    .colored-section .footer {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+
 }

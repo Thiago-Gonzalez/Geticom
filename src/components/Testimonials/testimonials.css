@@ -1,23 +1,31 @@
 .testimonials {
     padding: 70px 0;
-    background-color: #0074FF;
     margin: auto -100px;
     color: #fff;
 }
 
-.testimonials .carousel-caption {
+.testimonials, .testimonials .carousel-caption {
     background-color: #0074FF;
-    padding: 50px 100px;
+}
+
+.testimonials .carousel-caption {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .testimonials .carousel-caption h2 {
     font-weight: 700;
     font-size: 2.25rem;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    word-break: break-word;
 }
 
 .testimonials .carousel-caption p {
     margin-top: 50px;
+}
+
+.testimonials .carousel-caption h2, .testimonials .carousel-caption p {
+    width: 70%;
 }

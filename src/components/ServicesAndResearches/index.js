@@ -27,22 +27,23 @@ export default function ServicesAndResearches ({ services, researches }) {
             </div>
 
             
-            <div className="partner-companies">
+            <div className="partner-companies colored-section">
                 <p >Empresas parceiras podem contar com serviços de avaliação de tecnologias, desenvolvimento de estratégias de otimização operacional de recursos tecnológicos, apoio e suporte a processos licitatórios e de atendimento a normas de telecomunicações e treinamentos in company para formação ou aperfeiçoamento de pessoal</p>
             </div>
 
-
-            <h2>Além de soluções corporativas, o GETICOM trabalha com pesquisas nas seguintes áreas das ciências e tecnologias:</h2>
-            <Row>
-                {researches.map((research, index) => {
-                    return (
-                        <ServiceCard
-                            service={research}
-                            key={index}
-                        />
-                    );
-                })}
-            </Row>
+            <div className="research-services">
+                <h2>Além de soluções corporativas, o GETICOM trabalha com pesquisas nas seguintes áreas das ciências e tecnologias:</h2>
+                <Row>
+                    {researches.map((research, index) => {
+                        return (
+                            <ServiceCard
+                                service={research}
+                                key={index}
+                            />
+                        );
+                    })}
+                </Row>
+            </div>
 
             <div className="course">
                 <h1>Curso de Rádio Frequência (RF)</h1>

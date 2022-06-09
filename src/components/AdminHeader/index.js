@@ -7,11 +7,8 @@ import avatar from '../../assets/img/avatar.png';
 
 import { BiUserPlus } from 'react-icons/bi';
 import { FiHome } from "react-icons/fi";
-import { MdOutlineArticle, MdMiscellaneousServices, MdHighlight } from 'react-icons/md';
-import { RiTeamFill } from 'react-icons/ri';
-import { TiContacts } from 'react-icons/ti';
+import { MdOutlineArticle, MdHighlight } from 'react-icons/md';
 import { GiExitDoor } from 'react-icons/gi';
-import { BsFillMegaphoneFill } from 'react-icons/bs';
 import { useContext } from 'react';
 import { AuthContext } from '../../contexts/auth';
 import { Button } from 'react-bootstrap';

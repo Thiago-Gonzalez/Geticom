@@ -85,3 +85,23 @@ p {
 .content {
     background-color: #EFEFEF;
 }
+
+@media (max-width: 766px) {
+    body {
+        margin: auto 20px;
+    }
+
+    .colored-section {
+        margin: auto -20px;
+    }
+
+    .colored-section:not(footer) {
+        padding: 70px 30px;
+    }
+
+
+    .login-page, .reset-page, .admin, .dashboard-highlights, .dashboard-articles, .new-highlight, .new-article{
+        margin: 0 -20px;
+    }
+
+}

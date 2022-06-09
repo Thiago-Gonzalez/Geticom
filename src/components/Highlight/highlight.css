@@ -9,11 +9,10 @@
 }
 
 .highlight img {
-    margin: 20px auto 10px;
-    max-width: 900px;
+    margin: 20px 0 10px;
+    align-self: center;
+    max-width: 100%;
     max-height: 600px;
-    width: auto;
-    height: auto;
 }
 
 .highlight p {
@@ -22,6 +21,7 @@
     text-align: justify;
     padding-bottom: 20px;
     line-height: 1.6;
+    word-break: break-word;
 }
 
 .highlight .btn {

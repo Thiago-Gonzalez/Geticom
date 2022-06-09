@@ -24,7 +24,7 @@
         },
         "notFound": {
             "heading": "Página não encontrada!",
-            "paragraph": "Ops, ocorreu algum problema! Clique no botão abaixo ou em um dos menus da navegação para voltar a navegar"
+            "paragraph": "Ops, não foi possível encontrar a página que você está buscando. Continue navegando através do menu de navegação."
         }
     },
     "highlights": [

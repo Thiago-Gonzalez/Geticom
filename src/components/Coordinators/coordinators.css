@@ -5,6 +5,11 @@
     flex-direction: column;
 }
 
+.container.coordinators .column {
+    display: flex;
+    justify-content: center;
+}
+
 .coordinators .card {
     height: 330px;
     background-color: #16163F;

@@ -13,7 +13,7 @@ export default function Contacts ({ contacts }) {
             <Row>
                 {contacts.map((contact, index) => {
                     return (
-                        <Col xl={6} lg={6} md={6} key={index}>
+                        <Col xl={6} lg={6} md={6} key={index} style={{'padding' : '0'}}>
                             <div className='contact-detail'>
                                 <h4>{contact.name}</h4>
                                 <p>

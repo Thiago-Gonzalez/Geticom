@@ -11,7 +11,7 @@ export default function Researchers() {
 
 
     return(
-        <div className="researchers">
+        <div className="researchers colored-section">
              <h1>Pesquisadores</h1>
 
             <Coordinators 

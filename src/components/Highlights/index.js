@@ -13,28 +13,26 @@ export default function Highlights() {
     return(
         <Container className="highlights">
             <h1>Destaques</h1>
-            <Container>
-                <Carousel>
-                    {highlights.slice(0, 10).map( (highlight, index) => {
-                        return (
-                            <Carousel.Item key={index}>
+            <Carousel>
+                {highlights.slice(0, 10).map( (highlight, index) => {
+                    return (
+                        <Carousel.Item key={index} interval={3000} >
+                            <Link to={`/destaques/${highlight.id}/${highlight.title.replaceAll(" ", "-").toLowerCase()}`}>
+                                <img
+                                    className="d-block carousel-img"
+                                    src={highlight.imgUrl}
+                                    alt={"Imagem de destaque"}
+                                />
+                            </Link>
+                            <Carousel.Caption>
                                 <Link to={`/destaques/${highlight.id}/${highlight.title.replaceAll(" ", "-").toLowerCase()}`}>
-                                    <img
-                                        className="d-block carousel-img"
-                                        src={highlight.imgUrl}
-                                        alt={"Imagem de destaque"}
-                                    />
+                                    <p className="carousel-title">{highlight.title}</p>
                                 </Link>
-                                <Carousel.Caption>
-                                    <Link to={`/destaques/${highlight.id}/${highlight.title.replaceAll(" ", "-").toLowerCase()}`}>
-                                        <p className="carousel-title">{highlight.title}</p>
-                                    </Link>
-                                </Carousel.Caption>
-                            </Carousel.Item>
-                        );
-                    })}
-                </Carousel>
-            </Container>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                    );
+                })}
+            </Carousel>
         </Container>
     );
 }

@@ -7,7 +7,6 @@ header{
     margin: 0 -100px;
     padding: 20px 100px;
     min-height: 700px;
-    max-height: 100%;
 }
 
 .header-logo {
@@ -25,9 +24,7 @@ header ul a {
     padding: 0 30px;
 }
 
-.navbar .container {
-    max-width: 100%;
-}
+
 
 #basic-navbar-nav {
     margin-left: -160px;
@@ -37,6 +34,27 @@ header ul {
     margin: 0 auto;
 }
 
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 20px 0 50px;
+}
+
+.header-content h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: left;
+    word-break: break-word;
+}
+
+.header-content p {
+    font-size: 1.5rem;
+    text-align: left;
+    line-height: 1.4;
+}
 
 @media (max-width: 1199px) {
 
@@ -67,29 +85,4 @@ header ul {
         text-decoration: underline;
     }
 
-}
-
-
-
-
-.header-content {
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
-    padding: 20px 0 50px;
-}
-
-.header-content h1 {
-    font-weight: 700;
-    font-size: 2.5em;
-    width: 100%;
-    margin-bottom: 20px;
-    text-align: justify;
-}
-
-.header-content p {
-    font-size: 1.5rem;
-    width: 100%;
-    text-align: justify;
-    line-height: 1.4;
 }
