@@ -11,7 +11,7 @@ export default function LastVideos() {
                 <iframe 
                     width="480" 
                     height="270" 
-                    src="https://www.youtube.com/embed?listType=playlist&list=PLcRAK6ryeB9N88QVeelLQ0CjH50DZSBy0&loop=1&rel=0" 
+                    src="https://www.youtube.com/embed/videoseries?list=UUzg1WcH6uagZpzL_K3a0ydQ" 
                     title="YouTube video player" 
                     frameBorder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen;" 
@@ -19,7 +19,7 @@ export default function LastVideos() {
                 </iframe>
             </div>
                 
-            <a href="https://www.youtube.com/channel/UCwIX8GHoQlg2X-MT14UbOpA" target="_blank" rel='noopener noreferrer'>Ver mais vídeos</a>
+            <a href="https://www.youtube.com/channel/UCzg1WcH6uagZpzL_K3a0ydQ" target="_blank" rel='noopener noreferrer'>Ver mais vídeos</a>
         </div>
     );
 }
