@@ -11,7 +11,7 @@ export default function Coordinators({ coordinators }) {
                             <Card style={{ width: '15rem' }}>
                                 <Card.Img variant="top" src={require(`../../assets/img/${coordinator.img}`)} />
                                 <Card.Body>
-                                    <Card.Title><a href={coordinator.lattes}>{coordinator.name}</a></Card.Title>
+                                    <Card.Title><a href={coordinator.lattes} target="_blank">{coordinator.name}</a></Card.Title>
                                     <Card.Text>
                                         {coordinator.description}
                                     </Card.Text>
