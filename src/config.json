@@ -1,5 +1,3 @@
-
-
 {
     "headerContent": {
         "home": {
@@ -159,43 +157,85 @@
             "id": 1,
             "name": "Amanda Beatriz Cunha dos Santos",
             "description": "Mestre em Engenharia da Computação e Sistemas, UEMA",
-            "lattes": "http://lattes.cnpq.br/0814190530106602",
+            "social": "http://lattes.cnpq.br/0814190530106602",
             "img": "amanda.jpg"
         },
         {   
             "id": 2,
             "name": "Carlos Henrique Rodrigues de Oliveira",
             "description": "Mestre e Doutor em Telecomunicações, UNICAMP",
-            "lattes": "http://lattes.cnpq.br/0739489284822297",
+            "social": "http://lattes.cnpq.br/0739489284822297",
             "img": "carloshenrique.jpg"
         },
         {   
             "id": 3,
             "name": "Jairon Viana Batista",
             "description": "Mestre em Engenharia da Computação e Sistemas, UEMA",
-            "lattes": "http://lattes.cnpq.br/8164620025860620",
+            "social": "http://lattes.cnpq.br/8164620025860620",
             "img": "jaironviana.jpg"
         },
         {   
             "id": 4,
             "name": "Lucas Jeferson da Costa Silva",
             "description": "Mestre em Engenharia da Computação e Sistemas, UEMA",
-            "lattes": "http://lattes.cnpq.br/9721806560473297",
+            "social": "http://lattes.cnpq.br/9721806560473297",
             "img": "lucasjeferson.jpg"
         },
         {   
             "id": 5,
             "name": "Rafael Martins da Cruz",
             "description": "Mestre em Engenharia da Computação e Sistemas, UEMA",
-            "lattes": "http://lattes.cnpq.br/9700705144701597",
+            "social": "http://lattes.cnpq.br/9700705144701597",
             "img": "rafael.jpg"
         },
         {   
             "id": 6,
             "name": "Sandra Eloi Ferreira Nogueira",
             "description": "Mestre em Engenharia da Computação e Sistemas, UEMA",
-            "lattes": "http://lattes.cnpq.br/3347446811427312",
+            "social": "http://lattes.cnpq.br/3347446811427312",
             "img": "sandra.jpg"
+        },
+        {
+            "id": 7,
+            "name": "Alexssandro Bulhões Botelho",
+            "description": "Discente de graduação em Engenharia da Computação - Pesquisador na área de Desenvolvimento Web/Mobile",
+            "social": "https://www.linkedin.com/in/alexssandrobulhoes",
+            "img": "alexssandro.jpeg"
+        },
+        {
+            "id": 8,
+            "name": "Cayo Ricardo Milhomem de Sousa Cutrim",
+            "description": "Discente de graduação em Engenharia da Computação - Pesquisador na área de Desenvolvimento Web/Mobile",
+            "social": "https://www.linkedin.com/in/cayo-cutrim-8239a4205",
+            "img": "cayo.jpeg"
+        },
+        {
+            "id": 9,
+            "name": "Pedro Lucas Tomazeti Fernandes",
+            "description": "Discente de graduação em Engenharia da Computação - Pesquisador na área de Automação",
+            "social": "https://www.linkedin.com/in/pedro-lucas-tomazeti-fernandes-179226212/",
+            "img": "pedrotomazeti.jpeg"
+        },
+        {
+            "id": 10,
+            "name": "Rômulo Passos de Jesus",
+            "description": "Discente de graduação em Engenharia da Computação - Pesquisador na área de Social Media",
+            "social": "https://www.linkedin.com/in/r%C3%B4mulo-passos-a0bb6116a/",
+            "img": "romulopassosdejesus.jpeg"
+        },
+        {
+            "id": 11,
+            "name": "Schenaid Cristiano Mendes Pereira Júnior",
+            "description": "Discente de graduação em Engenharia da Computação - Pesquisador na área de Desenvolvimento Web/Mobile",
+            "social": "https://www.linkedin.com/in/schenaid-cristiano-9642a4253",
+            "img": "schenaid.jpeg"
+        },
+        {
+            "id": 12,
+            "name": "Thiago González Maia de Souza",
+            "description": "Discente de graduação em Engenharia da Computação - Pesquisador na área de Desenvolvimento Web/Mobile",
+            "social": "https://www.linkedin.com/in/thiago-gonz%C3%A1lez/",
+            "img": "thiagogonzalez.jpg"
         }
     ],
     "services": [

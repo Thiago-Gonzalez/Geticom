@@ -1,7 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 import firebase from '../services/firebaseConnection';
 import { toast } from 'react-toastify';
-import { useHistory } from "react-router-dom";
 
 
 export const AuthContext = createContext({});

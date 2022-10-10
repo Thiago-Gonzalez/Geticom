@@ -1,4 +1,3 @@
-import { Col, Container, Row } from 'react-bootstrap';
 import './footer.css';
 
 import uema from "../../assets/img/uema-logo.png";

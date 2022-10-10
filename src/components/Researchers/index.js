@@ -12,7 +12,7 @@ export default function Researchers() {
 
     return(
         <div className="researchers colored-section">
-             <h1>Pesquisadores</h1>
+             <h1>Coordenadores</h1>
 
             <Coordinators 
                 coordinators={appConfig.coordinators} 

@@ -94,6 +94,7 @@
     color: #fff;
     background-color: #16163F;
     text-align: justify;
+    text-justify:initial;
     padding: 25px;
     width: 250px;
     visibility: hidden;
