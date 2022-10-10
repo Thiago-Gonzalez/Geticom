@@ -10,6 +10,7 @@ import { useHistory } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { format } from "date-fns";
 import ArticleModal from "../../components/ArticleModal";
+import { DeleteConfirmationModal } from "../../components/DeleteConfirmationModal";
 
 
 export default function DashboardArticles() {
@@ -21,6 +22,7 @@ export default function DashboardArticles() {
     const [isEmpty, setIsEmpty] = useState(false);
     const [lastDocs, setLastDocs] = useState();
     const [showPostModal, setShowPostModal] = useState(false);
+    const [showDeleteConfirmationModal, setShowDeleteConfirmationModal] = useState(false);
     const [currentArticle, setCurrentArticle] = useState();
 
     const listRef = firebase.firestore().collection('articles').orderBy('created', 'desc');
@@ -87,7 +89,10 @@ export default function DashboardArticles() {
         })
     }
 
-
+    function toggleDeleteConfirmationModal(article) {
+        setShowDeleteConfirmationModal(!showDeleteConfirmationModal);
+        setCurrentArticle(article);
+    }
 
 
     function togglePostModal(article) {
@@ -153,17 +158,7 @@ export default function DashboardArticles() {
                                                 <Link className="action" style={{ backgroundColor: '#F6A935'}} to={`/admin/compose/article/${article.id}`} >
                                                     <FiEdit2 color="#FFF" size={17} />
                                                 </Link>
-                                                <button className="action" style={{ backgroundColor: '#B20600'}} onClick={async () => {
-                                                    await firebase.firestore().collection('articles').doc(article.id).delete()
-                                                        .then(() => {
-                                                            toast.success('Artigo excluído com sucesso!');
-                                                            history.push('/admin');
-                                                        })
-                                                        .catch((error) => {
-                                                            console.log("Erro ao excluir artigo: ", error);
-                                                            toast.error("Erro ao excluir artigo.");
-                                                        })
-                                                    }}
+                                                <button className="action" style={{ backgroundColor: '#B20600'}} onClick={() => toggleDeleteConfirmationModal(article)}
                                                 >
                                                     <FiTrash2 color="#fff" size={17} />
                                                 </button>
@@ -194,6 +189,14 @@ export default function DashboardArticles() {
                 <ArticleModal 
                     article={currentArticle}
                     close={togglePostModal}
+                />
+            )}
+
+            {showDeleteConfirmationModal && (
+                <DeleteConfirmationModal 
+                    postType="article"
+                    post={currentArticle}
+                    close={toggleDeleteConfirmationModal}
                 />
             )}
 

@@ -11,18 +11,17 @@ import { Link } from "react-router-dom";
 import HighlightModal from "../../components/HighlightModal";
 
 import firebase from '../../services/firebaseConnection';
-import { toast } from "react-toastify";
-import { useHistory } from "react-router-dom";
+import { DeleteConfirmationModal } from "../../components/DeleteConfirmationModal";
 
 export default function DashboardHighlights() {
-    const history = useHistory();
 
     const [highlights, setHighlights] = useState([]);
     const [loading, setLoading] = useState(true);
     const [loadingMore, setLoadingMore] = useState(false);
     const [isEmpty, setIsEmpty] = useState(false);
     const [lastDocs, setLastDocs] = useState();
-    const [showPostModal, setShowPostModal] = useState(false);
+    const [showHighlightModal, setShowHighlightModal] = useState(false);
+    const [showDeleteConfirmationModal, setShowDeleteConfirmationModal] = useState(false);
     const [currentHighlight, setCurrentHighlight] = useState();
 
     const listRef = firebase.firestore().collection('highlights').orderBy('created', 'desc');
@@ -89,8 +88,13 @@ export default function DashboardHighlights() {
         })
     }
 
-    function togglePostModal(highlight) {
-        setShowPostModal(!showPostModal);
+    function toggleHighlightModal(highlight) {
+        setShowHighlightModal(!showHighlightModal);
+        setCurrentHighlight(highlight);
+    }
+
+    function toggleDeleteConfirmationModal(highlight) {
+        setShowDeleteConfirmationModal(!showDeleteConfirmationModal);
         setCurrentHighlight(highlight);
     }
 
@@ -146,23 +150,13 @@ export default function DashboardHighlights() {
                                             <td data-label="Título" className="td-title">{highlight.title}</td>
                                             <td data-label="Cadastrado em">{highlight.createdFormated}</td>
                                             <td data-label="#">
-                                                <button className='action' style={{ backgroundColor: '#3583f6' }} onClick={ () => togglePostModal(highlight)} >
+                                                <button className='action' style={{ backgroundColor: '#3583f6' }} onClick={ () => toggleHighlightModal(highlight)} >
                                                     <FiSearch color='#FFF' size={17} />
                                                 </button>
                                                 <Link className="action" style={{ backgroundColor: '#F6A935'}} to={`/admin/compose/highlight/${highlight.id}`} >
                                                     <FiEdit2 color="#FFF" size={17} />
                                                 </Link>
-                                                <button className="action" style={{ backgroundColor: '#B20600'}} onClick={async () => {
-                                                    await firebase.firestore().collection('highlights').doc(highlight.id).delete()
-                                                        .then(() => {
-                                                            toast.success('Destaque excluído com sucesso!');
-                                                            history.push('/admin');
-                                                        })
-                                                        .catch((error) => {
-                                                            console.log("Erro ao excluir destaque: ", error);
-                                                            toast.error("Erro ao excluir destaque.");
-                                                        })
-                                                    }}
+                                                <button className="action" style={{ backgroundColor: '#B20600'}} onClick={ () => toggleDeleteConfirmationModal(highlight) }
                                                 >
                                                     <FiTrash2 color="#fff" size={17} />
                                                 </button>
@@ -189,10 +183,18 @@ export default function DashboardHighlights() {
                 )}
             </div>
 
-            {showPostModal && (
+            {showHighlightModal && (
                 <HighlightModal 
                     highlight={currentHighlight}
-                    close={togglePostModal}
+                    close={toggleHighlightModal}
+                />
+            )}
+
+            {showDeleteConfirmationModal && (
+                <DeleteConfirmationModal
+                    postType="highlight"
+                    post={currentHighlight}
+                    close={toggleDeleteConfirmationModal}
                 />
             )}
         </div>
