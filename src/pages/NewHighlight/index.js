@@ -48,6 +48,14 @@ export default function NewHighlight() {
         }
     }, [id])
 
+    function successfulMesage() {
+        if (idHighlight) {
+            toast.success('Destaque editado com sucesso!');
+        } else {
+            toast.success('Destaque criado com sucesso!');
+        }
+    }
+
     function handleImg(e) {
         if (e.target.files[0]) {
             const image = e.target.files[0];
@@ -71,6 +79,128 @@ export default function NewHighlight() {
 
     }
 
+    async function updateHighlight(highlightId) {
+        await firebase.firestore().collection('highlights')
+        .doc(highlightId)
+        .update({
+            title: title,
+            content: content,
+            link: link
+        })
+        .then( async () => {
+            if (img !== null) {
+                
+                await uploadImg(highlightId);
+
+            } else if (img === null && files.length > 0) {
+               await uploadFiles(highlightId);
+            } else {
+                successfulMesage();
+                setLoadingRegister(false);
+                history.push('/admin/highlights');
+            }
+        })
+        .catch((err) => {
+            toast.error('Ops, erro ao editar destaque!');
+            console.log(err);
+            setLoadingRegister(false);
+        })
+    }
+
+    async function uploadImg(highlightId) {
+        const uploadImg = await firebase.storage()
+        .ref(`highlights/${highlightId}/image/${img.name}`)
+        .put(img)
+        .then(async () => {
+            await getImgDownloadUrl(highlightId);
+        })
+    }
+
+    async function getImgDownloadUrl(highlightId) {
+        await firebase.storage().ref(`highlights/${highlightId}/image`)
+            .child(img.name).getDownloadURL()
+            .then( async (url) => {
+                let urlImg = url;
+
+                await updateImgUrlInFirestore(highlightId, urlImg);
+            })
+    }
+
+    async function updateImgUrlInFirestore(highlightId, urlImg) {
+        await firebase.firestore().collection('highlights')
+            .doc(highlightId)
+            .update({
+                imgUrl: urlImg
+            })
+            .then(async () => {
+                await uploadFiles(highlightId);
+            })
+    }
+
+    async function uploadFiles(highlightId) {
+        if (files.length > 0) {
+            [...files].forEach( async (file) => {
+
+                const uploadFiles = await firebase.storage()
+                .ref(`highlights/${highlightId}/files/${file.name}`)
+                .put(file)
+                .then(async () => {
+
+                    await getFileDownloadUrl(highlightId, file);
+                })
+            })
+        } else {
+            successfulMesage();
+            setLoadingRegister(false);
+            history.push('/admin/highlights');
+        }
+    }
+
+    async function getFileDownloadUrl(highlightId, file) {
+        await firebase.storage().ref(`highlights/${highlightId}/files`)
+            .child(file.name).getDownloadURL()
+            .then( async (url) => {
+                let urlFile = url;
+
+                await updateFileUrlInFirestore(highlightId, urlFile);
+            })
+    }
+
+    async function updateFileUrlInFirestore(highlightId, urlFile) {
+        await firebase.firestore().collection('highlights')
+            .doc(highlightId)
+            .update({
+                filesUrl: firebase.firestore.FieldValue.arrayUnion(urlFile)
+            })
+            .then(() => {
+                successfulMesage();
+                setLoadingRegister(false);
+                history.push('/admin/highlights');
+            })
+    }
+
+    async function createHighlight() {
+        await firebase.firestore().collection('highlights')
+        .add({
+            created: new Date(),
+            title: title,
+            imgUrl: imgUrl,
+            content: content,
+            link: link,
+            filesUrl: filesUrl
+        })
+        .then(async (docRef) => {
+            const docId = docRef.id;
+
+            await uploadImg(docId);
+        })
+        .catch((error) => {
+            toast.error('Ops, ocorreu um erro inesperado ao criar destaque!');
+            console.log(error);
+            setLoadingRegister(false);
+        })
+    }
+
     async function handleRegister(e) {
         e.preventDefault();
 
@@ -78,184 +208,22 @@ export default function NewHighlight() {
 
         if (idHighlight) {
            if (title !== '' && content !== '') {
-                await firebase.firestore().collection('highlights')
-                .doc(id)
-                .update({
-                    title: title,
-                    content: content,
-                    link: link
-                })
-                .then( async () => {
-                    if (img !== null) {
-                        
-                        const uploadImg = await firebase.storage()
-                        .ref(`highlights/${id}/image/${img.name}`)
-                        .put(img)
-                        .then(async () => {
-                            await firebase.storage().ref(`highlights/${id}/image`)
-                            .child(img.name).getDownloadURL()
-                            .then( async (url) => {
-                                let urlImg = url;
-
-                                await firebase.firestore().collection('highlights')
-                                .doc(id)
-                                .update({
-                                    imgUrl: urlImg
-                                })
-                                .then(() => {
-
-                                    if (files.length > 0) {
-                                        [...files].forEach( async (file) => {
-
-                                            const uploadFiles = await firebase.storage()
-                                            .ref(`highlights/${id}/files/${file.name}`)
-                                            .put(file)
-                                            .then(async () => {
-
-                                                await firebase.storage().ref(`highlights/${id}/files`)
-                                                .child(file.name).getDownloadURL()
-                                                .then( async (url) => {
-                                                    let urlFile = url;
-
-                                                    await firebase.firestore().collection('highlights')
-                                                    .doc(id)
-                                                    .update({
-                                                        filesUrl: firebase.firestore.FieldValue.arrayUnion(urlFile)
-                                                    })
-                                                    .then(() => {
-                                                        toast.success('Destaque editado com sucesso!');
-                                                        setLoadingRegister(false);
-                                                        history.push('/admin/highlights');
-                                                    })
-                                                })
-                                            })
-                                        })
-                                    } else {
-                                        toast.success('Destaque editado com sucesso!');
-                                        setLoadingRegister(false);
-                                        history.push('/admin/highlights');
-                                    }
-
-                                })
-                            })
-                        })
-                    } else if (img === null && files.length > 0) {
-                        [...files].forEach( async (file) => {
-
-                            const uploadFiles = await firebase.storage()
-                            .ref(`highlights/${id}/files/${file.name}`)
-                            .put(file)
-                            .then(async () => {
-
-                                await firebase.storage().ref(`highlights/${id}/files`)
-                                .child(file.name).getDownloadURL()
-                                .then( async (url) => {
-                                    let urlFile = url;
-
-                                    await firebase.firestore().collection('highlights')
-                                    .doc(id)
-                                    .update({
-                                        filesUrl: firebase.firestore.FieldValue.arrayUnion(urlFile)
-                                    })
-                                    .then(() => {
-                                        toast.success('Destaque editado com sucesso!');
-                                        setLoadingRegister(false);
-                                        history.push('/admin/highlights');
-                                    })
-                                })
-                            })
-                        })
-                    } else {
-                        toast.success('Destaque editado com sucesso!');
-                        setLoadingRegister(false);
-                        history.push('/admin/highlights');
-                    }
-                })
-                .catch((err) => {
-                    toast.error('Ops, erro ao editar destaque!');
-                    console.log(err);
-                    setLoadingRegister(false);
-                })
+                await updateHighlight(id);
                 return;
            } else {
                 toast.error('Necessário preencher os campos "Título" e "Conteúdo"!');
                 setLoadingRegister(false);
+                return;
            }
         }
 
         if (title !== '' && content !== '' && img !== null) {
-            await firebase.firestore().collection('highlights')
-            .add({
-                created: new Date(),
-                title: title,
-                imgUrl: imgUrl,
-                content: content,
-                link: link,
-                filesUrl: filesUrl
-            })
-            .then(async (docRef) => {
-                const docId = docRef.id;
-
-                const uploadImg = await firebase.storage()
-                .ref(`highlights/${docId}/image/${img.name}`)
-                .put(img)
-                .then(async () => {
-
-                    await firebase.storage().ref(`highlights/${docId}/image`)
-                    .child(img.name).getDownloadURL()
-                    .then( async (url) => {
-                        let urlImg = url;
-
-                        await firebase.firestore().collection('highlights')
-                        .doc(docId)
-                        .update({
-                            imgUrl: urlImg
-                        })
-                        .then(() => {
-
-                            if (files.length > 0) {
-                                [...files].forEach( async (file) => {
-
-                                    const uploadFiles = await firebase.storage().ref(`highlights/${docId}/files/${file.name}`)
-                                    .put(file)
-                                    .then(async () => {
-
-                                        await firebase.storage().ref(`highlights/${docId}/files`)
-                                        .child(file.name).getDownloadURL()
-                                        .then( async (url) => {
-                                            let urlFile = url;
-
-                                            await firebase.firestore().collection('highlights')
-                                            .doc(docId)
-                                            .update({
-                                                filesUrl: firebase.firestore.FieldValue.arrayUnion(urlFile)
-                                            })
-                                            .then(() => {
-                                                toast.success('Destaque criado com sucesso!');
-                                                setLoadingRegister(false);
-                                                history.push('/admin/highlights');
-                                            })
-                                        })
-                                    })
-                                })
-                            } else {
-                                toast.success('Destaque criado com sucesso!');
-                                setLoadingRegister(false);
-                                history.push('/admin/highlights');
-                            }
-
-                        })
-                    })
-                })
-            })
-            .catch((error) => {
-                toast.error('Ops, ocorreu um erro inesperado ao criar destaque!');
-                console.log(error);
-                setLoadingRegister(false);
-            })
+           await createHighlight();
+           return;
         } else {
             toast.error('Necessário preencher os campos "Título", "Imagem de destaque" e "Conteúdo"!');
             setLoadingRegister(false);
+            return;
         }
     }
 
