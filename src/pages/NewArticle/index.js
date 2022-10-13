@@ -62,64 +62,45 @@ export default function NewArticle() {
 
     }
 
-    async function handleRegister(e) {
-        e.preventDefault();
-
-        setLoadingRegister(true);
-
-        if (idArticle) {
-            if (title !== '' && authors !== '' && abstract !== '') {
-                await firebase.firestore().collection('articles')
-                .doc(id)
-                .update({
-                    title: title,
-                    abstract: abstract,
-                    authors: authors
-                })
-                .then( async () => {
-                    if (article !== null) {
-                        
-                        const uploadArticle = await firebase.storage()
-                        .ref(`articles/${id}/${article.name}`)
-                        .put(article)
-                        .then(async () => {
-                            await firebase.storage().ref(`articles/${id}`)
-                            .child(article.name).getDownloadURL()
-                            .then( async (url) => {
-                                let urlArticle = url;
-
-                                await firebase.firestore().collection('articles')
-                                .doc(id)
-                                .update({
-                                    articleUrl: urlArticle
-                                })
-                                .then(() => {
-                                    toast.success('Artigo editado com sucesso!');
-                                    setLoadingRegister(false);
-                                    history.push('/admin/articles');
-                                })
-                            })
-                        })
-                    } else {
-                        toast.success('Artigo editado com sucesso!');
-                        setLoadingRegister(false);
-                        history.push('/admin/articles');
-                    }
-                })
-                .catch((err) => {
-                    toast.error('Ops, erro ao editar artigo!');
-                    console.log(err);
-                    setLoadingRegister(false);
-                })
-                return;
-            } else {
-                toast.error('Erro ao editar artigo! Verifique se campos "Título", "Autores" e "Resumo" estão preenchidos.');
+    async function updateArticleUrl(docId, urlArticle) {
+        await firebase.firestore().collection('articles')
+            .doc(docId)
+            .update({
+                articleUrl: urlArticle
+            })
+            .then(() => {
+                if (idArticle) {
+                    toast.success('Artigo editado com sucesso!');
+                } else {
+                    toast.success('Artigo criado com sucesso!');
+                }
                 setLoadingRegister(false);
-            }
-        }
+                history.push('/admin/articles');
+            })
+    }
 
-        if (title !== '' && authors !== '' && abstract !== '' && article !== null) {
-            await firebase.firestore().collection('articles')
+    async function getDownloadUrl(docId) {
+        await firebase.storage().ref(`articles/${docId}`)
+            .child(article.name).getDownloadURL()
+            .then( async (url) => {
+                let urlArticle = url;
+
+                await updateArticleUrl(docId, urlArticle);
+        })
+    }
+
+    async function uploadArticle(docId) {
+        const uploadArticle = await firebase.storage()
+            .ref(`articles/${docId}/${article.name}`)
+            .put(article)
+            .then(async () => {
+
+                await getDownloadUrl(docId);
+        })
+    }
+
+    async function createArticle() {
+        await firebase.firestore().collection('articles')
             .add({
                 created: new Date(),
                 title: title,
@@ -130,36 +111,57 @@ export default function NewArticle() {
             .then(async (docRef) => {
                 const docId = docRef.id;
 
-                const uploadArticle = await firebase.storage()
-                .ref(`articles/${docId}/${article.name}`)
-                .put(article)
-                .then(async () => {
-
-                    await firebase.storage().ref(`articles/${docId}`)
-                    .child(article.name).getDownloadURL()
-                    .then( async (url) => {
-                        let urlArticle = url;
-
-                        await firebase.firestore().collection('articles')
-                        .doc(docId)
-                        .update({
-                            articleUrl: urlArticle
-                        })
-                        .then(() => {
-
-                            toast.success('Artigo criado com sucesso!');
-                            setLoadingRegister(false);
-                            history.push('/admin/articles');
-
-                        })
-                    })
-                })
+                await uploadArticle(docId);
             })
             .catch((error) => {
                 toast.error('Ops, ocorreu um erro inesperado ao criar artigo!');
                 console.log(error);
                 setLoadingRegister(false);
             })
+    }
+
+    async function updateArticle() {
+        await firebase.firestore().collection('articles')
+            .doc(id)
+            .update({
+                title: title,
+                abstract: abstract,
+                authors: authors
+            })
+            .then( async () => {
+                if (article !== null) {                
+                    await uploadArticle(id);
+                } else {
+                    toast.success('Artigo editado com sucesso!');
+                    setLoadingRegister(false);
+                    history.push('/admin/articles');
+                }
+            })
+            .catch((err) => {
+                toast.error('Ops, erro ao editar artigo!');
+                console.log(err);
+                setLoadingRegister(false);
+            })
+    }
+
+    async function handleRegister(e) {
+        e.preventDefault();
+
+        setLoadingRegister(true);
+
+        if (idArticle) {
+            if (title !== '' && authors !== '' && abstract !== '') {
+                await updateArticle();
+                return;
+            } else {
+                toast.error('Erro ao editar artigo! Verifique se campos "Título", "Autores" e "Resumo" estão preenchidos.');
+                setLoadingRegister(false);
+                return;
+            }
+        }
+
+        if (title !== '' && authors !== '' && abstract !== '' && article !== null) {
+            await createArticle();
         } else {
             toast.error('Erro ao criar artigo! Verifique se campos "Título", "Autores", "Resumo" e "Artigo" estão preenchidos.');
             setLoadingRegister(false);
