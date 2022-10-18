@@ -86,13 +86,13 @@ p {
     background-color: #EFEFEF;
 }
 
-@media (max-width: 766px) {
+@media (max-width: 1080px) {
     body {
-        margin: auto 20px;
+        margin: auto 50px;
     }
 
     .colored-section {
-        margin: auto -20px;
+        margin: auto -50px;
     }
 
     .colored-section:not(footer) {

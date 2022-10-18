@@ -6,34 +6,51 @@ import { HiOutlineDocumentDownload } from 'react-icons/hi';
 
 import cursoRF from '../../assets/courses/cursoRF.pdf';
 
+import { useKeenSlider } from 'keen-slider/react';
+import 'keen-slider/keen-slider.min.css';
+import { useEffect } from "react";
+
 export default function ServicesAndResearches ({ services, researches }) {
     
+    const sliderOptions = {
+        loop: true,
+        slides: {
+          perView: 5.5,
+          spacing: 25
+        }
+    }
+      
+    const [sliderRef, instanceRef] = useKeenSlider(sliderOptions);
+    
+    useEffect(() => {
+        instanceRef.current?.update({
+            ...sliderOptions
+        });
+        }, [instanceRef, sliderOptions]);
 
     return (
         <Container className="services">
             <h1>Serviços</h1>
-            
-            <div className="enterprise-services">
-                <Row>
-                    {services.map((service, index) => {
-                        return (
-                            <ServiceCard
-                                service={service}   
-                                key={index} 
-                            />
-                        );
-                    })}
-                </Row>
-            </div>
 
-            
-            <div className="partner-companies colored-section">
+            <div className="partner-companies">
                 <p >Empresas parceiras podem contar com serviços de avaliação de tecnologias, desenvolvimento de estratégias de otimização operacional de recursos tecnológicos, apoio e suporte a processos licitatórios e de atendimento a normas de telecomunicações e treinamentos in company para formação ou aperfeiçoamento de pessoal</p>
             </div>
+            
+            <div ref={sliderRef} className="keen-slider enterprise-services">
+                {services.map((service, index) => {
+                    return (
+                        <ServiceCard
+                            key={index}
+                            service={service}   
+                            slideNum={index}
+                        />
+                    );
+                })}
+            </div>
 
-            <div className="research-services">
+            <div className="research-services colored-section">
                 <h2>Além de soluções corporativas, o GETICOM trabalha com pesquisas nas seguintes áreas das ciências e tecnologias:</h2>
-                <Row>
+                <div className="rs">
                     {researches.map((research, index) => {
                         return (
                             <ServiceCard
@@ -42,7 +59,7 @@ export default function ServicesAndResearches ({ services, researches }) {
                             />
                         );
                     })}
-                </Row>
+                </div>
             </div>
 
             <div className="course">
