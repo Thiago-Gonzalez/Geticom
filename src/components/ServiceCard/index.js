@@ -1,17 +1,18 @@
 import { Card, Col } from "react-bootstrap";
 import './servicecard.css';
 
-export default function ServiceCard ({ service }) {
+export default function ServiceCard ({ service, slideNum }) {
     return (
-        <Col className="column" xl={4} lg={6} md={12} sm={12}>
-            <Card>
-                <Card.Header as="h4">{service.title}</Card.Header>
-                <Card.Body>
-                    <Card.Text>
-                        {service.description}
-                    </Card.Text>
-                </Card.Body>
-            </Card>
-        </Col>
+        <div className={`column keen-slider__slide number-slide${slideNum}`}>
+            <div className="custom-card">
+                <div className="custom-card-header">
+                    <h4>{service.title}</h4>
+                </div>
+
+                <div className="custom-card-body">
+                    <p className="custom-card-text">{service.description}</p>
+                </div>
+            </div>
+        </div>
     );
 }

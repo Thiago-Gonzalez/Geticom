@@ -1,5 +1,16 @@
-.container.services, .partner-companies {
+.container.services {
     padding: 70px 0;
+}
+
+.enterprise-services {
+    margin-bottom: 50px;
+    cursor: grab;
+}
+
+.partner-companies {
+    margin-top: 30px;
+    text-align: left;
+    color: #646665;
 }
 
 .services .row {
@@ -12,32 +23,30 @@
     justify-content: center;
 }
 
-.partner-companies {
-    background-color: #101C45;
-    color: #fff;
-    margin: 0 -100px;
-}
 
 .research-services {
     margin-top: 30px;
+    background-color: #16163F;
+    color: #fff;
+    margin: 0 -100px;
+    padding: 70px 100px;
 }
 
-.partner-companies p {
-    font-family: 'Work Sans', sans-serif;
-    font-weight: bold;
-    font-size: 1.5rem;
-    width: 70%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 40px 0;
-    line-height: 2rem;
-    word-break: break-word;
+.research-services .rs {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: flex-start;
 }
 
 .course {
     display: flex;
     flex-direction: column;
+    margin: 70px 0 30px 0;
+}
+
+.course h1 {
+    margin-bottom: 30px;
 }
 
 .course-paragraph {
