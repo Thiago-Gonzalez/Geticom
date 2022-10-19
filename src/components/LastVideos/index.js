@@ -1,4 +1,5 @@
-
+import { Player, Poster, Ui, Youtube } from '@vime/react';
+import { Spinner } from 'react-bootstrap';
 import './lastvideos.css';
 
 export default function LastVideos() {
@@ -8,15 +9,15 @@ export default function LastVideos() {
             <h1>Últimos vídeos</h1>
 
             <div className="embed-container">
-                <iframe 
-                    width="480" 
-                    height="270" 
-                    src="https://www.youtube.com/embed/videoseries?list=UUzg1WcH6uagZpzL_K3a0ydQ" 
-                    title="YouTube video player" 
-                    frameBorder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen;" 
-                >
-                </iframe>
+                <Player controls>
+                      <Youtube videoId="https://www.youtube.com/embed/videoseries?list=UUzg1WcH6uagZpzL_K3a0ydQ"/>
+                  <Ui>
+                    {/* Vime components. */}
+                    <Spinner />
+                    {/* Pensar se tiro ou nao esse poster */}
+                    <Poster />
+                  </Ui>
+                </Player>
             </div>
                 
             <a href="https://www.youtube.com/channel/UCzg1WcH6uagZpzL_K3a0ydQ" target="_blank" rel='noopener noreferrer'>Ver mais vídeos</a>
