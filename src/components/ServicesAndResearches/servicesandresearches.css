@@ -2,9 +2,12 @@
     padding: 70px 0;
 }
 
-.enterprise-services {
-    margin-bottom: 50px;
+.enterprise-services-slider, .research-services-slider {
     cursor: grab;
+}
+
+.enterprise-services {
+    margin-bottom: 40px;
 }
 
 .partner-companies {
@@ -32,11 +35,9 @@
     padding: 70px 100px;
 }
 
-.research-services .rs {
+.research-services .research-services-slider {
     display: flex;
     flex-direction: row;
-    gap: 30px;
-    justify-content: flex-start;
 }
 
 .course {
@@ -71,4 +72,10 @@
 
 .container.services img {
     max-width: 800px;
+}
+
+@media (min-width: 950px) {
+    .research-services-slider {
+        cursor: default;
+    }
 }

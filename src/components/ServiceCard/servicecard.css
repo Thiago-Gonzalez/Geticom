@@ -35,12 +35,14 @@
 }
 
 .custom-card-text {
-    text-align: justify;
+    display: flex;
+    text-align: center;
+    word-spacing: 5px;
     font-weight: 300;
     font-size: 1rem;
     line-height: 20px;
 }
 
-.rs .custom-card {
+.research-services-slider .custom-card {
     border: 1px solid #fff;
 }
