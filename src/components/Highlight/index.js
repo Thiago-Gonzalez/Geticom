@@ -25,7 +25,7 @@ export default function Highlight ({ highlight }) {
                         key={index}
                     >
                         <HiOutlineDocumentDownload size={24} /> 
-                        Download
+                        Baixar
                     </a>
                 );
             })]}

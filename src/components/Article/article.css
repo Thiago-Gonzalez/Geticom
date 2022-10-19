@@ -20,7 +20,7 @@
 }
 
 .article .download-btn:hover {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .article .btn {

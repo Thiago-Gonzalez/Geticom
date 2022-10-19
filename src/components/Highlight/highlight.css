@@ -41,6 +41,12 @@
 }
 
 .highlight .download-btn {
+    display: flex;
+    gap: 5px;
     margin-bottom: 20px;
     width: 120px;
+}
+
+.highlight .download-btn:hover {
+    text-decoration: underline;
 }

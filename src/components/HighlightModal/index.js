@@ -39,7 +39,7 @@ export default function HighlightModal({highlight, close}) {
                                     key={index}
                                 >
                                     <HiOutlineDocumentDownload size={24} /> 
-                                    Download
+                                    Baixar
                                 </a>
                             );
                         })}
