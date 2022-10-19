@@ -20,15 +20,21 @@ export default function Admin() {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [passwordConfirmation, setPasswordConfirmation] = useState("");
 
     function handleSubmit(e) {
         e.preventDefault();
 
         if (name !== '' && email !== '' && password !== '') {
-            signUp(email, password, name);
-            setEmail('');
-            setName('');
-            setPassword('');
+            if (password === passwordConfirmation) {
+                signUp(email, password, name);
+                setEmail('');
+                setName('');
+                setPassword('');
+                setPasswordConfirmation('');
+            } else {
+                toast.warning("As senhas devem coincidir!");
+            }
         } else if (name === '' || email === '' || password === '') {
             toast.warning('Preencha todos os campos!');
         }
@@ -50,6 +56,7 @@ export default function Admin() {
                         <input type="text" placeholder="Nome" value={name} onChange={ (e) => setName(e.target.value) } />
                         <input type="text" placeholder='Email' value={email} onChange={ (e) => setEmail(e.target.value)} />
                         <input type="password" placeholder='Senha'  value={password} onChange={ (e) => setPassword(e.target.value)} />
+                        <input type="password" placeholder='Confirme sua senha'  value={passwordConfirmation} onChange={ (e) => setPasswordConfirmation(e.target.value)} />
                         <Button type='submit' onClick={handleSubmit}>{loadingAuth ? 'Cadastrando...' : 'Cadastrar'}</Button>
                     
                     </form>
