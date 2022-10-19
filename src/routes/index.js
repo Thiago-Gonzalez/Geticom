@@ -30,15 +30,15 @@ const Routes = () => {
             <Route exact path="/artigos/:id/:title" component={ArticlePage} />
 
             <Route exact path="/admin/login" component={SignIn} />
-            <Route exact path="/admin/reset" component={Reset} />
+            <Route exact path="/admin/resetar-senha" component={Reset} />
             <Route exact path="/admin" component={Admin} isPrivate />
-            <Route exact path="/admin/register" component={SignUp} isPrivate />
-            <Route exact path="/admin/highlights" component={DashboardHighlights} isPrivate />
-            <Route exact path="/admin/compose/highlight" component={NewHighlight} isPrivate />
-            <Route exact path="/admin/compose/highlight/:id" component={NewHighlight} isPrivate />
-            <Route exact path="/admin/articles" component={DashboardArticles} isPrivate />
-            <Route exact path="/admin/compose/article" component={NewArticle} isPrivate />
-            <Route exact path="/admin/compose/article/:id" component={NewArticle} isPrivate />
+            <Route exact path="/admin/cadastrar-admin" component={SignUp} isPrivate />
+            <Route exact path="/admin/destaques" component={DashboardHighlights} isPrivate />
+            <Route exact path="/admin/cadastrar/destaque" component={NewHighlight} isPrivate />
+            <Route exact path="/admin/editar/destaque/:id" component={NewHighlight} isPrivate />
+            <Route exact path="/admin/artigos" component={DashboardArticles} isPrivate />
+            <Route exact path="/admin/cadastrar/artigo" component={NewArticle} isPrivate />
+            <Route exact path="/admin/editar/artigo/:id" component={NewArticle} isPrivate />
 
             <Route path="*" component={NotFound} />
         </Switch>

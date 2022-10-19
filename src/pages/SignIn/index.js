@@ -33,7 +33,7 @@ export default function SignIn() {
     function handleForgetPassword(e) {
         e.preventDefault();
 
-        history.push("/admin/reset");
+        history.push("/admin/resetar-senha");
     }
 
     return(

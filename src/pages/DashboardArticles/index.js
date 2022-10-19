@@ -132,7 +132,7 @@ export default function DashboardArticles() {
 
                 {articles.length !== 0 ? (
                     <>
-                        <Link to="/admin/compose/article" className="new-btn">
+                        <Link to="/admin/cadastrar/artigo" className="new-btn">
                             <FiPlus size={25} color="#FFF" />
                             Novo artigo
                         </Link>
@@ -155,7 +155,7 @@ export default function DashboardArticles() {
                                                 <button className='action' style={{ backgroundColor: '#3583f6' }} onClick={ () => togglePostModal(article)} >
                                                     <FiSearch color='#FFF' size={17} />
                                                 </button>
-                                                <Link className="action" style={{ backgroundColor: '#F6A935'}} to={`/admin/compose/article/${article.id}`} >
+                                                <Link className="action" style={{ backgroundColor: '#F6A935'}} to={`/admin/editar/artigo/${article.id}`} >
                                                     <FiEdit2 color="#FFF" size={17} />
                                                 </Link>
                                                 <button className="action" style={{ backgroundColor: '#B20600'}} onClick={() => toggleDeleteConfirmationModal(article)}
@@ -177,7 +177,7 @@ export default function DashboardArticles() {
                     <div className="special-container dashboard-empty">
                         <span>Nenhum artigo registrado</span>
 
-                        <Link to="/admin/compose/article" className="new-btn">
+                        <Link to="/admin/cadastrar/artigo" className="new-btn">
                             <FiPlus size={25} color="#FFF" />
                             Novo artigo
                         </Link>

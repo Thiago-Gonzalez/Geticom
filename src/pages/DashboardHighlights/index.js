@@ -130,7 +130,7 @@ export default function DashboardHighlights() {
 
                 {highlights.length !== 0 ? (
                     <>
-                        <Link to="/admin/compose/highlight" className="new-btn">
+                        <Link to="/admin/cadastrar/destaque" className="new-btn">
                             <FiPlus size={25} color="#FFF" />
                             Novo destaque
                         </Link>
@@ -153,7 +153,7 @@ export default function DashboardHighlights() {
                                                 <button className='action' style={{ backgroundColor: '#3583f6' }} onClick={ () => toggleHighlightModal(highlight)} >
                                                     <FiSearch color='#FFF' size={17} />
                                                 </button>
-                                                <Link className="action" style={{ backgroundColor: '#F6A935'}} to={`/admin/compose/highlight/${highlight.id}`} >
+                                                <Link className="action" style={{ backgroundColor: '#F6A935'}} to={`/admin/editar/destaque/${highlight.id}`} >
                                                     <FiEdit2 color="#FFF" size={17} />
                                                 </Link>
                                                 <button className="action" style={{ backgroundColor: '#B20600'}} onClick={ () => toggleDeleteConfirmationModal(highlight) }
@@ -175,7 +175,7 @@ export default function DashboardHighlights() {
                     <div className="special-container dashboard-empty">
                         <span>Nenhum destaque registrado</span>
 
-                        <Link to="/admin/compose/highlight" className="new-btn">
+                        <Link to="/admin/cadastrar/destaque" className="new-btn">
                             <FiPlus size={25} color="#FFF" />
                             Novo destaque
                         </Link>

@@ -27,16 +27,16 @@ export default function AdminHeader() {
                 Perfil
             </Link>
 
-            <Link to="/admin/highlights">
+            <Link to="/admin/destaques">
                 <MdHighlight color="#FFF" size={24} /> 
                 Destaques
             </Link>
-            <Link to="/admin/articles">
+            <Link to="/admin/artigos">
                 <MdOutlineArticle color="#FFF" size={24} /> 
                 Artigos
             </Link>
             {user.email === process.env.REACT_APP_ADMIN_EMAIL &&
-                <Link to="/admin/register">
+                <Link to="/admin/cadastrar-admin">
                     <BiUserPlus color="#FFF" size={24} />
                     Cadastrar usuário
                 </Link>
