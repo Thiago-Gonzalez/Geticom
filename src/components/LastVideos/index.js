@@ -10,7 +10,7 @@ export default function LastVideos() {
 
             <div className="embed-container">
                 <Player controls>
-                      <Youtube videoId="https://www.youtube.com/embed/videoseries?list=UUzg1WcH6uagZpzL_K3a0ydQ"/>
+                      <Youtube videoId="https://www.youtube.com/embed/videoseries?list=UULFwIX8GHoQlg2X-MT14UbOpA"/>
                   <Ui>
                     {/* Vime components. */}
                     <Spinner />
@@ -20,7 +20,7 @@ export default function LastVideos() {
                 </Player>
             </div>
                 
-            <a href="https://www.youtube.com/channel/UCzg1WcH6uagZpzL_K3a0ydQ" target="_blank" rel='noopener noreferrer'>Ver mais vídeos</a>
+            <a href="https://www.youtube.com/embed/videoseries?list=UULFwIX8GHoQlg2X-MT14UbOpA" target="_blank" rel='noopener noreferrer'>Ver mais vídeos</a>
         </div>
     );
 }
