@@ -20,7 +20,7 @@ export default function LastVideos() {
                 </Player>
             </div>
                 
-            <a href="https://www.youtube.com/embed/videoseries?list=UULFwIX8GHoQlg2X-MT14UbOpA" target="_blank" rel='noopener noreferrer'>Ver mais vídeos</a>
+            <a href="https://www.youtube.com/channel/UCwIX8GHoQlg2X-MT14UbOpA" target="_blank" rel='noopener noreferrer'>Ver mais vídeos</a>
         </div>
     );
 }
