@@ -10,11 +10,9 @@ export default function LastVideos() {
 
             <div className="embed-container">
                 <Player controls>
-                      <Youtube videoId="https://www.youtube.com/channel/UCwIX8GHoQlg2X-MT14UbOpA"/>
+                      <Youtube videoId="https://youtube.com/playlist?list=UULFwIX8GHoQlg2X-MT14UbOpA"/>
                   <Ui>
-                    {/* Vime components. */}
                     <Spinner />
-                    {/* Pensar se tiro ou nao esse poster */}
                     <Poster />
                   </Ui>
                 </Player>
