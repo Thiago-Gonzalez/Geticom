@@ -1,6 +1,5 @@
 import { Container } from "react-bootstrap";
 import Header from '../../components/Header/index';
-import appConfig from '../../config.json';
 import './notfound.css';
 
 import Footer from '../../components/Footer';
@@ -8,13 +7,13 @@ import Footer from '../../components/Footer';
 export default function NotFound() {
 
     return(
-            <Container fluid className="notfound">
-                <Header 
-                    heading={appConfig.headerContent.notFound.heading}
-                    paragraph={appConfig.headerContent.notFound.paragraph}
-                />
-
-                <Footer />
-            </Container>
+        <Container fluid className="notfound">
+            <Header />
+            <div className="notfound-content">
+                <h1>Página não encontrada!</h1>
+                <p>Ops, não foi possível encontrar a página que você está buscando.</p>
+            </div>
+            <Footer />
+        </Container>
     );
 }

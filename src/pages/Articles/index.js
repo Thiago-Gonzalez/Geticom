@@ -84,10 +84,7 @@ export default function Articles() {
 
     return (
         <Container fluid className="articles-page">
-            <Header 
-                heading={appConfig.headerContent.articles.heading}
-                paragraph={appConfig.headerContent.articles.paragraph}
-            />
+            <Header />
 
             {!loading ? (
                 <Container className="articles">

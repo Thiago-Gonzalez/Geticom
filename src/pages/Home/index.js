@@ -16,10 +16,7 @@ export default function Home () {
 
     return (
         <Container fluid>
-            <Header
-                heading={appConfig.headerContent.home.heading} 
-                paragraph={appConfig.headerContent.home.paragraph}
-            />
+            <Header />
 
             <Highlights />
 

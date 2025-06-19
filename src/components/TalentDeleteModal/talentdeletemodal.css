@@ -1,0 +1,61 @@
+.talent-delete-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.talent-delete-modal-container {
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+  text-align: center;
+  min-width: 320px;
+}
+
+.talent-delete-modal-container h2 {
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+  color: #222;
+}
+
+.talent-delete-modal-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.btn-confirm {
+  background: #B20600;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn-confirm:hover {
+  background: #d32f2f;
+}
+
+.btn-cancel {
+  background: #eee;
+  color: #222;
+  border: none;
+  border-radius: 5px;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn-cancel:hover {
+  background: #ccc;
+} 

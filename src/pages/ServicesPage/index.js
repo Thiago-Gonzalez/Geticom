@@ -11,10 +11,7 @@ export default function ServicesPage () {
 
     return (
         <Container fluid  className='services'>
-            <Header
-                heading={appConfig.headerContent.services.heading} 
-                paragraph={appConfig.headerContent.services.paragraph}
-            />
+            <Header />
 
             
             <ServicesAndResearches

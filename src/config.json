@@ -1,30 +1,4 @@
 {
-    "headerContent": {
-        "home": {
-            "heading": "Grupo de Estudos em Tecnologias de Informação e Comunicações sem Fio",
-            "paragraph": "Pesquisas nas áreas das ciências e tecnologias e consultoria para soluções em telecomunicações"
-        },
-        "about": {
-            "heading": "Sobre",
-            "paragraph": "GETICOM é um núcleo de estudos em telecomunicações cuja missão é desenvolver tecnologia em comunicação sem fio, através da pesquisa acadêmica e aplicada, realizada por professores e alunos de graduação e pós-graduação da UEMA. Atuamos como ferramenta de apoio ao ensino-aprendizagem nas áreas de tecnologia da informação, telecomunicações e automação e controle. Além de oferecer consultoria para soluções em telecomunicações, promovida por profissionais experientes e com um preço abaixo do mercado"
-        },
-        "services": {
-            "heading": "Conheça nossos serviços",
-            "paragraph": "Oferecemos consultoria para soluções em diversas linhas de ação em telecomunicações, através das melhores ferramentas e aplicações, realizada por profissionais especializados e com um preço abaixo do mercado"
-        },
-        "highlight": {
-            "heading": "Destaques",
-            "paragraph": "Acompanhe os eventos, tais como palestras, conferências, congressos e projetos, dos quais o GETICOM participa"
-        },
-        "articles": {
-            "heading": "Artigos",
-            "paragraph": "Acompanhe os artigos publicados pelos docentes e pesquisdores do GETICOM"
-        },
-        "notFound": {
-            "heading": "Página não encontrada!",
-            "paragraph": "Ops, não foi possível encontrar a página que você está buscando. Continue navegando através do menu de navegação."
-        }
-    },
     "highlights": [
         
         {
@@ -354,5 +328,35 @@
             "phone": "(98) 9 8126-9273",
             "email": "hmca13@gmail.com"
         }
+    ],
+    "studentTalentPool": [
+        {
+            "name": "Alice Johnson",
+            "major": "Computer Science",
+            "email": "alice.johnson@example.com",
+            "description": "A computer science student in with a passion for developing innovative software solutions.",
+            "skills": ["Java", "Python", "Machine Learning"]
+          },
+          {
+            "name": "Bob Smith",
+            "major": "Business Administration",
+            "email": "bob.smith@example.com",
+            "description": "Business administration student with strong skills in project management and strategic planning.",
+            "skills": ["Project Management", "Marketing", "Finance"]
+          },
+          {
+            "name": "Carol Williams",
+            "major": "Mechanical Engineering",
+            "email": "carol.williams@example.com",
+            "description": "Mechanical engineering student experienced in CAD software and robotics.",
+            "skills": ["CAD", "Robotics", "Thermodynamics"]
+          },
+          {
+            "name": "David Brown",
+            "major": "Graphic Design",
+            "email": "david.brown@example.com",
+            "description": "Creative graphic design student with a strong portfolio of visual design projects.",
+            "skills": ["Adobe Photoshop", "Illustrator", "UI/UX Design"]
+          }
     ]
 }

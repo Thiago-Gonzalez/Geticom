@@ -1,12 +1,15 @@
-.notfound .btn {
-    position: absolute;
-    top: 425px;
-    color: #16163F;
-    border: 1px solid #16163F;
-    transition: ease-in 0.2s;
+.notfound {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
 }
 
-.notfound .btn:hover {
-    color: #fff;
-    background-color: #16163F;
+.notfound-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
 }

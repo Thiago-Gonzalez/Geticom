@@ -1,0 +1,88 @@
+.student-modal-details-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2.2rem;
+    margin-bottom: 1.2rem;
+}
+.avatar-modal {
+    width: 140px;
+    height: 140px;
+    border-radius: 8px;
+    object-fit: cover;
+    background: #e9ecef;
+    flex-shrink: 0;
+}
+.student-modal-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+.modal-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.2rem;
+}
+.modal-label {
+    font-weight: 600;
+    color: #16163F;
+    font-size: 1rem;
+    margin-bottom: 0.1rem;
+}
+.skills-field {
+    margin-bottom: 0.3rem;
+}
+.skills-modal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.2rem;
+}
+.skill {
+    background: #16163F;
+    color: #FFF;
+    border-radius: 16px;
+    padding: 0.3rem 1rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+.modal-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-top: 1.2rem;
+}
+.modal-links a {
+    color: #16163F;
+    font-size: 1.5rem;
+    transition: color 0.2s;
+}
+.modal-links a:hover {
+    color: #1976d2;
+}
+@media (max-width: 700px) {
+    .student-modal-details-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2rem;
+    }
+    .avatar-modal {
+        width: 100px;
+        height: 100px;
+    }
+    .student-modal-info {
+        width: 100%;
+    }
+}
+.modal-field.disponibilidade-field {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.4rem;
+}
+.modal-field.experiencia-field span:last-child,
+.modal-field.observacao-field span:last-child {
+    text-align: justify;
+    display: block;
+    width: 100%;
+} 

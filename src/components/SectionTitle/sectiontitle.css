@@ -1,0 +1,13 @@
+.section-title-wrapper {
+    display: flex;
+    align-items: center;
+    margin: 0 0 1.5rem 0;
+  }
+  
+  .section-title-bar {
+    width: 12px;
+    height: 40px;
+    background: #151d46;
+    margin-right: 12px;
+    border-radius: 2px;
+  }

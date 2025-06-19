@@ -55,10 +55,7 @@ export default function HighlightPage () {
             {found ? (
 
                 <Container fluid className="highlight-page">
-                    <Header 
-                        heading={appConfig.headerContent.highlight.heading} 
-                        paragraph={appConfig.headerContent.highlight.paragraph}
-                    />
+                    <Header />
 
                     {loading ? (
                         <div style={{ height: '300px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
