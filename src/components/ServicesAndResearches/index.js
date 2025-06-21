@@ -11,6 +11,7 @@ import 'keen-slider/keen-slider.min.css';
 import { useEffect, useState } from "react";
 
 import useWindowDimensions from '../../utils/useWindowDimensions';
+import SectionTitle from "../SectionTitle";
 
 export default function ServicesAndResearches ({ services, researches }) {
     const [perView1, setPerView1] = useState();
@@ -92,7 +93,7 @@ export default function ServicesAndResearches ({ services, researches }) {
     return (
         <Container className="services">
             <div className="enterprise-services">
-                <h1>Serviços</h1>
+                <SectionTitle>Serviços</SectionTitle>
 
                 <div className="partner-companies">
                     <p>Empresas parceiras podem contar com serviços de avaliação de tecnologias, desenvolvimento de estratégias de otimização operacional de recursos tecnológicos, apoio e suporte a processos licitatórios e de atendimento a normas de telecomunicações e treinamentos in company para formação ou aperfeiçoamento de pessoal</p>

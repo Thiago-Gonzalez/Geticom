@@ -21,7 +21,7 @@ export default function Team({ coordinators, researchers }) {
                             <Card style={{ width: '15rem' }}>
                                 <Card.Img variant="top" src={require(`../../assets/img/${researcher.img}`)} />
                                 <Card.Body>
-                                    <Card.Title><a href={researcher.social} target="_blank">{researcher.name}</a></Card.Title>
+                                    <Card.Title><a href={researcher.social} target="_blank" rel="noreferrer">{researcher.name}</a></Card.Title>
                                     <Card.Text>
                                         {researcher.description}
                                     </Card.Text>
@@ -34,10 +34,6 @@ export default function Team({ coordinators, researchers }) {
 
             <div className="btn-div">
                 <Button variant="link" onClick={() =>  history.push("/servicos")}>Conheça nossos serviços</Button>
-                <span>
-                    ?
-                    <p>Ao clicar no nome de um dos Docentes ou Pesquisadores, você será redirecionado para uma página (currículo lattes ou linkedin) contendo mais informações sobre cada integrante do Geticom</p>
-                </span>
             </div>
         </Container>
     );

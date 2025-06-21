@@ -56,10 +56,7 @@ export default function ArticlePage() {
         <>
             {found ? (
                 <Container fluid className="article-page">
-                    <Header 
-                        heading={appConfig.headerContent.articles.heading}
-                        paragraph={appConfig.headerContent.articles.paragraph}
-                    />
+                    <Header />
                     
                     {loading ? (
                         <div style={{ height: '300px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>

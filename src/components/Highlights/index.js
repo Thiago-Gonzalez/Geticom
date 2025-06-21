@@ -3,6 +3,7 @@ import { Container, Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { HighlightsContext } from "../../contexts/highlights";
 import './highlights.css';
+import SectionTitle from "../SectionTitle";
 
 
 export default function Highlights() {
@@ -12,7 +13,7 @@ export default function Highlights() {
 
     return(
         <Container className="highlights">
-            <h1>Destaques</h1>
+            <SectionTitle>Destaques</SectionTitle>
             <Carousel>
                 {highlights.slice(0, 10).map( (highlight, index) => {
                     return (

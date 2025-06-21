@@ -1,0 +1,239 @@
+.student-talent-pool {
+    max-width: 1800px;
+    margin: 70px auto;
+  }
+  
+  .student-talent-pool h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .student-talent-pool .subtitle {
+    color: #6c757d;
+    margin-bottom: 2rem;
+  }
+  
+  .student-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .student-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    padding: 2rem 1.5rem 1.2rem 1.5rem;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #e9ecef;
+    margin-bottom: 0.7rem;
+    object-fit: cover;
+  }
+  
+  .student-card h2 {
+    font-size: 1.3rem;
+    margin: 0.3rem 0 0 0;
+  }
+  
+  .student-card h3 {
+    font-size: 1rem;
+    color: #6c757d;
+    margin: 0 0 0.5rem 0;
+    font-weight: 400;
+  }
+  
+  .student-card .email {
+    font-size: 0.95rem;
+    color: #007bff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .student-card .description {
+    font-size: 0.98rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .see-more-icon {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    color: #16163F;
+    cursor: pointer;
+    transition: color 0.2s;
+    z-index: 2;
+  }
+  
+  .course-semester {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.8rem;
+  }
+  .course {
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #444;
+    text-align: center;
+    margin-bottom: 0.1rem;
+    margin-top: 1.2rem;
+  }
+  .semester {
+    font-size: 0.95rem;
+    color: #888;
+    margin-top: 0;
+    text-align: center;
+  }
+  
+  .availability {
+    margin: 0.7rem 0 0.5rem 0;
+    font-size: 1rem;
+    color: #16163F;
+    text-align: center;
+  }
+  .availability-label {
+    font-weight: 600;
+    color: #16163F;
+    margin-right: 3px;
+  }
+  
+  .card-links {
+    display: flex;
+    gap: 0.7rem;
+    justify-content: center;
+    margin-top: 1.1rem;
+  }
+  .card-links a {
+    color: #16163F;
+    transition: color 0.2s;
+  }
+  
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .skill {
+    background: #16163F;
+    color: #FFF;
+    border-radius: 16px;
+    padding: 0.3rem 1rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+
+  .avatar-large {
+    display: block;
+    max-width: 220px;
+    max-height: 220px;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin: 0 auto 1.2rem auto;
+    object-fit: cover;
+  }
+
+  .student-modal-details-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .avatar-modal {
+    width: 140px;
+    height: 140px;
+    border-radius: 8px;
+    object-fit: cover;
+    background: #e9ecef;
+    flex-shrink: 0;
+  }
+  .student-modal-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  .modal-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.2rem;
+  }
+  .modal-label {
+    font-weight: 600;
+    color: #16163F;
+    font-size: 1rem;
+    margin-bottom: 0.1rem;
+  }
+  .skills-field {
+    margin-bottom: 0.3rem;
+  }
+  .skills-modal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.2rem;
+  }
+  .skill {
+    background: #16163F;
+    color: #FFF;
+    border-radius: 16px;
+    padding: 0.3rem 1rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+  .modal-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-top: 1.2rem;
+  }
+  .modal-links a {
+    color: #16163F;
+    font-size: 1.5rem;
+    transition: color 0.2s;
+  }
+  .modal-links a:hover {
+    color: #1976d2;
+  }
+  @media (max-width: 700px) {
+    .student-modal-details-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2rem;
+    }
+    .avatar-modal {
+        width: 100px;
+        height: 100px;
+    }
+    .student-modal-info {
+        width: 100%;
+    }
+  }
+
+  .modal-field.disponibilidade-field {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .modal-field.experiencia-field span:last-child,
+  .modal-field.observacao-field span:last-child {
+    text-align: justify;
+    display: block;
+    width: 100%;
+  }

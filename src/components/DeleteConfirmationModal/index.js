@@ -5,7 +5,7 @@ import { useHistory } from 'react-router-dom';
 import { FiX } from 'react-icons/fi';
 import { HiOutlineDocumentDownload } from 'react-icons/hi';
 
-export const DeleteConfirmationModal = ({ postType, post, close }) => {
+export const DeleteConfirmationModal = ({ postType, post, close, onConfirm }) => {
     const history = useHistory();
 
     const deleteHighlight = async () => {
@@ -31,6 +31,16 @@ export const DeleteConfirmationModal = ({ postType, post, close }) => {
                 toast.error("Erro ao excluir artigo.");
             })
         }
+
+    const handleDelete = () => {
+        if (onConfirm) {
+            onConfirm();
+        } else if (postType === 'highlight') {
+            deleteHighlight();
+        } else {
+            deleteArticle();
+        }
+    };
 
     return (
         <div className="delete-confirmation-modal">
@@ -100,7 +110,7 @@ export const DeleteConfirmationModal = ({ postType, post, close }) => {
                         </>
                     )}
                     <div className='confirmation'>
-                        <button className='confirmation-btn confirm' onClick={ () => postType === 'highlight' ? deleteHighlight() : deleteArticle() }>Excluir</button>
+                        <button className='confirmation-btn confirm' onClick={ handleDelete }>Excluir</button>
                         <button className='confirmation-btn decline' onClick={ close }>Cancelar</button>
                     </div>
                 </div>
