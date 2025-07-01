@@ -20,6 +20,9 @@ import NewArticle from '../pages/NewArticle';
 import StudentTalentPool from '../pages/StudentTalentPool';
 import NewTalent from '../pages/NewTalent';
 import DashboardTalents from '../pages/DashboardTalents';
+import Faculty from '../pages/Faculty';
+import DashboardFaculty from '../pages/DashboardFaculty';
+import NewFaculty from '../pages/NewFaculty';
 
 const Routes = () => {
     return (
@@ -32,6 +35,7 @@ const Routes = () => {
             <Route exact path="/artigos" component={Articles} />
             <Route exact path="/artigos/:id/:title" component={ArticlePage} />
             <Route exact path="/banco-de-talentos" component={StudentTalentPool} />
+            <Route exact path="/docentes" component={Faculty} />
 
             <Route exact path="/admin/login" component={SignIn} />
             <Route exact path="/admin/resetar-senha" component={Reset} />
@@ -46,6 +50,9 @@ const Routes = () => {
             <Route exact path="/admin/talentos" component={DashboardTalents} isPrivate />
             <Route exact path="/admin/cadastrar/talento" component={NewTalent} isPrivate />
             <Route exact path="/admin/editar/talento/:id" component={NewTalent} isPrivate />
+            <Route exact path="/admin/docentes" component={DashboardFaculty} isPrivate />
+            <Route exact path="/admin/cadastrar/docente" component={NewFaculty} isPrivate />
+            <Route exact path="/admin/editar/docente/:id" component={NewFaculty} isPrivate />
 
             <Route path="*" component={NotFound} />
         </Switch>

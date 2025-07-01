@@ -6,7 +6,7 @@ import './adminheader.css';
 import avatar from '../../assets/img/avatar.png';
 
 import { BiUserPlus } from 'react-icons/bi';
-import { FaUserGraduate } from 'react-icons/fa';
+import { FaChalkboardTeacher, FaUserGraduate } from 'react-icons/fa';
 import { FiHome } from "react-icons/fi";
 import { MdOutlineArticle, MdHighlight } from 'react-icons/md';
 import { GiExitDoor } from 'react-icons/gi';
@@ -39,6 +39,10 @@ export default function AdminHeader() {
             <Link to="/admin/talentos">
                 <FaUserGraduate color="#FFF" size={24} />
                 Talentos
+            </Link>
+            <Link to="/admin/docentes">
+                <FaChalkboardTeacher color="#FFF" size={24} />
+                Docentes
             </Link>
             {user.email === process.env.REACT_APP_ADMIN_EMAIL &&
                 <Link to="/admin/cadastrar-admin">

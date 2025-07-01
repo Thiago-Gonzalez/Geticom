@@ -1,0 +1,169 @@
+.faculty-modal-details-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.avatar-modal {
+    width: 140px;
+    height: 140px;
+    border-radius: 8px;
+    object-fit: cover;
+    background: #e9ecef;
+    flex-shrink: 0;
+}
+
+.faculty-modal-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.faculty-modal-info span:not(.modal-label) {
+    color: #666;
+}
+
+.modal-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.2rem;
+}
+
+.modal-label {
+    font-weight: 600;
+    color: #16163F;
+    font-size: 1rem;
+    margin-bottom: 0.1rem;
+}
+
+.disciplines-field {
+    margin-bottom: 0.3rem;
+}
+
+.disciplines-modal {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-top: 0.2rem;
+}
+
+.discipline-item {
+    padding: 0.3rem 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.discipline-item:last-child {
+    border-bottom: none;
+}
+
+.published-works-field {
+    margin-bottom: 0.3rem;
+}
+
+.published-works-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.2rem;
+}
+
+.published-work-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.3rem 0;
+}
+
+.published-work-item svg {
+    min-width: 16px;
+    min-height: 16px;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.published-work-link {
+    color: #16163F;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: color 0.2s;
+    line-height: 1.3;
+}
+
+.published-work-link:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.modal-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e9ecef;
+}
+
+.modal-links a {
+    color: #16163F;
+    transition: color 0.2s;
+}
+
+.modal-links a:hover {
+    color: #007bff;
+}
+
+.biography-text {
+    line-height: 1.6;
+    text-align: justify;
+    color: #666;
+}
+
+.academic-formation-text {
+    white-space: pre-line;
+    line-height: 1.5;
+}
+
+.academic-formation-modal {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-top: 0.2rem;
+    color: #666;
+}
+
+.formation-item {
+    padding: 0.3rem 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.formation-item:last-child {
+    border-bottom: none;
+}
+
+@media (max-width: 700px) {
+    .faculty-modal-details-row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .avatar-modal {
+        width: 120px;
+        height: 120px;
+    }
+
+    .faculty-modal-info {
+        width: 100%;
+    }
+} 
