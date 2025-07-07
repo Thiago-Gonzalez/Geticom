@@ -3,3 +3,8 @@
     background-color: #EFEFEF;
     height: 100%;
 }
+
+.dashboard-articles .new-btn:hover {
+    color: white;
+    text-decoration: none;
+}

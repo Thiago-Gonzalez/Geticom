@@ -85,4 +85,14 @@
     text-align: justify;
     display: block;
     width: 100%;
+}
+.student-modal-info span:not(.modal-label):not(.skill) {
+    color: #666;
+}
+.skills-modal .skill {
+    color: #fff !important;
+}
+.experiencia-field,
+.observacao-field {
+    color: #666;
 } 

@@ -1,0 +1,151 @@
+.new-faculty {
+    margin: 0 -100px;
+    background-color: #f8f8f8;
+    height: 100%;
+}
+
+.new-faculty .special-container {
+    padding: 30px;
+}
+
+.new-faculty .form-faculty {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 55%;
+}
+
+.new-faculty .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.new-faculty .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.new-faculty label {
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+}
+
+.new-faculty input,
+.new-faculty textarea,
+.new-faculty select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.new-faculty input:focus,
+.new-faculty textarea:focus,
+.new-faculty select:focus {
+    outline: none;
+    border-color: #3583f6;
+}
+
+.new-faculty textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.new-faculty button[type="submit"] {
+    border: 1px solid #16163F;
+    border-radius: 20px;
+    background-color: #16163F;
+    color: #fff;
+    padding: 7px 10px;
+    font-weight: 600;
+    transition: 0.4s;
+}
+
+.new-faculty button[type="submit"]:hover {
+    color: #16163F;
+    background-color: #fff;
+}
+
+.new-faculty button[type="submit"]:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.new-faculty .published-work-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+.new-faculty .work-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.new-faculty .work-inputs input {
+    margin: 0;
+}
+
+.new-faculty .remove-work-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.3s;
+}
+
+.new-faculty .remove-work-btn:hover {
+    background-color: #c82333;
+}
+
+.new-faculty .add-work-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.new-faculty .add-work-btn:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 768px) {
+    .new-faculty .content {
+        padding: 15px;
+    }
+    
+    .new-faculty .special-container {
+        padding: 20px;
+    }
+    
+    .new-faculty .form-row {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .new-faculty .work-inputs {
+        gap: 8px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .form-faculty {
+        max-width: 100%;
+    }
+}

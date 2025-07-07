@@ -107,6 +107,12 @@
     color: #16163F;
     margin-right: 3px;
   }
+  .availability {
+    color: #666;
+  }
+  .availability-label {
+    color: #16163F;
+  }
   
   .card-links {
     display: flex;
