@@ -18,9 +18,9 @@ export default function Header() {
                         <Nav className="ms-auto modern-nav">
                             <Link className={location.pathname === "/" ? "active" : ""} to="/">Início</Link>
                             <Link className={location.pathname === "/sobre" ? "active" : ""} to="/sobre">Sobre</Link>
-                            <Link className={location.pathname === "/servicos" ? "active" : ""} to="/servicos">Serviços</Link>
                             <Link className={location.pathname === "/docentes" ? "active" : ""} to="/docentes">Docentes</Link>
                             <Link className={location.pathname === "/banco-de-talentos" ? "active" : ""} to="/banco-de-talentos">Banco de Talentos</Link>
+                            <Link className={location.pathname === "/servicos" ? "active" : ""} to="/servicos">Serviços</Link>
                             <a href="/servicos#contatos">Contate-nos</a>
                         </Nav>
                     </Navbar.Collapse>
