@@ -1,0 +1,13 @@
+services:
+    app:
+        container_name: geticom-app
+        build:
+            context: .
+            dockerfile: .dockerfile
+        volumes:
+            - .:/app
+            - /app/node_modules
+        ports:
+            - 3000:3000
+        environment:
+            - NODE_ENV=production
